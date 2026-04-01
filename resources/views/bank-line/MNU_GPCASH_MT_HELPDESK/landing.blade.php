@@ -1,0 +1,227 @@
+﻿@include('_partials.header_content',['breadcrumb'=>['Information Management','Search']])
+
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="notification"></div>
+            <div class="box">
+                <div id="spinner" style="display:none"></div>
+                <div class="box-header">
+                    <h3 class="box-title">Information Filter</h3>
+                </div>
+                <form class="form-horizontal">
+
+                <div class="box-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="mb-3 row">
+                                <label class="col-md-4 col-form-label text-end">Type</label>
+
+                                <div class="col-md-4">
+                                   <select class="form-control" id="typeCode">
+                                        <option value="">All Type</option>
+                                        <option value="INFO">Information</option>
+                                        <option value="NEWS">News</option>
+                                        <option value="PROMO">Promo</option>
+                                   </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+
+                    <div class="float-left">
+                        <button type="button" id="search" name="search" class="btn btn-primary">@lang('form.search')</button>
+                    </div>
+                    <div class="float-right">
+                        <button type="button" id="add" name="add" class="btn btn-info">@lang('form.add')</button>
+                    </div>
+
+                </div>
+                </form>
+                    <div class="box-header list-title">
+                        <h3 class="box-title">Information Listing</h3>
+                    </div>
+                    <div class="box-body list-title">
+
+                                <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
+                                       style="border-collapse:collapse;">
+                                    <thead>
+                                    <tr>
+                                        <th align="center"><strong>Title</strong></th>
+                                        <th align="center"><strong>Upload File Name</strong></th>
+                                        <th align="center"><strong>Description</strong></th>
+                                        <th align="center"><strong>Type</strong></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td align="left"></td>
+                                        <td align="left"></td>
+                                        <td align="left"></td>
+                                        <td align="left"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    var id = '{{ $service }}';
+    var currentPageTable;
+    var currentPageSize;
+    var oTable;
+
+    $(document).ready(function () {
+
+        $('#list').hide();
+        $('.list-title').hide();
+
+
+        if (window.searchParam) {
+            $('#typeCode').val(window.searchParam.infoType).change();
+            
+            $('#search').trigger('click');
+            searchFunction();
+        }
+
+        $('#add').on('click', function () {
+            var res = app.setView(id,'add');
+            if(res=='done'){
+                $('#type').val('add');
+            }
+        });
+
+        $('#list tbody').on('click', 'a', function (e) {
+            if(e.handled !== true) // This will prevent event triggering more then once
+            {
+                e.handled = true;
+            }
+            var code = $(this).data('id');
+
+            // console.log("============", code);
+
+            if (code !== undefined) {
+                var res = app.setView(id,'detail');
+                if(res=='done'){
+                    $('#uploadId').val(code);
+                    getMatrix();
+                }
+            }
+        });
+
+        $('#search').on('click', function () {
+            currentPageTable= 0;
+            currentPageSize = 10;
+
+            searchFunction();
+        });
+
+    });
+
+
+    function searchFunction(){
+        
+        var url_action = 'search';
+        var action = 'SEARCH';
+        var result_key = 'result';
+        var custom_order = {"id": "ASC"};
+
+        $(this).prop("disabled",true);
+        $('#list').show();
+        $('.list-title').show();
+
+        window.searchParam = {
+            infoType: $('#typeCode').val(),
+        }
+
+        var value = {
+            // id:"%",
+            infoType: $('#typeCode').val(),
+            // currentPage: "1",
+            // pageSize: "50",
+            // orderBy: {"currency.effectiveDate": "DESC"}
+        };
+
+        oTable = $('#list').DataTable({
+            "destroy": true,
+            "initComplete": function(settings, json) {
+                $('#search').prop("disabled",false);
+
+            },
+            "select": false,
+            "searching": false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "pageLength":currentPageSize,
+            "displayStart":currentPageTable * currentPageSize,
+            "processing": true,
+            "serverSide": true,
+            "autoWidth": false,
+            "ScrollX": '100%',
+            "columnDefs": [
+                {
+                    targets: 0,
+                    data: 'title',
+                    render: function ( data, type, full, meta ) {
+                        return '<a href="javascript:void(0)" data-id="'+full.id+'">'+full.title+'</a>';
+                    },
+                    orderable: true
+                },
+                {
+                    targets: 1,
+                    data: "fileName",
+                    orderable: true
+                },
+                {
+                    targets: 2,
+                    data: "dscp",
+                    render: function ( data, type, full, meta ) {
+                        if (full.infoType === 'PROMO') {
+                            return full.promoDscpFileName;
+                        } else {
+                            return full.description;
+                        }
+                    },
+                    orderable: true
+                },
+                {
+                    targets: 3,
+                    data: "infoType",
+                    orderable: true
+                }
+            ],
+            "ajax": {
+                url: "fetchDataTable",
+                type:'POST',
+                data: function ( d ) {
+                    d.value = value;
+                    d.menu = id;
+                    d.url_action = url_action;
+                    d.action = action;
+                    d.result_key = result_key;
+                    d._token = '{{ csrf_token() }}';
+                },
+                error:function (jqXHR, textStatus, errorThrown) {
+
+                    var msg = '{{trans('form.conn_error')}}';
+                    flash('warning', msg);
+                    $('#list').hide();
+                    $('.list-title').hide();
+                    $('#search').prop("disabled",false);
+                },
+                complete:function(data){
+                    currentPageTable = oTable.page.info().page;
+                    currentPageSize = oTable.page.len();
+                }
+            }
+        });
+    }
+
+</script>

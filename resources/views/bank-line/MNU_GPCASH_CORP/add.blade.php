@@ -1,0 +1,2870 @@
+﻿
+@include('_partials.header_content',['breadcrumb'=>[ str_replace('-',' ',$menu),$type ]])
+
+<style>
+    .input-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .input-group .form-control {
+        flex: 1;
+    }
+
+    .input-group-btn {
+        display: flex;
+    }
+
+    .input-group-btn .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -1px;
+    }
+
+    .input-group .form-control:focus {
+        z-index: 2;
+    }
+
+    .nav-tabs > li {
+        margin-right: 10px;
+    }
+
+    .nav-tabs > li > a {
+        margin-right: 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .has-error .form-control,
+    .has-danger .form-control {
+        border-color: #d9534f !important;
+    }
+
+    .has-error .with-errors,
+    .has-danger .with-errors {
+        color: #d9534f;
+        font-size: 12px;
+        margin-top: 5px;
+        display: block;
+    }
+
+</style>
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="notification"></div>
+            <div id="print" class="box">
+
+                <form id="form-area" class="form-horizontal form-area">
+                    <input type="hidden" id="code_edit" value=""/>
+                    <input type="hidden" id="type" value=""/>
+                    <input type="hidden" id="state" value=""/>
+
+                    <input type="hidden" id="maker_userId_edit" value=""/>
+                    <input type="hidden" id="maker_name_edit" value=""/>
+                    <input type="hidden" id="maker_email_edit" value=""/>
+                    <input type="hidden" id="maker_mobileNo_edit" value=""/>
+                    <input type="hidden" id="approver_userId_edit" value=""/>
+                    <input type="hidden" id="approver_name_edit" value=""/>
+                    <input type="hidden" id="approver_email_edit" value=""/>
+                    <input type="hidden" id="approver_mobileNo_edit" value=""/>
+
+
+                    <div id="exTab" class="">
+
+                        <ul class="nav nav-tabs state_edit" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#tab_detail" type="button" role="tab" aria-controls="tab_detail" aria-selected="true">Corporate Detail</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#tab_services" type="button" role="tab" aria-controls="tab_services" aria-selected="false">Services</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="admin-tab" data-bs-toggle="tab" data-bs-target="#tab_admin" type="button" role="tab" aria-controls="tab_admin" aria-selected="false">Corporate Admin</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab_detail" role="tabpanel" aria-labelledby="detail-tab" style="display:block;">
+                                <div class="box-header state_view" style="display:none;">
+                                    <h3 class="box-title">Corporate Detail</h3><br>
+                                </div>
+                                <div class="box-body">
+                                        <div class="mb-3 row corporate_filter" id="cifidBlock">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Corporate - CIF</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="form-inline">
+                                                    <input type="text" id="cifid_filter" maxlength="6" name="cifid_filter" class="form-control state_edit" autocomplete="off" value="" >
+                                                    <label id="cifid_filter_view" class="state_view">-</label>
+                                                    <div class="help-block with-errors"></div>
+                                                    <span class="form-control-feedback"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Corporate ID</label>
+                                            <div class="col-md-5">
+                                                <div class="form-inline">
+                                                    <input type="text" id="cifid" name="cifid" class="form-control state_edit" autocomplete="off" value="" readonly disabled>
+                                                    <label id="cifid_view" class="state_view">-</label>
+                                                    <span class="form-control-feedback"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Customer Location&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit" id="customer_location" data-error="This field is required." required>
+                                                        <option value="">select location</option>
+                                                        <option value="010">010</option>
+                                                        <option value="030">030</option>
+                                                        <option value="040">040</option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="customer_location_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"></label>
+                                            <div class="col-md-5">
+                                                <div class="form-inline">
+                                                    <button type="button" id="cifid_search" name="cifid_search" class="btn btn-default">Load Corporate Detail</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row" hidden="true">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Corporate ID&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="corporateId" name="corporateId" class="form-control state_edit detail" autocomplete="off" value="" maxlength="20" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="corporateId_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Corporate Name&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="corporateName" name="corporateName" class="form-control state_edit detail" autocomplete="off" value="" maxlength="35" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="corporateName_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Address&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="address1" name="address1" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="address1_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="address2" name="address2" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
+
+                                                <label id="address2_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="address3" name="address3" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
+                                                <label id="address3_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Country&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit detail" id="country" data-error="This field is required." onchange="getDroplist('country')" required>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="country_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>State&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit detail" id="states" data-error="This field is required." onchange="getDroplist('state')" required>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="states_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Substate&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit detail" id="substate" data-error="This field is required." onchange="getDroplist('substate')" required>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="substate_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>City&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit detail" id="city" data-error="This field is required." required>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="city_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Post Code&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                <select class="form-control state_edit detail" id="postcode" data-error="This field is required." required>
+                                                    <option></option>
+                                                </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="postcode_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row" id="email1Block">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Email Address&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input id="email1" name="email1" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="email1_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row" id="email2Block">
+                                            <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
+                                            <div class="col-md-5">
+                                                <input type="email" id="email2" name="email2" class="form-control state_edit" autocomplete="off" maxlength="100" data-error="Invalid Email Address." value="">
+                                                <div class="help-block with-errors"></div>
+                                                <label id="email2_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Phone No.&ast;</strong></label>
+                                            <div class="col-md-3">
+                                                <input type="text" id="phoneNo" name="phoneNo" class="form-control state_edit detail numeric phone" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="phoneNo_view" class="state_view numeric phone">-</label>
+                                            </div>
+                                            <label class="col-md-2 col-form-label text-end">Ext No.</label>
+                                            <div class="col-md-2">
+                                                <input type="text" id="extNo" name="extNo" class="form-control state_edit" autocomplete="off" value="" maxlength="40">
+                                                <label id="extNo_view" class="state_view numeric phone">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Fax No.</label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="faxNo" name="faxNo" class="form-control state_edit numeric phone" autocomplete="off" value="" maxlength="40">
+                                                <label id="faxNo_view" class="state_view numeric phone">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label text-end"><strong>Servicing Branch&ast;</strong></label>
+                                        <div class="col-md-5">
+                                            <div class="state_edit">
+                                                <select class="form-control state_edit detail" id="branch" data-error="This field is required." required>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                            <label id="branch_view" class="state_view">-</label>
+                                        </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Industry Segment</label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit" id="industrySegment">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <label id="industrySegment_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Business Unit</label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit" id="businessUnit">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <label id="businessUnit_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Tax ID&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="taxId" name="taxId" class="form-control state_edit detail taxId" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="taxId_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Handling Officer</label>
+                                            <div class="col-md-5">
+                                                <div class="state_edit">
+                                                    <select class="form-control state_edit" id="handlingOfficer">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="handlingOfficer_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label text-end">Residential Status</label>
+                                        <div class="col-md-5">
+                                            <div class="state_edit">
+                                                <input type="radio" id="resident-rb" name="resident-rb" value="0" checked>
+                                                <label for="resident-rb">Resident</label>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                            <label id="residential_view" class="state_view"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row state_edit">
+                                        <label class="col-md-3 col-form-label text-end"></label>
+                                        <div class="col-md-6">
+                                            <div class="state_edit">
+                                                <div class="col-md-4 form-inline" style="padding-left: 0px;padding-right: 0px;">
+                                                <input class="state_edit" type="radio" id="nonresident-rb" name="resident-rb" value="1">
+                                                <label for="nonresident-rb">Non Resident</label>
+                                                </div>
+                                                <div id="resident_container" class="col-md-6 form-inline" style="padding-left: 0px;padding-right: 0px;display:none;">
+                                                <select class="form-control state_edit" id="residential" style="width:100%;">
+                                                    <option></option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label text-end">Citizenship</label>
+                                        <div class="col-md-5">
+                                            <div class="state_edit">
+                                                <input type="radio" id="citizen-rb" name="citizen-rb" value="0" checked>
+                                                <label for="citizen-rb">Citizen</label>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                            <label id="citizenship_view" class="state_view"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row state_edit">
+                                        <label class="col-md-3 col-form-label text-end"></label>
+                                        <div class="col-md-6">
+                                            <div class="state_edit">
+                                                <div class="col-md-4 form-inline" style="padding-left: 0px;padding-right: 0px;">
+                                                    <input class="state_edit" type="radio" id="noncitizen-rb" name="citizen-rb" value="1">
+                                                    <label for="noncitizen-rb">Non Citizen</label>
+                                                </div>
+                                                <div id="citizenship_container" class="col-md-6 form-inline" style="padding-left: 0px;padding-right: 0px;display:none;">
+                                                    <select class="form-control state_edit" id="citizenship" style="width:100%;">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label text-end">Remitter Type</label>
+                                        <div class="col-md-5">
+                                            <div class="state_edit">
+                                                <select class="form-control state_edit" id="remitterType">
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                            <label id="remitterType_view" class="state_view">-</label>
+                                        </div>
+                                    </div>
+                                        <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Status</label>
+                                                <div class="col-md-5">
+                                                    <label id="status">-</label>
+                                                </div>
+                                        </div>
+
+
+                                </div>
+                                <div class="box-header">
+                                    <h3 class="box-title table-hidden">Contact Person</h3>
+                                </div>
+                                <div class="box-body">
+                                    <table id="list_cp" class="table table-bordered dataTable" border="2" cellpadding="2"
+                                           style="border-collapse:collapse;">
+                                        <thead>
+                                        <tr>
+                                            <th align="left"><strong>No</strong></th>
+                                            <th align="left"><strong>Name</strong></th>
+                                            <th align="left"><strong>Phone</strong></th>
+                                            <th align="left"><strong>Mobile</strong></th>
+                                            <th align="left"><strong>Email Address</strong></th>
+                                            <th align="left"><strong>Fax No.</strong></th>
+                                        </tr>
+                                        </thead>
+
+                                    </table>
+                                </div>
+                                <div class="state_view">
+                                    <div class="box-header auth-device">
+                                        <h3 class="box-title">Service</h3>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Service Setup</label>
+                                                <div class="col-md-5">
+                                                    <label id="servicePackageName">-</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Special Limit</label>
+                                                <div class="col-md-5">
+                                                    <label id="specialLimitFlag_view">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Special Fee</label>
+                                                <div class="col-md-5">
+                                                    <label id="specialChargeFlag_view">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Corporate SME</label>
+                                                <div class="col-md-5">
+                                                    <label id="smeFlag_view">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row token-list">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Default Approval Matrix</label>
+                                                <div class="col-md-5">
+                                                    <label id="defAppMatrixFlag_view">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
+                                                <div class="col-md-5">
+                                                    <label id="maxCorporateUser">-</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-header auth-device token-list">
+                                        <h3 class="box-title">Authentication Device</h3>
+                                    </div>
+                                    <div class="box-body auth-device token-list">
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
+                                                <div class="col-md-5">
+                                                    <label id="tokenType_view">Hard Token</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-md-3 col-form-label text-end"></label>
+                                            <div class="col-md-5">
+                                                <table id="list_token_view" class="table table-bordered table-striped dataTable float-left" border="2" cellpadding="2"
+                                                       style="border-collapse:collapse;">
+                                                    <thead>
+                                                    <tr>
+                                                        <th align="left"><strong>Serial Number</strong></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
+                                                <div class="col-md-5">
+                                                    <label id="tokenNum_view">-</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-header">
+                                        <h3 class="box-title table-hidden">Corporate Admin</h3>
+                                    </div>
+                                    <div class="box-body">
+
+                                        <table id="list_admin_view" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
+                                               style="border-collapse:collapse;">
+                                            <thead>
+                                            <tr>
+                                                <th align="left"><strong>Role</strong></th>
+                                                <th align="left"><strong>User ID</strong></th>
+                                                <th align="left"><strong>User Name</strong></th>
+                                                <th align="left"><strong>Email Address</strong></th>
+                                                <th align="left"><strong>Mobile Phone</strong></th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_services" role="tabpanel" aria-labelledby="services-tab" style="display:none;">
+                                <div class="container-fluid box-body">
+                                    <div class="col-xs-12">
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Service Setup&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <select class="form-control state_edit" id="servicePackage" data-error="This field is required." required>
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Special Limit</label>
+                                            <div class="col-md-6">
+                                                <div class="state_edit">
+                                                    <input type="checkbox" id="specialLimitFlag" name="specialLimitFlag" value="Yes"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Special Fee</label>
+                                            <div class="col-md-6">
+                                                <div class="state_edit">
+                                                    <input type="checkbox" id="specialChargeFlag" name="specialChargeFlag" value="Yes"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end">Corporate SME</label>
+                                            <div class="col-md-6">
+                                                <div class="state_edit">
+                                                    <input type="checkbox" id="smeFlag" name="smeFlag" value="Yes"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row token-list">
+                                            <label class="col-md-3 col-form-label text-end">Default Approval Matrix</label>
+                                            <div class="col-md-6">
+                                                <div class="state_edit">
+                                                    <input type="checkbox" id="defAppMatrixFlag" name="defAppMatrixFlag" value="Yes"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-3 col-form-label text-end"><strong>Maximum Number of User&ast;</strong></label>
+                                            <div class="col-md-5">
+                                                <input type="text" id="maximumUser" name="maximumUser" class="form-control state_edit numeric" autocomplete="off" value="999999999" maxlength="9" data-error="This field is required." required>
+                                                <div class="help-block with-errors"></div>
+                                                <label id="maximumUser_view" class="state_view">-</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="box-header auth-device token-list">
+                                            <h3 class="box-title">Authentication Device</h3>
+                                        </div>
+                                        <div class="box-body auth-device token-list">
+                                            <div class="row">
+                                                <div class="mb-3 row">
+                                                    <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
+                                                    <div class="col-md-6">
+                                                        <label id="tokenType">Hard Token</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="mb-3 row">
+                                                    <label class="col-md-3 col-form-label text-end">Serial Number</label>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <input type="text" id="serialNumber" name="serialNumber" class="form-control state_edit" autocomplete="off" value="" maxlength="40" placeholder="Enter Serial Number">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" id="serialNumber_add" name="serialNumber_add" class="btn btn-default">Add to List</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <label class="col-md-3 col-form-label text-end"></label>
+                                                    <div class="col-md-6">
+                                                    <table id="list_token" class="table table-bordered table-striped dataTable float-left" border="2" cellpadding="2"
+                                                       style="border-collapse:collapse;">
+                                                    <thead>
+                                                    <tr>
+                                                        <th align="left"><strong>Serial Number</strong></th>
+                                                        <th align="left"></th>
+                                                    </tr>
+                                                    </thead>
+                                                    </table>
+                                                    </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="mb-3 row">
+                                                    <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
+                                                    <div class="col-md-6">
+                                                        <label id="tokenNum">-</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab_admin" role="tabpanel" aria-labelledby="admin-tab" style="display:none;">
+                                <div class="container-fluid box-body">
+                                    <div class="col-xs-12">
+
+                                        <div class="box-body">
+                                            <table id="list_admin" class="table table-bordered dataTable" border="2" cellpadding="2"
+                                                   style="border-collapse:collapse;">
+                                                <thead>
+                                                <tr>
+                                                    <th align="left"><strong>Role</strong></th>
+                                                    <th align="left"><strong>User ID*</strong></th>
+                                                    <th align="left"><strong>User Name*</strong></th>
+                                                    <th align="left"><strong>Email Address*</strong></th>
+                                                    <th align="left"><strong>Mobile Phone*</strong></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Admin Maker</td>
+                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="text" id="maker_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="text" id="maker_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="email" id="maker_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="maker_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Admin Approver</td>
+                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="email" id="approver_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="box-footer">
+                    <div class="col-md-12 state_edit text-center">
+                        <button type="button" id="back" name="back" class="btn btn-default back float-left">@lang('form.cancel')</button>
+                        <button type="button" id="confirm" name="confirm" class="btn btn-primary float-right ">@lang('form.confirm')</button>
+                    </div>
+                    <div class="col-md-12 state_view text-center" data-html2canvas-ignore="true">
+                        <div class="float-left">
+                            <button type="button" id="back_view" name="back_view" class="btn btn-default">@lang('form.cancel')</button>
+                            <button type="button" id="save_screen" name="save_screen" class="btn btn-default" style="display:none" onclick="save_pdf();">@lang('form.save_pdf')</button>
+                        </div>
+                        <div class="float-right" style="display:inline;">
+                            <button type="button" id="next_user" name="next_user" class="btn btn-info">@lang('form.next_user')</button>
+                            <button type="button" id="done" name="done" class="btn btn-primary" style="display:none">@lang('form.done')</button>
+                            <button type="button" id="submit_view" name="submit_view" class="btn btn-primary">@lang('form.submit')</button>
+                        </div>
+                    </div>
+                </div>
+                @include('_partials.next_user')
+            </div>
+
+
+            </div>
+        </div>
+
+
+</section>
+
+<script>
+    var oTable_cp;
+    var oTable_admin;
+    var oTable_token;
+    var oTable_token_view;
+    var oTable_admin_view;
+    var postCodeOption;
+    var cityOption;
+    var substateOption;
+    var stateOption;
+    var countryOption;
+    var branchOption;
+    var industryOption;
+    var businessOption;
+    var officerOption;
+    var serviceOption;
+    var remitterOption;
+    var id = '{{ $service }}';
+    var submit_data;
+    var noRef;
+    var token_list;
+    $(document).ready(function () {
+
+
+
+        $('#specialLimitFlag').lc_switch();
+        $('#specialChargeFlag').lc_switch();
+        $('#smeFlag').lc_switch();
+        $('#defAppMatrixFlag').lc_switch();
+
+        $('.pendingTrxNote').hide();
+
+        oTable_cp = $('#list_cp').DataTable({
+            "paging" : false,
+            "ordering" : false,
+            "info": false,
+            "destroy": true,
+            "searching": false,
+            "autoWidth":false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "columnDefs": [
+                {
+                    targets: 0,
+                    sortable: true,
+                    width: "5%"
+                },
+                {
+                    targets: 1,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 2,
+                    sortable: true,
+                    width: "20%"
+                },
+                {
+                    targets: 3,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 4,
+                    sortable: true,
+                    width: "30%"
+                },
+                {
+                    targets: 5,
+                    sortable: true,
+                    width: "15%"
+                }
+            ]
+        });
+
+        var cp_count = 1;
+        for (i = 0; i < 5; i++) {
+            oTable_cp.row.add([
+                cp_count,
+                '<input type="text" id="cp_name" class="form-control state_edit" style="width: 100%;" maxlength="100"><label id="cp_name_view" class="state_view">-</label>',
+                '<input type="text" id="cp_phoneNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40"><label id="cp_phoneNo_view" class="state_view numeric phone">-</label>',
+                '<input type="text" id="cp_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40"><label id="cp_mobileNo_view" class="state_view numeric phone">-</label>',
+                '<div class="mb-3 row maker" style="margin: 0"><input type="email" id="cp_email" data-error="Invalid Email Address." class="cp_email form-control state_edit" style="width: 100%;" maxlength="100"><div class="help-block with-errors"></div><label id="cp_email_view" class="state_view">-</label></div>',
+                '<input type="text" id="cp_faxNo" class="form-control state_edit numeric" style="width: 100%;" maxlength="40"><label id="cp_faxNo_view" class="state_view">-</label>'
+            ]).draw(true);
+            cp_count++;
+        }
+
+        oTable_admin = $('#list_admin').DataTable({
+            "paging" : false,
+            "ordering" : false,
+            "info": false,
+            "destroy": true,
+            "searching": false,
+            "autoWidth":false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "columnDefs": [
+                {
+                    targets: 0,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 1,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 2,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 3,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 4,
+                    sortable: true,
+                    width: "15%"
+                }
+            ]
+        });
+
+        oTable_admin_view = $('#list_admin_view').DataTable({
+            "paging" : false,
+            "ordering" : false,
+            "info": false,
+            "destroy": true,
+            "searching": false,
+            "autoWidth":false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "columnDefs": [
+                {
+                    targets: 0,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 1,
+                    sortable: true,
+                    width: "20%"
+                },
+                {
+                    targets: 2,
+                    sortable: true,
+                    width: "20%"
+                },
+                {
+                    targets: 3,
+                    sortable: true,
+                    width: "15%"
+                },
+                {
+                    targets: 4,
+                    sortable: true,
+                    width: "10%"
+                }
+            ]
+        });
+
+        /*oTable_admin.row.add([
+            'Admin Maker',
+            '<input type="text" id="maker_userId" class="state_edit maker" style="width: 100%;" maxlength="40" required>',
+            '<input type="text" id="maker_name" class="state_edit maker" style="width: 100%;" maxlength="100" required>',
+            '<input type="email" id="maker_email" class="state_edit maker" style="width: 100%;" maxlength="100" required>',
+            '<input type="text" id="maker_mobileNo" class="state_edit numeric" style="width: 100%;" maxlength="40">',
+            '-'
+        ]).draw(true);
+
+        oTable_admin.row.add([
+            'Admin Approver',
+            '<input type="text" id="approver_userId" class="state_edit approver" style="width: 100%;" maxlength="40" required>',
+            '<input type="text" id="approver_name" class="state_edit approver" style="width: 100%;" maxlength="100" required>',
+            '<input type="email" id="approver_email" class="state_edit approver" style="width: 100%;" maxlength="100" required>',
+            '<input type="text" id="approver_mobileNo" class="state_edit numeric" style="width: 100%;" maxlength="40">',
+            'Hard Token'
+        ]).draw(true);*/
+        //$('.numeric').autoNumeric('init', {decimalPlacesOverride: '0',digitGroupSeparator: '',minimumValue:'0',maximumValue:'999999999999' });
+        /*if($('#type').val()=='add'){
+
+            oTable_admin.column(6).visible(false);
+        }*/
+        oTable_token = $('#list_token').DataTable({
+            "paging" : false,
+            "ordering" : false,
+            "info": false,
+            "destroy": true,
+            "searching": false,
+            "autoWidth":false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "columnDefs": [
+                {
+                    targets: 0,
+                    sortable: true,
+                    width: "80%"
+                },
+                {
+                    targets: 1,
+                    sortable: true,
+                    width: "20%",
+                    className: "dt-center",
+                    render: function ( data, type, full, meta ) {
+                        return '<button data-cif="'+data+'" class="btn btn-danger" onClick="removeRow(this);" style="width:100px;">Remove</button>';
+                    }
+                }
+            ],
+            "drawCallback": function( settings ) {
+                tokenCount();
+            }
+        });
+
+        oTable_token_view = $('#list_token_view').DataTable({
+            "paging" : false,
+            "ordering" : false,
+            "info": false,
+            "destroy": true,
+            "searching": false,
+            "autoWidth":false,
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+            "columnDefs": [
+                {
+                    targets: 0,
+                    sortable: true,
+                    width: "100%"
+                }
+            ]
+        });
+
+        stateEdit();
+
+        $('#detail-tab, #services-tab, #admin-tab').on('click', function (e) {
+            e.preventDefault();
+
+            var target = $(this).attr('data-bs-target');
+
+            $('.nav-tabs button').removeClass('active').attr('aria-selected', 'false');
+            $(this).addClass('active').attr('aria-selected', 'true');
+
+            $('.tab-pane').hide().removeClass('show active');
+            $(target).addClass('show active').show();
+        });
+
+        $('#submit_view').on('click', function () {
+            $(this).prop('disabled',true);
+            /*if($('#approver_tokenNo').val()==null||$('#approver_tokenNo').val()==''){
+                var content ='{{trans('form.alert_empty',['label'=>'Serial Number'])}}';
+                $.alert({
+                    title: '{{trans('form.warning')}}',
+                    content: content
+                });
+                $('#submit_view').prop('disabled',false);
+                return;
+            }*/
+            var content ='';
+            if ($('#type').val() == 'add'){
+                content='{{trans('form.confirm_add')}}';
+            }else{
+                content='{{trans('form.confirm_edit')}}';
+            }
+
+            $.confirm({
+                title: '{{trans('form.submit')}}',
+                content: content,
+                buttons: {
+
+                    cancel: {
+                        text: '{{trans('form.cancel')}}',
+                        btnClass: 'btn-default',
+                        action: function(){
+                            $('#submit_view').prop('disabled',false);
+                        }
+                    },
+
+                    confirm: {
+                        text: '{{trans('form.confirm')}}',
+                        btnClass: 'btn-primary',
+                        action: function(){
+                            submitData();
+                        }
+                    }
+
+                }
+            });
+
+        });
+
+        function submitData(){
+            var value = submit_data;
+
+            if($('#type').val() == 'add'){
+                $.ajax({
+                    url: 'add',
+                    async:false,
+                    method: 'post',
+                    data: {"_token": "{{ csrf_token() }}", menu: id, value: value},
+                    success: function (data) {
+                        $('#submit_view').prop('disabled',false);
+                        var result = JSON.parse(data);
+                        if (result.status=="200") {
+                            noRef=result.referenceNo;
+                            flash('success', result.message+'<br>'+'ReferenceNo: '+ result.referenceNo+'<br>'+result.dateTimeInfo);
+                            $('#submit_view').hide();
+                            stateSuccess();
+                        } else {
+                            $('#submit_view').prop('disabled',false);
+                            flash('warning', result.message);
+                        }
+
+                    }, error: function (xhr, ajaxOptions, thrownError) {
+                        $('#submit_view').prop('disabled',false);
+                        flash('warning', 'Form Submit Failed');
+                        console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+                    }
+                });
+            }else{
+                //submit_data.adminList[1].tokenNo = $('#approver_tokenNo').val();
+                $.ajax({
+                    url: 'edit',
+                    async:false,
+                    method: 'post',
+                    data: {"_token": "{{ csrf_token() }}", menu: id, value: value},
+                    success: function (data) {
+                        $('#submit_view').prop('disabled',false);
+                        var result = JSON.parse(data);
+                        if (result.status=="200") {
+                            noRef=result.referenceNo;
+                            flash('success', result.message+'<br>'+'ReferenceNo: '+ result.referenceNo+'<br>'+result.dateTimeInfo);
+                            $('#submit_view').hide();
+                            stateSuccess();
+                        } else {
+                            $('#submit_view').prop('disabled',false);
+                            flash('warning', result.message);
+                        }
+
+                    }, error: function (xhr, ajaxOptions, thrownError) {
+                        $('#submit_view').prop('disabled',false);
+                        flash('warning', 'Form Submit Failed');
+                        console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+                    }
+                });
+            }
+        }
+
+        let debounceTimer;
+
+        $("#email1").on("input blur", function () {
+            clearTimeout(debounceTimer);
+
+            debounceTimer = setTimeout(() => {
+                if ($("#email1").val() != '') {
+                    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    var str = $("#email1").val();
+                    if (!regex.test(str)) {
+                        $("#email1Block").addClass("has-error").addClass("has-danger");
+                        $("#email1Block").find(".with-errors").html("Invalid Email Address.");
+                        return false;
+                    } else {
+                        $("#email1Block").removeClass("has-error has-danger");
+                        $("#email1Block").find(".with-errors").html("");
+                    }
+                }
+            }, 300);
+        });
+
+
+        $('#confirm').on('click', function () {
+            var currentTabTitle = $('#detail-tab').hasClass('active') ? '#tab_detail' :
+                                  $('#services-tab').hasClass('active') ? '#tab_services' : '#tab_admin';
+
+            if(currentTabTitle=='#tab_detail'){
+                $("#cifidBlock").removeClass("has-error");
+                $("#cifidBlock").removeClass("has-danger");
+                $("#cifidBlock").find(".with-errors").html("");
+
+                if($("#cifid_filter").val()!=''){
+                    var regex = new RegExp("^[0-9]+$");
+                    var str = $("#cifid_filter").val();
+                    if (!regex.test(str)) {
+                        $("#cifidBlock").addClass("has-error").addClass("has-danger");
+                        $("#cifidBlock").find(".with-errors").html("Invalid Input");
+                        return false;
+                    }
+                }
+
+                $('.nav-tabs button').removeClass('active').attr('aria-selected', 'false');
+                $('#services-tab').addClass('active').attr('aria-selected', 'true');
+                $('.tab-pane').hide().removeClass('show active');
+                $('#tab_services').addClass('show active').show();
+                return;
+            }
+
+            if(currentTabTitle=='#tab_services'){
+                $('.nav-tabs button').removeClass('active').attr('aria-selected', 'false');
+                $('#admin-tab').addClass('active').attr('aria-selected', 'true');
+                $('.tab-pane').hide().removeClass('show active');
+                $('#tab_admin').addClass('show active').show();
+                return;
+            }
+
+            if(currentTabTitle=='#tab_admin'){
+                var hasError = false;
+                var firstErrorTab = null;
+
+                // ==== VALIDATE TAB DETAIL ====
+                // Validate CIF filter
+                $("#cifidBlock").removeClass("has-error").removeClass("has-danger");
+                $("#cifidBlock").find(".with-errors").html("");
+                if($("#cifid_filter").val()!=''){
+                    var regex = new RegExp("^[0-9]+$");
+                    var str = $("#cifid_filter").val();
+                    if (!regex.test(str)) {
+                        $("#cifidBlock").addClass("has-error").addClass("has-danger");
+                        $("#cifidBlock").find(".with-errors").html("Invalid Input");
+                        hasError = true;
+                        if(!firstErrorTab) firstErrorTab = '#tab_detail';
+                    }
+                }
+
+                // Validate all detail fields
+                $(".detail").each(function(){
+                    var $field = $(this);
+                    var $parent = $field.closest('.mb-3');
+                    $parent.removeClass("has-error").removeClass("has-danger");
+                    $parent.find(".with-errors").html("");
+
+                    if ($field.val().trim() == "") {
+                        $parent.addClass("has-error").addClass("has-danger");
+                        $parent.find(".with-errors").html("This field is required.");
+                        hasError = true;
+                        if(!firstErrorTab) firstErrorTab = '#tab_detail';
+                    }
+            });
+
+                var $customerLoc = $('#customer_location').closest('.mb-3');
+                $customerLoc.removeClass("has-error").removeClass("has-danger");
+                $customerLoc.find(".with-errors").html("");
+                if($('#customer_location').val() == ''){
+                    $customerLoc.addClass("has-error").addClass("has-danger");
+                    $customerLoc.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_detail';
+                }
+
+                var $servicePkg = $('#servicePackage').closest('.mb-3');
+                $servicePkg.removeClass("has-error").removeClass("has-danger");
+                $servicePkg.find(".with-errors").html("");
+                if($('#servicePackage').val() == ''){
+                    $servicePkg.addClass("has-error").addClass("has-danger");
+                    $servicePkg.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_services';
+                }
+
+                // Validate maximumUser
+                var $maxUser = $('#maximumUser').closest('.mb-3');
+                $maxUser.removeClass("has-error").removeClass("has-danger");
+                $maxUser.find(".with-errors").html("");
+                if($('#maximumUser').val() == ''){
+                    $maxUser.addClass("has-error").addClass("has-danger");
+                    $maxUser.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_services';
+                }
+
+                // ==== VALIDATE TAB ADMIN ====
+                // Validate maker fields
+                var $makerUserId = $('#maker_userId').closest('.maker');
+                $makerUserId.removeClass("has-error").removeClass("has-danger");
+                $makerUserId.find(".with-errors").html("");
+                if($('#maker_userId').val().trim() == ''){
+                    $makerUserId.addClass("has-error").addClass("has-danger");
+                    $makerUserId.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                var $makerName = $('#maker_name').closest('.maker');
+                $makerName.removeClass("has-error").removeClass("has-danger");
+                $makerName.find(".with-errors").html("");
+                if($('#maker_name').val().trim() == ''){
+                    $makerName.addClass("has-error").addClass("has-danger");
+                    $makerName.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                var $makerEmail = $('#maker_email').closest('.maker');
+                $makerEmail.removeClass("has-error").removeClass("has-danger");
+                $makerEmail.find(".with-errors").html("");
+                if($('#maker_email').val().trim() == ''){
+                    $makerEmail.addClass("has-error").addClass("has-danger");
+                    $makerEmail.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                } else {
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test($('#maker_email').val())) {
+                        $makerEmail.addClass("has-error").addClass("has-danger");
+                        $makerEmail.find(".with-errors").html("This field is invalid.");
+                        hasError = true;
+                        if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                    }
+                }
+
+                var $makerMobile = $('#maker_mobileNo').closest('.approver');
+                $makerMobile.removeClass("has-error").removeClass("has-danger");
+                $makerMobile.find(".with-errors").html("");
+                if($('#maker_mobileNo').val().trim() == ''){
+                    $makerMobile.addClass("has-error").addClass("has-danger");
+                    $makerMobile.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                // Validate approver fields
+                var $approverUserId = $('#approver_userId').closest('.approver');
+                $approverUserId.removeClass("has-error").removeClass("has-danger");
+                $approverUserId.find(".with-errors").html("");
+                if($('#approver_userId').val().trim() == ''){
+                    $approverUserId.addClass("has-error").addClass("has-danger");
+                    $approverUserId.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                var $approverName = $('#approver_name').closest('.approver');
+                $approverName.removeClass("has-error").removeClass("has-danger");
+                $approverName.find(".with-errors").html("");
+                if($('#approver_name').val().trim() == ''){
+                    $approverName.addClass("has-error").addClass("has-danger");
+                    $approverName.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                var $approverEmail = $('#approver_email').closest('.approver');
+                $approverEmail.removeClass("has-error").removeClass("has-danger");
+                $approverEmail.find(".with-errors").html("");
+                if($('#approver_email').val().trim() == ''){
+                    $approverEmail.addClass("has-error").addClass("has-danger");
+                    $approverEmail.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                } else {
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test($('#approver_email').val())) {
+                        $approverEmail.addClass("has-error").addClass("has-danger");
+                        $approverEmail.find(".with-errors").html("This field is invalid.");
+                        hasError = true;
+                        if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                    }
+                }
+
+                var $approverMobile = $('#approver_mobileNo').closest('.approver');
+                $approverMobile.removeClass("has-error").removeClass("has-danger");
+                $approverMobile.find(".with-errors").html("");
+                if($('#approver_mobileNo').val().trim() == ''){
+                    $approverMobile.addClass("has-error").addClass("has-danger");
+                    $approverMobile.find(".with-errors").html("This field is required.");
+                    hasError = true;
+                    if(!firstErrorTab) firstErrorTab = '#tab_admin';
+                }
+
+                // If there are errors, navigate to first tab with error
+                if(hasError){
+                    if(firstErrorTab){
+                        $('a[href="'+firstErrorTab+'"]').click();
+                    }
+                    return false;
+            }
+
+            setTimeout(function(){
+                    stateView();
+                });
+                }
+            });
+
+        $('#cifid_search').on('click', function () {
+
+            if($('#cifid_filter').val()!==''){
+                $(this).prop('disabled',true);
+                searchCorporate($('#cifid_filter').val());
+            }else{
+                var content ='{{trans('form.alert_empty',['label'=>'CIF ID'])}}';
+                $.alert({
+                    title: '{{trans('form.warning')}}',
+                    content: content
+                });
+                return;
+            }
+
+        });
+
+        $('#back_view').on('click', function () {
+            $(this).prop('disabled',true);
+            if($('#state').val() == 'success'){
+                app.setView(id,'landing')
+            }else{
+            $('#back_view').prop('disabled',false);
+            stateEdit();
+            }
+        });
+
+
+
+        $('.back').on('click', function () {
+            $(this).prop('disabled',true);
+            var corporateId = $('#code_edit').val();
+            var name = $('#corporateName').val();
+            if($('#type').val() == 'add') {
+                app.setView(id,'landing');
+            } else {
+                var res = app.setView(id,'detail');
+                if(res=='done'){
+                    $('#code').val(corporateId);
+                    getData(corporateId,name);
+                }
+            }
+        });
+
+        $('#serialNumber_add').on('click', function () {
+            if($('#serialNumber').val()!==''){
+            $(this).prop('disabled',true);
+            searchToken();
+            }else{
+                var content ='{{trans('form.alert_empty',['label'=>'Serial Number'])}}';
+                $.alert({
+                    title: '{{trans('form.warning')}}',
+                    content: content
+                });
+                return;
+            }
+
+        });
+
+        $('.state_edit').not('#customer_location').not('#cifid_filter').prop('disabled',true);
+        $('#form-area').validator().on('submit', function (e) {
+            if (e.isDefaultPrevented()) {
+                // handle the invalid form...
+            } else {
+                // everything looks good!
+                console.log('valid')
+            }
+        });
+
+        //resetFormValidator('#form-area');
+
+
+        $('input[name="resident-rb"]').on('change', function(e) {
+            if(this.value=='1'){
+                $('#resident_container').show();
+            }else{
+                $('#resident_container').hide();
+            }
+        });
+
+        $('input[name="citizen-rb"]').on('change', function(e) {
+            if(this.value=='1'){
+                $('#citizenship_container').show();
+
+            }else{
+                $('#citizenship_container').hide();
+            }
+        });
+
+
+
+        $('#done').on('click', function () {
+            $(this).prop('disabled',true);
+            app.setView(id,'landing');
+        });
+
+        $('input[type="text"]').not('.numeric').not('#cifid_filter').not('#corporateId').alphanum({
+            allowSpace: true,
+            allow : ',.-'
+        });
+
+        $('#cifid_filter').not('.numeric').alphanum({
+            allowSpace: false,
+            allow : ''
+        });
+
+        $('#corporateId').not('.numeric').alphanum({
+            allowSpace: false,
+            allow : ''
+        });
+
+
+        $('#extNo').numeric({
+            allowSpace: false,
+           allow : ''
+        })
+        $('#maximumUser').numeric({
+            allowSpace: false,
+            allow : ''
+        });
+        $('.phone').mask('(00)000000000000000000000000000000000000');
+
+	//$('.taxId').mask('000.000.000.0-000.000');
+	$('.taxId').on('input',function(){
+	   $(this).mask('000.000.000.0-000.000');
+	});
+
+        $('#maker_userId').not('.numeric').alphanum({
+            allowSpace: false,
+            allow : ''
+        });
+
+        $('#approver_userId').not('.numeric').alphanum({
+            allowSpace: false,
+            allow : ''
+        });
+
+        $('#maker_userId').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.maker').addClass("has-error").addClass("has-danger");
+                $(this).closest('.maker').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.maker').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.maker').find(".with-errors").html("");
+            }
+        });
+
+        $('#maker_name').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.maker').addClass("has-error").addClass("has-danger");
+                $(this).closest('.maker').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.maker').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.maker').find(".with-errors").html("");
+            }
+        });
+
+        $('#maker_email').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.maker').addClass("has-error").addClass("has-danger");
+                $(this).closest('.maker').find(".with-errors").html("This field is required.");
+            } else {
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test($(this).val())) {
+                    $(this).closest('.maker').addClass("has-error").addClass("has-danger");
+                    $(this).closest('.maker').find(".with-errors").html("This field is invalid.");
+                } else {
+                    $(this).closest('.maker').removeClass("has-error").removeClass("has-danger");
+                    $(this).closest('.maker').find(".with-errors").html("");
+                }
+            }
+        });
+
+        $('#maker_mobileNo').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.approver').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("");
+            }
+        });
+
+        $('#approver_userId').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.approver').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("");
+            }
+        });
+
+        $('#approver_name').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.approver').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("");
+            }
+        });
+
+        $('#approver_email').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("This field is required.");
+            } else {
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test($(this).val())) {
+                    $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                    $(this).closest('.approver').find(".with-errors").html("This field is invalid.");
+                } else {
+                    $(this).closest('.approver').removeClass("has-error").removeClass("has-danger");
+                    $(this).closest('.approver').find(".with-errors").html("");
+                }
+            }
+        });
+
+        $('#approver_mobileNo').on('blur', function() {
+            if($(this).val().trim() == ''){
+                $(this).closest('.approver').addClass("has-error").addClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("This field is required.");
+            } else {
+                $(this).closest('.approver').removeClass("has-error").removeClass("has-danger");
+                $(this).closest('.approver').find(".with-errors").html("");
+            }
+        });
+
+        // Real-time validation for detail fields (tab_detail)
+        $('.detail').on('blur', function() {
+            var $parent = $(this).closest('.mb-3');
+            $parent.removeClass("has-error").removeClass("has-danger");
+            $parent.find(".with-errors").html("");
+
+            if($(this).val().trim() == ''){
+                $parent.addClass("has-error").addClass("has-danger");
+                $parent.find(".with-errors").html("This field is required.");
+            }
+        });
+
+        $('#customer_location').on('change blur', function() {
+            var $parent = $(this).closest('.mb-3');
+            $parent.removeClass("has-error").removeClass("has-danger");
+            $parent.find(".with-errors").html("");
+
+            if($(this).val() == ''){
+                $parent.addClass("has-error").addClass("has-danger");
+                $parent.find(".with-errors").html("This field is required.");
+            }
+        });
+
+        // Real-time validation for service package (tab_services)
+        $('#servicePackage').on('change blur', function() {
+            var $parent = $(this).closest('.mb-3');
+            $parent.removeClass("has-error").removeClass("has-danger");
+            $parent.find(".with-errors").html("");
+
+            if($(this).val() == ''){
+                $parent.addClass("has-error").addClass("has-danger");
+                $parent.find(".with-errors").html("This field is required.");
+            }
+        });
+
+        $('#maximumUser').on('blur', function() {
+            var $parent = $(this).closest('.mb-3');
+            $parent.removeClass("has-error").removeClass("has-danger");
+            $parent.find(".with-errors").html("");
+
+            if($(this).val() == ''){
+                $parent.addClass("has-error").addClass("has-danger");
+                $parent.find(".with-errors").html("This field is required.");
+            }
+        });
+
+    });
+
+
+    function removeRow(el){
+        var row = $(el).parent().parent();
+        oTable_token.row(row).remove().draw(true);
+        //tokenCount();
+    }
+
+    function checkDuplicateList(tokenNo){
+        var duplicate = 0;
+        $("#list_token").find("tbody tr").each(function () {
+            var serialNo = $('td:eq(0)', $(this)).find('#serialNo').val();
+            if(tokenNo==serialNo){
+                duplicate = 1;
+            }
+        });
+
+        if(duplicate==1){
+            return false;
+        }else{
+            return true;
+        }
+
+    }
+
+    function getData(code,name) {
+        if($('#type').val() == 'edit') {
+        $('.corporate_filter').hide();
+        $('#cifid_search').hide();
+        $('#maker_userId').prop('readonly',false);
+        $('#approver_userId').prop('readonly',false);
+        $('.token-list').hide();
+        }else{
+            $('.token-list').show();
+        }
+        getPostCode();
+        getCountry();
+        getState()
+        getSubstate();
+        getCity();
+        getBranch();
+        getRemitter();
+        getIndustrySegment();
+        getBusinessUnit();
+        getHandlingOfficer();
+        getServicePackage(code,name);
+    }
+
+    function getDataEdit(code,name,countryCode,stateCode,substateCode) {
+        if($('#type').val() == 'edit') {
+        $('.corporate_filter').hide();
+        $('#cifid_search').hide();
+
+        $('#maker_userId').prop('readonly',false);
+        $('#approver_userId').prop('readonly',false);
+
+        $('.pendingTrxNote').show();
+
+        $('.token-list').hide();
+        }else{
+            $('.token-list').show();
+        }
+        getPostCode();
+        getCountry(countryCode);
+        getState(countryCode)
+        getSubstate(stateCode);
+        getCity(substateCode);
+        getBranch();
+        getRemitter();
+        getIndustrySegment();
+        getBusinessUnit();
+        getHandlingOfficer();
+        getServicePackage(code,name);
+    }
+
+    function getAllData(code,name){
+        var tokenNo ='';
+        var value = {
+            corporateId: code,
+            name: "",
+            currentPage: "1",
+            pageSize: "20",
+            orderBy: {"id": "ASC"}
+        };
+        var url_action = 'search';
+        var action = 'DETAIL';
+        var menu = id;
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : menu,
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+					var index = result.result.map(function(o) { return o.corporateId; }).indexOf(code.toString());
+                    var detail = result.result;
+                    var contactList = detail[index].contactList;
+                    //token_list = detail[0].tokenList;
+                    //token_list = ["1111","2222","33333"];
+                    var adminListTemp = detail[index].adminList;
+
+                    var adminList = [];
+                    var adminMaker;
+                    var adminChecker;
+                    if(adminListTemp){
+                        $.each(adminListTemp, function (idx, obj){
+                            if(obj.role=='maker'){
+                                adminMaker = obj;
+                            }else if(obj.role=='checker'){
+                                adminChecker = obj
+                            }
+                        });
+                    }
+
+                    adminList.push(adminMaker);
+                    adminList.push(adminChecker);
+
+                    //var adminList = detail[index].adminList;
+
+                    tokenNo = adminList[1]?adminList[1].tokenNo:"";
+
+                    $('#cifid').val(detail[index].cifId);
+                    $('#cifid_view').text(detail[index].cifId);
+                    $('#corporateId').val(detail[index].corporateId);
+ 		$('#customer_location').val(detail[index].customerLocation).trigger('change');
+                    $('#corporateName').val(name);
+                    $('#address1').val(detail[index].address1);
+                    $('#address2').val(detail[index].address2);
+                    $('#address3').val(detail[index].address3);
+                    $('#postcode').val(detail[index].postcode).trigger('change');
+                    $('#city').val(detail[index].cityCode);
+                    $('#substate').val(detail[index].substateCode);
+                    $('#states').val(detail[index].stateCode);
+                    $('#country').val(detail[index].countryCode).trigger('change');
+                    $('#email1').val(detail[index].email1);
+                    $('#email2').val(detail[index].email2);
+                    $('#phoneNo').val(detail[index].phoneNo);
+                    $('#extNo').val(detail[index].extNo);
+                    $('#faxNo').val(detail[index].faxNo);
+                    $('#branch').val(detail[index].branchCode).trigger('change');
+                    $('#industrySegment').val(detail[index].industrySegmentCode).trigger('change');
+                    $('#businessUnit').val(detail[index].businessUnitCode).trigger('change');
+                    $('#taxId').val(detail[index].taxIdNo);
+                    $('#maximumUser').val(detail[index].maxCorporateUser);
+                    $('#servicePackage').val(detail[index].servicePackageCode).trigger('change');
+                    $('#handlingOfficer').val(detail[index].handlingOfficerCode).trigger('change');
+                    $('#remitterType').val(detail[index].lldCategory).trigger('change');
+                    $('#status').text((detail[index].inactiveFlag=="N"?"Active":"Inactive"));
+                    if(detail[index].specialChargeFlag=="Y"){
+                        $('#specialChargeFlag').lcs_on();
+                    }else{
+                        $('#specialChargeFlag').lcs_off();
+                    }
+                    if(detail[index].specialLimitFlag=="Y"){
+                        $('#specialLimitFlag').lcs_on();
+                    }else{
+                        $('#specialLimitFlag').lcs_off();
+                    }
+
+                    if(detail[index].smeFlag=="Y"){
+                        $('#smeFlag').lcs_on();
+                    }else{
+                        $('#smeFlag').lcs_off();
+                    }
+
+                    if(detail[index].defAppMatrixFlag=="Y"){
+                        $('#defAppMatrixFlag').lcs_on();
+                    }else{
+                        $('#defAppMatrixFlag').lcs_off();
+                    }
+
+
+                    if(contactList){
+                        $.each(contactList, function (idx, obj){
+                            $('#list_cp tr:eq('+(idx+1)+') td:eq(1)').find('#cp_name').val(obj.name);
+                            $('#list_cp tr:eq('+(idx+1)+') td:eq(2)').find('#cp_phoneNo').val(obj.phoneNo);
+                            $('#list_cp tr:eq('+(idx+1)+') td:eq(3)').find('#cp_mobileNo').val(obj.mobileNo);
+                            $('#list_cp tr:eq('+(idx+1)+') td:eq(4)').find('#cp_email').val(obj.email);
+                            $('#list_cp tr:eq('+(idx+1)+') td:eq(5)').find('#cp_faxNo').val(obj.faxNo);
+                        });
+                    }
+                    if(token_list){
+                        oTable_token.clear();
+                        $.each(token_list, function (idx, obj){
+                            var tokenNo = obj;
+                            if(tokenNo){
+                                oTable_token.row.add([
+                                    tokenNo
+                                ]).draw(true);
+
+                            }
+                        });
+                    }
+
+                    if(adminList){
+                        $.each(adminList, function (idx, obj){
+                            if(obj.role=='maker'){
+                                $('#maker_userId_edit').val(obj.userId);
+
+
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(1)').find('#maker_userId').val(obj.userId);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(2)').find('#maker_name').val(obj.name);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(3)').find('#maker_email').val(obj.email);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(4)').find('#maker_mobileNo').val(obj.mobileNo);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(5)').val('Hard Token');
+                            }else
+                            if(obj.role=='checker'){
+                                $('#approver_userId_edit').val(obj.userId);
+
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(1)').find('#approver_userId').val(obj.userId);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(2)').find('#approver_name').val(obj.name);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(3)').find('#approver_email').val(obj.email);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(4)').find('#approver_mobileNo').val(obj.mobileNo);
+                                $('#list_admin tr:eq('+(idx+1)+') td:eq(5)').val('-');
+                            }
+
+                        });
+                    }
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            },
+            complete: function(data) {
+                $('.table-hidden').show();
+                //getAdminTokenEdit(tokenNo);
+            }
+        });
+    }
+
+    function getAdminTokenEdit(tokenNo) {
+        var loginId = '<?php echo Session::get('userId') ?>';
+        var corporateId = $('#corporateId').val();
+        var adminId= $('#approver_userId').val();
+        var value = {
+            adminId : adminId,
+            corporateId : corporateId,
+            loginId:loginId,
+            tokenType: "TKN"
+        };
+        var url_action = 'searchTokenUserForEditAdmin';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : id,
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    token_list = result.tokenList;
+                    var tokenOption = '<select class="form-control" id="approver_tokenNo">';
+
+                    $.each(token_list,function (index, item) {
+                        tokenOption += '<option value="'+item+'" '+(tokenNo==item? 'selected':'')+'>'+item+'</option>';
+                    });
+                    tokenOption += '</select>';
+                    //console.log(tokenOption);
+                    $('#list_admin_token').html(tokenOption);
+                    //$('#list_admin_token').select2({ width: '100%',placeholder: 'Select Token' });
+                } else {
+                    app.setView(id);
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+
+    function getPostCode() {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_POSTCODE"
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    postCodeOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        postCodeOption += '<option value="' + obj.code + '">' + obj.code +' - '+ obj.name + '</option>';
+                    });
+                    $('#postcode').html(postCodeOption);
+                    $('#postcode').select2({ width: '100%',placeholder: 'Select Post Code' });
+                } else {
+                    app.setView(id);
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+    function getCity(substate_code,cityCode) {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_CITY",
+            parentProperty:"substate",
+            parentPropertySearchCode:substate_code
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    cityOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        cityOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#city').html(cityOption);
+                    $('#city').val(cityCode);
+                    $('#city').select2({ width: '100%',placeholder: 'Select City' });
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+    function getSubstate(state_code,substateCode) {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_SUBSTATE",
+            parentProperty:"state",
+            parentPropertySearchCode:state_code
+        };
+
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    substateOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        substateOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#substate').html(substateOption);
+                    $('#substate').val(substateCode);
+                    $('#substate').select2({ width: '100%',placeholder: 'Select Substate' });
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+    function getState(country_code,stateCode) {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_STATE",
+            parentProperty:"country",
+            parentPropertySearchCode:country_code
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    stateOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        stateOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#states').html(stateOption);
+                    $('#states').val(stateCode);
+                    $('#states').select2({ width: '100%',placeholder: 'Select State' });
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+    function getCountry(countryCode) {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_COUNTRY"
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    countryOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        countryOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#country').html(countryOption);
+                    $('#country').select2({ width: '100%',placeholder: 'Select Country' });
+                    $('#country').val(countryCode);
+                    $('#residential').html(countryOption);
+                    $('#residential').select2({ width: '100%',placeholder: 'Select Country' });
+                    $('#residential').val('ID').trigger('change');
+                    $('#citizenship').html(countryOption);
+                    $('#citizenship').select2({ width: '100%',placeholder: 'Select Country' });
+                    $('#citizenship').val('ID').trigger('change');
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+                if($('#type').val()=='add'){
+                    $('#country').val('ID').trigger('change');
+                    $('#residential').val('ID').trigger('change');
+                    $('#citizenship').val('ID').trigger('change');
+                }
+            }
+        });
+    }
+
+    function getRemitter() {
+        var value = {
+            loginId : '<?php echo Session::get('userId') ?>',
+        };
+        var url_action = 'searchBeneficiaryTypeForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_CORP',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    remitterOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        remitterOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#remitterType').html(remitterOption);
+                    $('#remitterType').select2({ width: '100%',placeholder: 'Select Remitter Type' });
+
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+                if($('#remitterType').val()==''){
+                    $('#remitterType').val('2').trigger('change');
+                }
+            }
+        });
+    }
+
+    function getDroplist2(currentDroplist){
+    }
+
+		function getDroplist(currentDroplist){
+			if(currentDroplist == "country"){
+					getState($('#country').val(),$('#states').val());
+					getSubstate($('#states').val(),$('#substate').val());
+					getCity($('#substate').val(),$('#city').val());
+
+			}
+
+			if(currentDroplist == "state" ){
+					getSubstate($('#states').val(),$('#substate').val());
+					getCity($('#substate').val(),$('#city').val());
+			}
+
+			if(currentDroplist == "substate"){
+					getCity($('#substate').val(),$('#city').val());
+			}
+
+		}
+        function getBranch() {
+        	var value = {
+                code: "",
+                name: ""
+            };
+            var url_action = 'searchBranch';
+            var action = 'SEARCH';
+            $.ajax({
+                url: 'getAPIData',
+                method: 'post',
+                async:false,
+                data: {
+                    value : value,
+                    menu : 'MNU_GPCASH_CORP',
+                    url_action : url_action,
+                    action : action,
+                    _token : '{{ csrf_token() }}'
+                },
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    if (result.status=="200") {
+                        branchOption = '<option value=""></option>';
+                        $.each(result.result, function (idx, obj) {
+                            branchOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                        });
+                        $('#branch').html(branchOption);
+                        $('#branch').select2({ width: '100%',placeholder: 'Select Branch' });
+                    } else {
+                        flash('warning', result.message);
+                    }
+
+
+
+                }, error: function (xhr, ajaxOptions, thrownError) {
+                    var msg = '{{trans('form.conn_error')}}';
+                    flash('warning', msg);
+                    app.setView(id);
+                    console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+                }, complete: function (data) {
+
+                }
+            });
+        }
+
+    function getIndustrySegment() {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_IDS_SGM"
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    industryOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        industryOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#industrySegment').html(industryOption);
+                    $('#industrySegment').select2({ width: '100%',placeholder: 'Select Industry Segment' });
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+        function getBusinessUnit() {
+            var value = {
+                code: "",
+                name: "",
+                modelCode: "COM_MT_BUSINESS_UNIT"
+            };
+            var url_action = 'searchModelForDroplist';
+            var action = 'SEARCH';
+            $.ajax({
+                url: 'getAPIData',
+                method: 'post',
+                async:false,
+                data: {
+                    value : value,
+                    menu : 'MNU_GPCASH_MT_PARAMETER',
+                    url_action : url_action,
+                    action : action,
+                    _token : '{{ csrf_token() }}'
+                },
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    if (result.status=="200") {
+                        businessOption = '<option value=""></option>';
+                        $.each(result.result, function (idx, obj) {
+                            businessOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                        });
+                        $('#businessUnit').html(businessOption);
+                        $('#businessUnit').select2({ width: '100%',placeholder: 'Select Business Unit' });
+                    } else {
+                        flash('warning', result.message);
+                    }
+
+
+
+                }, error: function (xhr, ajaxOptions, thrownError) {
+                    var msg = '{{trans('form.conn_error')}}';
+                    flash('warning', msg);
+                    app.setView(id);
+                    console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+                }, complete: function (data) {
+
+                }
+            });
+        }
+
+    function getHandlingOfficer() {
+        var value = {
+            code: "",
+            name: "",
+            modelCode: "COM_MT_HANDLING_OFFICER"
+        };
+        var url_action = 'searchModelForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_MT_PARAMETER',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    officerOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        officerOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#handlingOfficer').html(officerOption);
+                    $('#handlingOfficer').select2({ width: '100%',placeholder: 'Select Officer' });
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+
+            }
+        });
+    }
+
+    function getServicePackage(code,name) {
+        var value = {
+            code: "",
+            name: ""
+        };
+        var url_action = 'searchServicePackageForDroplist';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_CORP',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    serviceOption = '<option value=""></option>';
+                    $.each(result.result, function (idx, obj) {
+                        serviceOption += '<option value="' + obj.code + '">' + obj.name + '</option>';
+                    });
+                    $('#servicePackage').html(serviceOption);
+                    $('#servicePackage').select2({ width: '100%',placeholder: 'Select Service' });
+                    if($('#type').val()=='edit'){
+                        $('.state_edit').not('#cifid_filter').prop('disabled',false);
+                        $('#cifid').prop('disabled',true);
+                    }else{
+                        $('#cifid').prop('disabled',false);
+                    }
+
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                app.setView(id);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+                if(code!='') {
+
+                    getAllData(code, name);
+                }
+
+            }
+        });
+    }
+
+    function searchToken() {
+        /*var serialNo = $('#serialNumber').val();
+        if(checkDuplicateList(serialNo)) {
+
+            oTable_token.row.add([
+                serialNo + '<input type=hidden id="serialNo" value="' + serialNo + '">'
+            ]).draw(true);
+            tokenCount();
+            $('#serialNumber_add').prop('disabled',false);
+        }
+        return;*/
+        var serialNo = $('#serialNumber').val();
+        var corporateId = $('#corporateId').val();
+        var value = {
+        corporateId: corporateId,
+        tokenNo: serialNo,
+        tokenType: "TKN"
+        };
+        var url_action = 'searchToken';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_CORP',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    if(result.tokenNo !== undefined){
+                        if(checkDuplicateList(serialNo)) {
+                            oTable_token.row.add([
+                                serialNo + '<input type=hidden id="serialNo" value="' + serialNo + '">'
+                            ]).draw(true);
+                            tokenCount();
+                        }
+                    }else{
+                        $.alert({
+                            title: 'Attention!',
+                            content: 'Serial Number not Found.'
+                        });
+                    }
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+                $('#serialNumber_add').prop('disabled',false);
+            }
+        });
+    }
+
+    function tokenCount(){
+        if(oTable_token !== undefined)
+        var token_count = oTable_token.data().count();
+        $('#tokenNum').text(token_count);
+    }
+
+    function searchCorporate(cifid) {
+
+	var customerLocation = ($('#customer_location').val() == '' ? '-' : $('#customer_location').val());
+        var value = {
+            cifId: cifid,
+	    customerLocation:customerLocation,
+        };
+        var url_action = 'searchOnline';
+        var action = 'SEARCH';
+        $.ajax({
+            url: 'getAPIData',
+            method: 'post',
+            async:false,
+            data: {
+                value : value,
+                menu : 'MNU_GPCASH_CORP',
+                url_action : url_action,
+                action : action,
+                _token : '{{ csrf_token() }}'
+            },
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.status=="200") {
+                    if(result.cifId !== undefined){
+
+                        $('#cifid').val(result.cifId);
+                        $('#corporateId').val(result.cifId);
+                        $('#corporateName').val(result.name);
+                        $('#address1').val(result.address1);
+                        $('#address2').val(result.address2);
+                        $('#address3').val(result.address3);
+                        $('#postcode').val(result.postcode).trigger('change');
+                        $('#city').val(result.cityCode).trigger('change');
+                        $('#substate').val(result.substateCode).trigger('change');
+                        $('#states').val(result.stateCode).trigger('change');
+                        $('#country').val(result.countryCode).trigger('change');
+                        $('#status').text('Active');
+                        $('#taxId').val(result.taxId);
+                        $('#phoneNo').val(result.phoneNo);
+                        $('#faxNo').val(result.fax);
+                        $('#branch').val(result.servicingBranch).trigger('change');
+                        $('#handlingOfficer').val(result.accountOfficer).trigger('change');
+                        $('.state_edit').not('#cifid_filter').prop('disabled',false);
+                    }else{
+                        $.alert({
+                            title: 'Attention!',
+                            content: 'Corporate not Found.'
+                        });
+
+                    }
+                } else {
+                    flash('warning', result.message);
+                }
+
+
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                //$('#form-area').find("input[type=text]").val("");
+                var msg = '{{trans('form.conn_error')}}';
+                flash('warning', msg);
+                console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
+            }, complete: function (data) {
+                $('#cifid_search').prop('disabled',false);
+            }
+        });
+    }
+
+        function stateEdit() {
+            $('#state').val('edit');
+            if($('#type').val()=='edit'){
+                $('#cifid_search').hide();
+                $('.token-list').hide();
+                //oTable_admin.column(6).visible(true);
+            }else{
+                //oTable_admin.column(6).visible(false);
+                $('.token-list').show();
+                $('#cifid_search').show();
+            }
+            $('.state_view').hide();
+            $('.state_edit').show();
+            $('label.state_view').text('-');
+            $('#save_screen').hide();
+            $('.help-block').show();
+            $('#done').hide();
+            $('#next_user').hide();
+        }
+
+        function stateView() {
+            var lldIsResidence = ($('input[name="resident-rb"]:checked').val() == '0' ? 'Y' : 'N');
+            var lldIsCitizen = ($('input[name="citizen-rb"]:checked').val() == '0' ? 'Y' : 'N');
+            if($('#type').val()=='edit'){
+                $('.token-list').hide();
+            }else{
+                $('.token-list').show();
+            }
+            $('#cifid_search').hide();
+
+            $('#state').val('view');
+
+            $('.nav-tabs button').removeClass('active').attr('aria-selected', 'false');
+            $('#detail-tab').addClass('active').attr('aria-selected', 'true');
+            $('.tab-pane').hide().removeClass('show active');
+            $('#tab_detail').addClass('show active').show();
+
+           // $('.role_list').appendTo('.role_view');
+            //oTable.column(2).visible(false);
+            var cifid_filter = ($('#cifid_filter').val() == '' ? '-' : $('#cifid_filter').val());
+            $('#cifid_filter_view').text(cifid_filter);
+            var cifid = ($('#cifid').val() == '' ? '-' : $('#cifid').val());
+            $('#cifid_view').text(cifid);
+            var corporateId = ($('#corporateId').val() == '' ? '-' : $('#corporateId').val());
+            $('#corporateId_view').text(corporateId);
+            var customerLocation = ($('#customer_location').val() == '' ? '-' : $('#customer_location').val());
+            $('#customer_location_view').text(customerLocation);
+            var corporateName = ($('#corporateName').val() == '' ? '-' : $('#corporateName').val());
+            $('#corporateName_view').text(corporateName);
+            var address1 = ($('#address1').val() == '' ? '-' : $('#address1').val());
+            $('#address1_view').text(address1);
+            var address2 = ($('#address2').val() == '' ? '-' : $('#address2').val());
+            $('#address2_view').text(address2);
+            var address3 = ($('#address3').val() == '' ? '-' : $('#address3').val());
+            $('#address3_view').text(address3);
+            var postcode = ($('#postcode :selected').text() == '' ? '-' : $('#postcode :selected').text());
+            var postcode_code = $('#postcode').val();
+            $('#postcode_view').text(postcode);
+            var city = ($('#city :selected').text() == '' ? '-' : $('#city :selected').text());
+            var city_code = $('#city').val();
+            $('#city_view').text(city);
+            var substate = ($('#substate :selected').text() == '' ? '-' : $('#substate :selected').text());
+            var substate_code = $('#substate').val();
+
+            $('#substate_view').text(substate);
+            var states = ($('#states :selected').text() == '' ? '-' : $('#states :selected').text());
+            var states_code = $('#states').val();
+
+            $('#states_view').text(states);
+            var country = ($('#country :selected').text() == '' ? '-' : $('#country :selected').text());
+            var country_code = $('#country').val();
+            $('#country_view').text(country);
+            //console.log($('input[name="resident-rb"]:checked').val());
+            var residential = ($('input[name="resident-rb"]:checked').val() == '0' ? 'Resident' : 'Non Resident, '+$('#residential :selected').text());
+            var residential_code = ($('input[name="resident-rb"]:checked').val() == '0' ? 'ID' : $('#residential').val());
+            $('#residential_view').text(residential);
+
+            var citizenship = ($('input[name="citizen-rb"]:checked').val() == '0' ? 'Citizen' : 'Non Citizen, '+$('#citizenship :selected').text());
+            var citizenship_code = ($('input[name="citizen-rb"]:checked').val() == '0' ? 'ID' : $('#citizenship').val());
+            $('#citizenship_view').text(citizenship);
+
+            var remitter = ($('#remitterType :selected').text() == '' ? '-' : $('#remitterType :selected').text());
+            var remitterType_code = $('#remitterType').val();
+            $('#remitterType_view').text(remitter);
+
+            var email1 = $('#email1').val();
+            $('#email1_view').text(email1);
+            var email2 = $('#email2').val();
+            $('#email2_view').text(email2);
+            var phoneNo = $('#phoneNo').val();
+            $('#phoneNo_view').text(phoneNo);
+            var extNo = $('#extNo').val();
+            $('#extNo_view').text(extNo);
+            var faxNo = $('#faxNo').val();
+            $('#faxNo_view').text(faxNo);
+            var branch = ($('#branch :selected').text() == '' ? '-' : $('#branch :selected').text());
+            var branch_code = $('#branch').val();
+            $('#branch_view').text(branch);
+            var industrySegment = ($('#industrySegment :selected').text() == '' ? '-' : $('#industrySegment :selected').text());
+            var industrySegment_code = $('#industrySegment').val();
+            $('#industrySegment_view').text(industrySegment);
+            var businessUnit = ($('#businessUnit :selected').text() == '' ? '-' : $('#businessUnit :selected').text());
+            var businessUnit_code = $('#businessUnit').val();
+
+            $('#businessUnit_view').text(businessUnit);
+            var taxId = ($('#taxId').val() == '' ? '-' : $('#taxId').val());
+            $('#taxId_view').text(taxId);
+            var handlingOfficer = ($('#handlingOfficer :selected').text() == '' ? '-' : $('#handlingOfficer :selected').text());
+            var handlingOfficer_code = $('#handlingOfficer').val();
+
+            $('#handlingOfficer_view').text(handlingOfficer);
+            var servicePackage = ($('#servicePackage :selected').text() == '' ? '-' : $('#servicePackage :selected').text());
+            var servicePackage_code = $('#servicePackage').val();
+            var inactiveFlag = $('#status').text();
+            $('#servicePackageName').text(servicePackage);
+            var maximumUser = ($('#maximumUser').val() == '' ? '-' : $('#maximumUser').val());
+            $('#maxCorporateUser').text(maximumUser);
+
+            var tokenNum = $('#tokenNum').text();
+            $('#tokenNum_view').text(tokenNum);
+
+            var specialLimit = ($('#specialLimitFlag').is(':checked') ? 'Yes' : 'No');
+            $('#specialLimitFlag_view').text(specialLimit);
+            var specialLimit_post = ($('#specialLimitFlag').is(':checked') ? 'Y' : 'N');
+
+            var specialCharge = ($('#specialChargeFlag').is(':checked') ? 'Yes' : 'No');
+            var specialCharge_post = ($('#specialChargeFlag').is(':checked') ? 'Y' : 'N');
+            $('#specialChargeFlag_view').text(specialCharge);
+
+            var isSME = ($('#smeFlag').is(':checked') ? 'Yes' : 'No');
+            $('#smeFlag_view').text(isSME);
+            var isSME_post = ($('#smeFlag').is(':checked') ? 'Y' : 'N');
+
+            var isDefAppMatrix = ($('#defAppMatrixFlag').is(':checked') ? 'Yes' : 'No');
+            $('#defAppMatrixFlag_view').text(isDefAppMatrix);
+            var isDefAppMatrix_post = ($('#defAppMatrixFlag').is(':checked') ? 'Y' : 'N');
+
+            var contact_list = [];
+            $("#list_cp").find("tbody tr").each(function () {
+
+                var name = $('td:eq(1)', $(this)).find('#cp_name').val();
+                $('td:eq(1)', $(this)).find('#cp_name_view').text(name);
+                var phoneNo = $('td:eq(2)', $(this)).find('#cp_phoneNo').val();
+                $('td:eq(2)', $(this)).find('#cp_phoneNo_view').text(phoneNo);
+                var mobileNo = $('td:eq(3)', $(this)).find('#cp_mobileNo').val();
+                $('td:eq(3)', $(this)).find('#cp_mobileNo_view').text(mobileNo);
+                var email = $('td:eq(4)', $(this)).find('#cp_email').val();
+                $('td:eq(4)', $(this)).find('#cp_email_view').text(email);
+                var faxNo = $('td:eq(5)', $(this)).find('#cp_faxNo').val();
+                $('td:eq(5)', $(this)).find('#cp_faxNo_view').text(faxNo);
+
+                var obj = {
+                    name: name,
+                    phoneNo: phoneNo,
+                    mobileNo: mobileNo,
+                    email: email,
+                    faxNo: faxNo
+                };
+                contact_list.push(obj);
+
+            });
+
+            var tokenNo_approver ='';
+            if($('#type').val()=='add') {
+
+                token_list = [];
+                oTable_token_view.clear();
+                $("#list_token").find("tbody tr").each(function () {
+                    var tokenNo = $('td:eq(0)', $(this)).find('#serialNo').val();
+                    if(tokenNo){
+                        token_list.push(tokenNo);
+                        oTable_token_view.row.add([
+                            tokenNo
+                        ]).draw(true);
+                    }
+                });
+            }else{
+                //tokenNo_approver = $('#approver_tokenNo').val();
+            }
+
+
+            var admin_list = [];
+            oTable_admin_view.clear();
+            var maker_userId = $('#maker_userId').val();
+            var maker_userId_ori = $('#maker_userId_edit').val();
+            var maker_name = $('#maker_name').val();
+            var maker_mobileNo = $('#maker_mobileNo').val();
+            var maker_email = $('#maker_email').val();
+            var approver_userId = $('#approver_userId').val();
+            var approver_userId_ori = $('#approver_userId_edit').val();
+            var approver_name = $('#approver_name').val();
+            var approver_mobileNo = $('#approver_mobileNo').val();
+            var approver_email = $('#approver_email').val();
+
+            $('#list_admin_view').show();
+
+            oTable_admin_view.row.add([
+                    'Admin Maker',
+                    maker_userId,
+                    maker_name,
+                    maker_email,
+                    maker_mobileNo,
+                    '-',
+                    ''
+                ]).draw(true);
+            var maker = {
+                userId:maker_userId,
+                originalUserId:maker_userId_ori,
+                name:maker_name,
+                mobileNo:maker_mobileNo,
+                email:maker_email,
+                role:'maker'
+            };
+            admin_list.push(maker);
+
+            oTable_admin_view.row.add([
+                'Admin Approver',
+                approver_userId,
+                approver_name,
+                approver_email,
+                approver_mobileNo,
+                '-',
+                ''
+
+            ]).draw(true);
+            //$('#approver_tokenNo').select2({ width: '100%' });
+            var approver = {
+                userId:approver_userId,
+                originalUserId:approver_userId_ori,
+                name:approver_name,
+                mobileNo:approver_mobileNo,
+                email:approver_email,
+                role:'checker'
+            };
+
+            admin_list.push(approver);
+            //console.log(admin_list);
+            submit_data = {
+                corporateId:corporateId,
+                customerLocation:customerLocation,
+		corporateLocation:customerLocation,
+                name:corporateName,
+                cifId:cifid,
+                address1:address1,
+                address2:address2,
+                address3:address3,
+                postcode:postcode_code,
+                postName:postcode,
+                cityCode:city_code,
+                cityName:city,
+                substateCode:substate_code,
+                substateName:substate,
+                stateCode:states_code,
+                stateName:states,
+                countryCode:country_code,
+                countryName:country,
+                email1:email1,
+                email2:email2,
+                phoneNo:phoneNo,
+                extNo:extNo,
+                faxNo:faxNo,
+                branchCode:branch_code,
+                branchName:branch,
+                industrySegmentCode:industrySegment_code,
+                industrySegmentName:industrySegment,
+                servicePackageCode:servicePackage_code,
+                servicePackageName:servicePackage,
+                businessUnitCode:businessUnit_code,
+                businessUnitName:businessUnit,
+                taxIdNo:taxId,
+                handlingOfficerCode:handlingOfficer_code,
+                handlingOfficerName:handlingOfficer,
+                maxCorporateUser:maximumUser,
+                specialLimitFlag:specialLimit_post,
+                specialChargeFlag:specialCharge_post,
+                smeFlag:isSME_post,
+                defAppMatrixFlag:isDefAppMatrix_post,
+                tokenList:token_list,
+                contactList:contact_list,
+                adminList:admin_list,
+                lldIsResidence: lldIsResidence,
+                isResidenceText: residential,
+                lldIsCitizen: lldIsCitizen,
+                isCitizenText: citizenship,
+                lldCategory: remitterType_code,
+                isCategoryText: remitter,
+                citizenCountryCode: citizenship_code,
+                residenceCountryCode: residential_code,
+                inactiveFlag:inactiveFlag
+
+            };
+            console.log(submit_data);
+            $('.state_edit').hide();
+            $('.state_view').show();
+            $('#save_screen').hide();
+            $('.help-block').hide();
+            $('#done').hide();
+            $('#next_user').hide();
+        }
+
+        function stateSuccess() {
+            $('#state').val('success');
+
+            $('input.state_edit').val('');
+            $('input.check').attr('checked', '');
+            $('#back_view').hide();
+            $('#save_screen').show();
+            $('#done').show();
+            $('#next_user').show();
+        }
+
+        function resetFormValidator(formId) {
+            $(formId).removeData('validator');
+            $(formId).removeData('unobtrusiveValidation');
+            $.validator.unobtrusive.parse(formId);
+        }
+
+</script>
