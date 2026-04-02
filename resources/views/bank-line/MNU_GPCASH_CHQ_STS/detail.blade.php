@@ -16,7 +16,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Order Number</label>
 									<div class="col-md-5">
 										<label id="orderNo">-</label>
@@ -24,7 +24,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Transaction Reference Number</label>
 									<div class="col-md-5">
 										<label id="referenceNo">-</label>
@@ -32,7 +32,7 @@
 								</div>
 							</div>
 							<div class="row row-status">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Status</label>
 									<div class="col-md-5">
 										<label id="statusName">-</label>
@@ -40,7 +40,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Request By</label>
 									<div class="col-md-5">
 										<label id="requestBy">-</label>
@@ -48,7 +48,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Source Account</label>
 									<div class="col-md-5">
 										<label id="sourceAccount">-</label>
@@ -64,7 +64,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Book Type</label>
                                     <div class="col-md-5">
                                         <label id="chequeType">-</label>
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Number of Books</label>
 									<div class="col-md-5">
 										<label id="noOfPages">-</label>
@@ -85,7 +85,7 @@
 
 
 							<div class="row stateTotalFee">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Total Debit Amount</label>
 									<div class="col-md-5">
 										<label id="totalDebitAmount">-</label>
@@ -94,7 +94,7 @@
 							</div>
 
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Branch</label>
 									<div class="col-md-5">
 										<label id="pickupBranch">-</label>
@@ -102,7 +102,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end"></label>
 									<div class="col-md-5">
 										<label id="branchAddress">-</label>
@@ -110,7 +110,7 @@
 								</div>
 							</div>
 {{--							<div class="row">--}}
-{{--								<div class="mb-3 row">--}}
+{{--								<div class="mb-3 row form-group">--}}
 {{--									<label class="col-md-3 col-form-label text-end">Pickup Schedule</label>--}}
 {{--									<div class="col-md-5">--}}
 {{--										<label id="pickupDate">-</label>--}}
@@ -118,7 +118,7 @@
 {{--								</div>--}}
 {{--							</div>--}}
 {{--							<div class="row">--}}
-{{--								<div class="mb-3 row">--}}
+{{--								<div class="mb-3 row form-group">--}}
 {{--									<label class="col-md-3 col-form-label text-end">at</label>--}}
 {{--									<div class="col-md-5">--}}
 {{--										<label id="pickupTime">-</label>--}}
@@ -128,7 +128,7 @@
 
 							<div class="state_identity">
 								<div class="row">
-									<div class="mb-3 row">
+									<div class="mb-3 row form-group">
 										<label class="col-md-3 col-form-label text-end"><strong>Pickup Identitiy*</strong></label>
 										<div class="col-md-5 state_detail_identity">
 											<label id="pickupID">-</label>
@@ -148,7 +148,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="mb-3 row">
+									<div class="mb-3 row form-group">
 										<label class="col-md-3 col-form-label text-end"><strong>Name as shown in ID card*</strong></label>
 										<div class="col-md-5">
 											<label id="nameID" class="state_detail_identity">-</label>
@@ -159,7 +159,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="mb-3 row">
+									<div class="mb-3 row form-group">
 										<label class="col-md-3 col-form-label text-end"><strong>Mobile Phone No.*</strong></label>
 										<div class="col-md-5">
 											<label id="phoneNo" class="state_detail_identity">-</label>
@@ -170,7 +170,7 @@
 									</div>
 								</div>
 								<div class="row state_detail_identity">
-									<div class="mb-3 row">
+									<div class="mb-3 row form-group">
 										<label class="col-md-3 col-form-label text-end">Handover Date/Time</label>
 										<div class="col-md-5">
 											<label id="handoverDate">-</label>
@@ -188,7 +188,7 @@
 					<div class="box-body state_declined">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label state_detail_dcl text-end">Rejection Reason</label>
 									<label class="col-md-3 col-form-label state_view_dcl text-end">Rejection Reason</label>
 									<label class="col-md-3 col-form-label state_add_dcl text-end"><strong>Rejection Reason&ast;</strong></label>
@@ -459,7 +459,7 @@
 		var html = '';
 		if(chargeList.length >0){
 			$.each(chargeList, function (idx, chg) {
-				html +='<div class="row"><div class="mb-3 row">';
+				html +='<div class="row"><div class="mb-3 row form-group">';
 				if (chg.value != '0' && chg.value != '0.00' && chg.value != '.00' && chg.serviceChargeName != 'Total Fee') {
 				html += '<label class="col-md-3 col-form-label text-end">' + chg.serviceChargeName + '</label>';
 					html += '<div class="col-md-5"><label>' + chg.currencyName +' '+ chg.value+'</label>';

@@ -14,7 +14,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<input type="radio" id="refno-rb" name="searchBy-rb" value="0" checked>
 										<label for="refno-rb" style="margin-left: 7px;">Bill Reference Number</label>
@@ -27,7 +27,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<input type="radio" id="bankRefno-rb" name="searchBy-rb" value="1">
 										<label for="bankRefno-rb" style="margin-left: 7px;">Bank Reference Number</label>
@@ -40,7 +40,7 @@
 								</div>
 							</div>
                             <div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<input type="radio" id="corp-rb" name="searchBy-rb" value="2">
 										<label for="corp-rb" style="margin-left: 7px;">Corporate ID</label>

@@ -4,7 +4,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="corporate">-</label>
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Group Code</label>
                                 <div class="col-md-6">
                                     <label id="code">-</label>
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Group Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Account Group</label>
                                 <div class="col-md-6">
                                     <label id="accountGroupName">-</label>
@@ -139,7 +139,7 @@
 					var html = ''
 					if(menuList){
 						$.each(menuList, function (idx, obj){
-							html += '<div class="mb-3 row">';
+							html += '<div class="mb-3 row form-group">';
 							html += '<div class="col-md-3"><label>' + obj.menuName + '</label></div>';
 							html += '<div class="col-md-6"></div>';
 							html += '</div>';

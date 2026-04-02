@@ -5,7 +5,7 @@
 <div class="box-body">
     <div class="container-fluid">
         <div class="row">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-2 col-form-label text-end">Currency</label>
                 <div class="col-md-6">
                     <label id="currency">-</label>
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-2 col-form-label text-end">Transaction Buy Rate</label>
                 <div class="col-md-6">
                     <label id="trxBuyRate" class="rate">-</label>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-2 col-form-label text-end">Transaction Sell Rate</label>
                 <div class="col-md-6">
                     <label id="trxSellRate" class="rate">-</label>

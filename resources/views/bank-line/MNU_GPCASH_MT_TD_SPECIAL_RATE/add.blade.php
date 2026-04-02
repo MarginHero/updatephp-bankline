@@ -21,10 +21,10 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row state_view" >
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblRefNo text-end"><strong>Reference Number&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
-                                    <input type="text" id="refNoSpecialRate" name="refNoSpecialRate" class="form-control state_edit" autocomplete="off" value="" maxlength="10" data-error="This field is required." required>
+                                    <input type="text" id="refNoSpecialRate" name="refNoSpecialRate" class="form-control state_edit" autocomplete="off" value="" maxlength="10" ss>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="col-md-6 state_view">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblcorpID text-end"><strong>Corporate ID&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="corporate_setup state_edit"><select class="form-control"></select></div>
@@ -46,7 +46,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lbltimeDepo text-end"><strong>Time Deposit Product&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="time_deposit state_edit">
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="row state_view" >
-                            <div class="mb-3 row row" >
+                            <div class="mb-3 row form-group row" >
                                 <label class="col-md-4 col-form-label text-end ">Period </label>
                                 <div class="col-md-6 state_view">
                                     <label id="periodDesc">-</label>
@@ -69,11 +69,11 @@
                             </div>
                         </div>
                         <div class="row state_edit" >
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblDebitCurr text-end"><strong>Period&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" style="margin-left: -15px">
                                             <label class="radio-inline">
                                                 <input type="radio" id="radioFixed" name="prd" value="F" checked> Fixed For
                                             </label>
@@ -87,11 +87,11 @@
                             </div>
                         </div>
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" style="margin-left: -15px">
                                             <label class="radio-inline">
                                                 <input type="radio" id="radioMature" name="prd" value="M"> Mature On
                                             </label>
@@ -114,7 +114,7 @@
                         </div>
 
                         <div class="row ">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblSpecialRate text-end"><strong>Special Rate&ast;</strong></label>
                                 <div class="col-md-2 state_edit">
                                     <input type="text" id="specialRate" name="specialRate" class="form-control state_edit numeric rateSpecial"  data-error="This field is required." required>
@@ -128,18 +128,18 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblPaymentAmount text-end"><strong>Placement Amount&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-4">
                                             <select class="form-control" id="placementAmountCurrency">
                                                 <option value="IDR">IDR</option>
                                                 <option value="USD">USD</option>
                                                 <option value="JPY">JPY</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-9">
+                                        <div class="col-md-8">
                                             <input type="text" id="placementAmount" name="placementAmount" class="state_edit form-control amount" autocomplete="off" value="" data-error="This field is required." required>
                                             <input type="text" id="placementAmountJpy" name="placementAmountJpy" class="state_edit form-control amountJpy" autocomplete="off" value="" data-error="This field is required." required>
                                         </div>
@@ -153,7 +153,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Remark</label>
                                 <div class="col-md-5 state_edit">
                                     <input type="text" id="remark" maxlength="200" name="remark" class="form-control state_edit" autocomplete="off" value="" >
@@ -165,7 +165,7 @@
                         </div>
 
                         <div class="row">
-                            <div id="emailblock" class="mb-3 row">
+                            <div id="emailblock" class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblEmail text-end">Email</label>
                                 <div class="col-md-5 state_edit">
                                     <input type="text" id="email" maxlength="1000" name="email" class="form-control state_edit" autocomplete="off" value="">
@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row" id="validUntilBlock">
+                            <div class="mb-3 row form-group" id="validUntilBlock">
                                 <label class="col-md-4 col-form-label lblExpDate text-end"><strong>Valid Until&ast;</strong></label>
                                 <div class="col-md-5 state_edit">
                                     <div class="row">

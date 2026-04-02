@@ -74,7 +74,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3">
                                         <input type="radio" id="corporate-rb" name="searchBy-rb" value="0" checked>
                                         <label for="corporate-rb" ><strong>Corporate</strong></label>
@@ -89,7 +89,7 @@
                             </div>
 
                             <div class="row row-menu">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3" >
                                         <label>Branch</label>
                                     </div>
@@ -102,7 +102,7 @@
                             </div>
 
                             <!-- <div class="row row-menu">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-2" style="margin-left: 15px;">
                                         <label>Menu</label>
                                     </div>
@@ -114,7 +114,7 @@
                                 </div>
                             </div> -->
                             <div class="row row-menu">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3" >
                                         <label>Service</label>
                                     </div>
@@ -126,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="row row-date">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3" >
                                         <label>Date Range</label>
                                     </div>
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="row row-rate">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3" >
                                         <label>Rate</label>
                                     </div>
@@ -174,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="row row-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3">
                                         <label>Transaction Status</label>
                                     </div>
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3">
                                         <input type="radio" id="refNo-rb" name="searchBy-rb" value="1">
                                         <label for="refNo-rb" >Reference Number</label>
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3">
                                         <input type="radio" id="prnt-refNo-rb" name="searchBy-rb" value="2">
                                         <label for="prnt-refNo-rb" >Reference Number Parent</label>
@@ -861,6 +861,8 @@
                     });
                     $('#corporate').html(unitOption);
                     $('#corporate').select2();
+                    $('#dateType').select2();
+                    $('#rate').select2();
                     if(window.searchParam){
                         $('#corporate').val(window.searchParam.corporate).change();
                         $('#branch').val(window.searchParam.branch).change();

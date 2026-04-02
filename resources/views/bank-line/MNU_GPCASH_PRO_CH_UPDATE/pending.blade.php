@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -56,32 +56,32 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Fee Updates</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Fee Updates</label>
                                 <div class="col-md-6">
                                     <label id="updateType">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row specialFee">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Corporate with Special Fee</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Corporate with Special Fee</label>
                                 <div class="col-md-6">
                                     <label id="isUpdate">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row specificFee">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Fee Setup Code</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Fee Setup Code</label>
                                 <div class="col-md-6">
                                     <label id="feeCode" class="col-form-label text-end">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row specificFee">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Fee Setup Name</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Fee Setup Name</label>
                                 <div class="col-md-6">
                                     <label id="feeName" class="col-form-label text-end">-</label>
                                 </div>

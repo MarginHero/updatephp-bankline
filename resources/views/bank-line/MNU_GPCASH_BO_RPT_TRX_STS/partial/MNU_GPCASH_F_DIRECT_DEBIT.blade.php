@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Credit Account</label>
                                 <div class="col-md-6">
                                     <label id="creditAccount">-</label>
@@ -25,7 +25,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Uploaded Date Time</label>
                                 <div class="col-md-6">
                                     <label id="uploadDate">-</label>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Format</label>
                                 <div class="col-md-6">
                                     <label id="fileFormat">-</label>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6">
                                     <label id="fileUpload">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Description</label>
                                 <div class="col-md-6">
                                     <label id="fileDescp" style="text-transform: none">-</label>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Record</label>
                                 <div class="col-md-6">
                                     <label id="totalRecord">-</label>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Amount</label>
                                 <div class="col-md-6">
                                     <label id="totalAmount">-</label>
@@ -76,7 +76,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Fee</label>
                                 <div class="col-md-6">
                                     <label id="totalFee">-</label>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Debit Amount</label>
                                 <div class="col-md-6">
                                     <label id="totalDebitAmount">-</label>
@@ -93,7 +93,7 @@
                         </div>
                         <hr style="height:1px;border:none;color:#333;background-color:#d2d6de;"/>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Payment Schedule</label>
                                 <div class="col-md-6">
                                     <label id="paymentSchedule">-</label>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row instDate">
+                            <div class="mb-3 row form-group instDate">
                                 <label class="col-md-5 col-form-label text-end">Payment Date</label>
                                 <div class="col-md-6">
                                     <label id="paymentDate">-</label>
@@ -306,13 +306,13 @@
 
         // if (chargeList[0]) {
 
-            tags = '<div class="mb-3 row">';
+            tags = '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-5 col-form-label text-end">'+chargeList[0].serviceChargeName+'</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>'+chargeList[0].currencyCode+' '+chargeList[0].value+' / record '+'</label>';
             tags += '</div></div>';
 
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-5 col-form-label text-end"></label>';
             tags += '<div class="col-md-6">';
             tags += '<label>'+chargeList[0].currencyCode+' '+chargeList[0].value+' x '+confirm_data.totalRecord+' record = '+ confirm_data.totalChargeCurrency+' '+ confirm_data.totalCharge+'</label>';
@@ -323,7 +323,7 @@
 
             console.log("====== else");
 
-            tags = '<div class="mb-3 row">';
+            tags = '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-5 col-form-label text-end">'+Payroll Fee+'</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>'+' - '+'</label>';

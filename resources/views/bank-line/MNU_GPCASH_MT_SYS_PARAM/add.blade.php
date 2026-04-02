@@ -17,7 +17,7 @@
                       <div class="box-body">
                         <div class="container-fluid">
 
-                               <div class="mb-3 row">
+                               <div class="mb-3 row form-group">
                                 <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                        style="border-collapse:collapse;">
                                     <thead>
@@ -29,7 +29,7 @@
                                     <!-- <tbody>
                                         <tr>
                                             <td></td>
-                                            <td><div class="mb-3 row param" style="margin: 0"><input type="text" id="param_val" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                            <td><div class="mb-3 row form-group param" style="margin: 0"><input type="text" id="param_val" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
                                         </tr>
                                     </tbody>   -->
                                 </table>
@@ -226,9 +226,9 @@
                                 oTable.row.add([
 
                                     '<span id="param_name">'+obj.name +'</span>'+'<input id="param_code" name="param_code" class="form-control state_edit" value="' + obj.code + '" type="hidden">',
-                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row param" style="margin: 0"><input id="param_value" class="form-control state_edit" value="'+obj.value+'" type="text" maxlength="'+obj.maxLength+'" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="value_param_id" class="state_view" style="float: left;">'+obj.value+'</span><div class="help-block with-errors"></div></div></form>'
+                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row form-group param" style="margin: 0"><input id="param_value" class="form-control state_edit" value="'+obj.value+'" type="text" maxlength="'+obj.maxLength+'" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="value_param_id" class="state_view" style="float: left;">'+obj.value+'</span><div class="help-block with-errors"></div></div></form>'
 
-                                    /*<div class="mb-3 row param" style="margin: 0"><input type="text" id="param_val" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div>*/
+                                    /*<div class="mb-3 row form-group param" style="margin: 0"><input type="text" id="param_val" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div>*/
                                 ]).draw(false);
                             }
                         });

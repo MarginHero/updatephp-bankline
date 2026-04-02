@@ -91,7 +91,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 ">
                                         <input type="radio" id="corporate-rb" name="searchBy-rb" value="0" checked>
                                         <label for="corporate-rb"><strong>Corporate</strong></label>
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 ">
                                         <input type="radio" id="regDate-rb" name="searchBy-rb" value="1">
                                         <label for="regDate-rb"><strong>Registration Date</strong></label>

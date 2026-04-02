@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Organization Type</label>
                                 <div class="col-md-5">
                                     <div class="org_type state_edit">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Bank Code&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="code" name="code" class="form-control state_edit bank-required" autocomplete="off" value="" maxlength="11" data-error="This field is required." required>
@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Bank Name&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="name" name="name" class="form-control state_edit bank-required" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Department</label>
                                 <div class="col-md-5">
                                     <input type="text" id="department" name="department" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Sub Department</label>
                                 <div class="col-md-5">
                                     <input type="text" id="subDepartment" name="subDepartment" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Street Name</label>
                                 <div class="col-md-5">
                                     <input type="text" id="streetName" name="streetName" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Building Number</label>
                                 <div class="col-md-5">
                                     <input type="text" id="buildingNumber" name="buildingNumber" class="form-control state_edit" autocomplete="off" value="" maxlength="16">
@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Building Name</label>
                                 <div class="col-md-5">
                                     <input type="text" id="buildingName" name="buildingName" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -106,7 +106,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Floor</label>
                                 <div class="col-md-5">
                                     <input type="text" id="floor" name="floor" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -117,7 +117,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Post Box</label>
                                 <div class="col-md-5">
                                     <input type="text" id="postBox" name="postBox" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -128,7 +128,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Post Code</label>
                                 <div class="col-md-5">
                                     <input type="text" id="postCode" name="postCode" class="form-control state_edit" autocomplete="off" value="" maxlength="16">
@@ -139,7 +139,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Room</label>
                                 <div class="col-md-5">
                                     <input type="text" id="room" name="room" class="form-control state_edit" autocomplete="off" value="" maxlength="70">
@@ -150,7 +150,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Town Name*</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="townName" name="townName" class="form-control state_edit bank-required" autocomplete="off" value="" maxlength="35" data-error="This field is required." required>
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Town Location Name</label>
                                 <div class="col-md-5">
                                     <input type="text" id="townLocationName" name="townLocationName" class="form-control state_edit" autocomplete="off" value="" maxlength="35">
@@ -172,7 +172,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">District Name</label>
                                 <div class="col-md-5">
                                     <input type="text" id="districtName" name="districtName" class="form-control state_edit" autocomplete="off" value="" maxlength="35">
@@ -183,7 +183,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Country Sub Division</label>
                                 <div class="col-md-5">
                                     <input type="text" id="countrySubDivision" name="countrySubDivision" class="form-control state_edit" autocomplete="off" value="" maxlength="35">
@@ -195,7 +195,7 @@
 
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Country&ast;</strong></label>
                                 <div class="col-md-5">
                                     <div class="state_edit">
@@ -525,7 +525,7 @@ $('.numeric').numeric({
                 console.log(xhr.status + " ," + " " + ajaxOptions + ", " + thrownError);
             }, complete: function (data) {
                 $('.org_type').html(orgTypeOption);
-
+                $('#orgType_list').select2();
                 $('#orgType_list').on('blur change', function() {
                     var $this = $(this);
                     var $formGroup = $this.closest('.row');

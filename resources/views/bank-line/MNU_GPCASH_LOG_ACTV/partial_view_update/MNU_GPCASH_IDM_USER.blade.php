@@ -8,7 +8,7 @@
                             <h2 style="text-align: center">New Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">User Id</label>
                                         <div class="col-md-6">
                                             <label id="code_1"></label>
@@ -16,7 +16,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">User Name</label>
                                         <div class="col-md-6">
                                             <label id="name"></label>
@@ -24,7 +24,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Unit</label>
                                         <div class="col-md-6">
                                             <label id="unit"></label>
@@ -32,7 +32,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Email Address</label>
                                         <div class="col-md-6">
                                             <label id="email"></label>
@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Active From</label>
                                         <div class="col-md-4">
                                             <label id="activeFrom"></label>
@@ -52,7 +52,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Password Never Expired</label>
                                         <div class="col-md-6">
                                             <label id="isPwdNeverExpired"></label>
@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Status</label>
                                         <div class="col-md-6">
                                             <label id="status"></label>
@@ -77,7 +77,7 @@
                         <div class="box-body" style="border-right: 4px solid #d2d6de">
                             <div class="container-fluid">
                                 <div class="row table-hidden">
-                                    <div class="mb-3 row" style=";padding: 10px;">
+                                    <div class="mb-3 row form-group" style=";padding: 10px;">
                                         <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                                style="border-collapse:collapse">
                                             <thead>
@@ -107,7 +107,7 @@
                             <h2  style="text-align: center" >Old Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">User Id</label>
                                         <div class="col-md-6">
                                             <label id="old_code_1"></label>
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">User Name</label>
                                         <div class="col-md-6">
                                             <label id="old_name"></label>
@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Unit</label>
                                         <div class="col-md-6">
                                             <label id="old_unit"></label>
@@ -131,7 +131,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Email Address</label>
                                         <div class="col-md-6">
                                             <label id="old_email"></label>
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Active From</label>
                                         <div class="col-md-4">
                                             <label id="old_activeFrom"></label>
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Password Never Expired</label>
                                         <div class="col-md-6">
                                             <label id="old_isPwdNeverExpired"></label>
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Status</label>
                                         <div class="col-md-6">
                                             <label id="old_status"></label>
@@ -176,7 +176,7 @@
                         <div class="box-body" >
                             <div class="container-fluid">
                                 <div class="row table-hidden">
-                                    <div class="mb-3 row" style=";padding: 10px;">
+                                    <div class="mb-3 row form-group" style=";padding: 10px;">
                                         <table id="old_list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                                style="border-collapse:collapse;">
                                             <thead>

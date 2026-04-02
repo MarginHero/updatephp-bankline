@@ -26,7 +26,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Bank Reference No.&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="refNo" name="refNo" class="form-control state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issue Date&ast;</strong></label>
 									<div class="col-md-6 state_issuedt">
                                         <div class="input-group state_edit">
@@ -52,7 +52,7 @@
                                 <h3 class="box-title">GENERAL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Media of Issue&ast;</strong></label>
 									<div class="col-md-6">
 										<select class="form-control state_edit" id="mediaOfIssue" data-error="This field is required." required>
@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Advise Date&ast;</strong></label>
                                     <div class="col-md-6 state_advisedt">
                                         <div class="input-group state_edit">
@@ -81,7 +81,7 @@
                                 <h3 class="box-title">APPLICANT DETAIL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Name&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="appName" name="appName" class="form-control state_edit alphanumspecial" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Address&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="address1" name="address1" class="form-control state_edit alphanumspecial" autocomplete="off" value="" maxlength="50" data-error="This field is required." required>
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="address2" name="address2" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -111,7 +111,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="address3" name="address3" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -121,7 +121,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Country&ast;</strong></label>
 									<div class="col-md-6 state_edit">
 										<select class="form-control" id="country" data-error="This field is required." required>
@@ -138,7 +138,7 @@
                                 <h3 class="box-title">BENEFICIARY DETAIL</h3>
                             </div>
 							<div class="row" style="padding-top: 20px">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Corporate ID&ast;</strong></label>
 									<div class="col-md-6 state_createddt state_edit">
 										<select class="form-control " id="corpId" data-error="please select corporate" required>
@@ -152,7 +152,7 @@
 								</div>
 							</div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficiary Name&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="benName" name="benName" class="form-control state_edit alphanumspecial" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficary Address&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="benAddress1" name="benAddress1" class="form-control state_edit alphanumspecial" autocomplete="off" value="" maxlength="50" data-error="This field is required." required>
@@ -172,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="benAddress2" name="benAddress2" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="benAddress3" name="benAddress3" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -192,7 +192,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficiary Country*</strong></label>
 									<div class="col-md-6 state_edit">
 										<select class="form-control" id="benCountry" data-error="This field is required." required>
@@ -209,7 +209,7 @@
                                 <h3 class="box-title">ISSUING BANK DETAIL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Name&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="issName" name="issName" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -219,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Address&ast;</strong></label>
                                     <div class="col-md-6">
                                         <input type="text" id="issAddress1" name="issAddress1" class="form-control state_edit" autocomplete="off" value="" maxlength="50" data-error="This field is required." required>
@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="issAddress2" name="issAddress2" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -239,7 +239,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <input type="text" id="issAddress3" name="issAddress3" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -249,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Country*</strong></label>
 									<div class="col-md-6 state_edit">
 										<select class="form-control" id="issCountry" data-error="This field is required." required>
@@ -267,7 +267,7 @@
                             <h3 class="box-title">CONTRACT DETAIL</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Transferable*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="transferable" data-error="This field is required." required>
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Confirming Instruction*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="confirmInst" data-error="This field is required." required>
@@ -296,7 +296,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Bank Confirmation*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="bankConfirm" data-error="This field is required." required>
@@ -310,7 +310,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Credit Available By*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="creditAvailBy" data-error="This field is required." required>
@@ -326,7 +326,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Payment / Draft At*</strong></label>
                                 <div class="col-md-6 state_edit">
                                     <select class="form-control" id="paymentAt" data-error="This field is required." required>
@@ -340,7 +340,7 @@
                             </div>
                         </div>
                         <div class="row state_paymentAtUsanceUpas">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-1 state_paymentAtUsance">
                                     <input autofocus type="text" id="usanceDay" name="usanceDay" class="form-control numeric-input state_edit" autocomplete="off" value="" maxlength="3" data-error="This field is required.">
@@ -373,7 +373,7 @@
                                     <label id="usanceOpt2_view" class="state_view"></label>
                                 </div>
                             </div>
-                            <div class="mb-3 row state_paymentAtUsanceUpas_other">
+                            <div class="mb-3 row form-group state_paymentAtUsanceUpas_other">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <input type="text" id="usanceOther" name="usanceOther" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -384,7 +384,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Currency*</strong></label>
                                 <div class="col-md-6 state_edit">
                                     <select class="form-control" id="currency" data-error="This field is required." required>
@@ -398,7 +398,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Amount*</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="amount" name="amount" class="form-control numeric-input state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -408,7 +408,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Tolerance Percentage*</strong></label>
                                 <div class="col-md-6 state_edit">
                                     <div class="row g-2 align-items-center">
@@ -440,7 +440,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Additional Amount Covered</label>
                                 <div class="col-md-6">
                                     <input type="text" id="addAmount" name="addAmount" class="form-control state_edit" autocomplete="off" value="" maxlength="50">
@@ -450,7 +450,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Expiry Date*</strong></label>
                                 <div class="col-md-6 state_expiryDate">
                                     <div class="input-group state_edit">
@@ -463,7 +463,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Expiry Place*</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="expPlace" name="expPlace" class="form-control state_edit alphanumspecial" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -476,7 +476,7 @@
                             <h3 class="box-title">GOODS AND SHIPMENT</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Shipment Date*</strong></label>
                                 <div class="col-md-6">
                                     <!-- <select class="form-control state_edit" id="shipDateMode" data-error="This field is required." required>
@@ -497,7 +497,7 @@
                             </div>
                         </div>
                         <!-- <div class="row state_shipmentdt_shipmentPeriod">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6 state_shipmentdt">
                                     <div class="input-group state_edit">
@@ -515,7 +515,7 @@
                             </div>
                         </div> -->
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Period of Presentation*</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="periodPresent" name="periodPresent" class="form-control numeric-input state_edit" autocomplete="off" value="" maxlength="3" data-error="This field is required." required>
@@ -526,7 +526,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Partial Shipment*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="partialShip" data-error="This field is required." required>
@@ -540,7 +540,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Transhipment*</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control state_edit" id="transhipment" data-error="This field is required." required>
@@ -558,7 +558,7 @@
                             <h3 class="box-title">GOODS AND SHIPMENT</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Other Information</label>
                                 <div class="col-md-6">
                                     <input type="text" id="otherInf" name="otherInf" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -571,7 +571,7 @@
                             <h3 class="box-title">ATTACHMENT DETAIL</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">File Upload</label>
                                 <div class="col-md-7 state_edit" >
                                     <div style="text-align:right; margin-bottom:8px;margin-right: 60px;">

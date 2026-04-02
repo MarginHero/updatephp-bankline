@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3">
                                    <label for="refNo-rb">Reference Number</label>
                                 </div>

@@ -83,7 +83,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Month</strong></label>
                                 <div class="col-md-6 row-month">
                                     <select class="form-control" id="searchMonth" data-error="please select month" required>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Service</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="service">
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Organization Unit</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="branch">
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Company</strong></label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="searchCompany" data-error="Please Select Company" required>

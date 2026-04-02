@@ -110,7 +110,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3">
                                    <label for="corporate-rb"><strong>Company</strong></label>
                                 </div>
@@ -121,7 +121,7 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3">
                                    <label></label>
                                 </div>
@@ -175,7 +175,7 @@
                                 </div>
 
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-12">
                                    <label><strong>Select none of the check box in order to select all available lists</strong></label>
                                 </div>
@@ -250,12 +250,12 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <h4 class="box-title"><strong>Company Information</strong></h4>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Company ID</label>
                                     <div class="col-md-6">
                                         <label id="profile_corpId">-</label>
@@ -263,7 +263,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Company Name</label>
                                     <div class="col-md-6">
                                         <label id="profile_corpName">-</label>
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Address</label>
                                     <div class="col-md-6">
                                         <label id="profile_address">-</label>
@@ -279,7 +279,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Post Code</label>
                                     <div class="col-md-6">
                                         <label id="profile_postCode">-</label>
@@ -287,7 +287,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">City</label>
                                     <div class="col-md-6">
                                         <label id="profile_city">-</label>
@@ -295,7 +295,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Country</label>
                                     <div class="col-md-6">
                                         <label id="profile_country">-</label>
@@ -303,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Email Address 1</label>
                                     <div class="col-md-6">
                                         <label id="profile_email1">-</label>
@@ -311,7 +311,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Email Address 2</label>
                                     <div class="col-md-6">
                                         <label id="profile_email2">-</label>
@@ -319,7 +319,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Phone No.</label>
                                     <div class="col-md-6">
                                         <label id="profile_phone">-</label>
@@ -327,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Fax No.</label>
                                     <div class="col-md-6">
                                         <label id="profile_fax">-</label>
@@ -335,7 +335,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Servicing Branch</label>
                                     <div class="col-md-6">
                                         <label id="profile_branch">-</label>
@@ -343,7 +343,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Industry Segment</label>
                                     <div class="col-md-6">
                                         <label id="profile_industry">-</label>
@@ -351,7 +351,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Business Unit</label>
                                     <div class="col-md-6">
                                         <label id="profile_unit">-</label>
@@ -359,7 +359,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Tax ID</label>
                                     <div class="col-md-6">
                                         <label id="profile_taxId">-</label>
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Handling Officer</label>
                                     <div class="col-md-6">
                                         <label id="profile_officer">-</label>
@@ -375,7 +375,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Status</label>
                                     <div class="col-md-6">
                                         <label id="profile_status">-</label>
@@ -383,7 +383,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Reason</label>
                                     <div class="col-md-6">
                                         <label id="profile_reason">-</label>
@@ -398,12 +398,12 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <h4 class="box-title"><strong>Services</strong></h4>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Services</label>
                                     <div class="col-md-6">
                                         <label id="profile_services">-</label>
@@ -411,7 +411,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Special Limit</label>
                                     <div class="col-md-6">
                                         <label id="profile_specialLimit">-</label>
@@ -419,7 +419,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Special Fee</label>
                                     <div class="col-md-6">
                                         <label id="profile_specialFee">-</label>
@@ -427,7 +427,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Corporate SME</label>
                                     <div class="col-md-6">
                                         <label id="profile_corporateSME">-</label>
@@ -435,7 +435,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Maximum Number of User</label>
                                     <div class="col-md-6">
                                         <label id="profile_maxUser">-</label>
@@ -450,7 +450,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <h4 class="box-title"><strong>Contact Person</strong></h4>
                                 </div>
                             </div>
@@ -476,7 +476,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <h4 class="box-title"><strong>Company Admin</strong></h4>
                                 </div>
                             </div>
@@ -550,7 +550,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <h4 class="box-title"><strong>Transaction Limit Per Day Per Company</strong></h4>
                                 </div>
                             </div>
@@ -615,7 +615,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label ">Detail</label>
                                 </div>
                             </div>
@@ -1583,22 +1583,22 @@
         $.each(authLimit, function (idx, obj) {
             tags += '<div class="box-body">';
                 tags += '<div class="container-fluid">';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<h4 class="box-title"><strong>User Level Information</strong></h4>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">User Level</label>';
                         tags += '<div class="col-md-6"><label id="auth_name'+ idx+ '">'+ obj.name +'</label></div>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">User Level Alias</label>';
                         tags += '<div class="col-md-6"><label id="auth_alias'+ idx+ '">'+ (obj.alias !==undefined ? obj.alias : '-') +'</label></div>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">Currency</label>';
                         tags += '<div class="col-md-6"><label id="auth_currencyName'+ idx+ '">'+ (obj.currencyName !==undefined ? obj.currencyName : '-') +'</label></div>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">Maker Limit</label>';
                         tags += '<div class="col-md-6"><label id="auth_makerLimit'+idx+'">'+ ((obj.makerLimit !='' && obj.makerLimit !==undefined) ? obj.makerLimit : '-')  +'</label></div>';
                     tags += '</div></div>';
@@ -1606,18 +1606,18 @@
             tags += '</div>';
             tags += '<div class="box-body">';
                 tags += '<div class="container-fluid">';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<h4 class="box-title"><strong>Authorized Limit</strong></h4>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">Single Approval Limit</label>';
                         tags += '<div class="col-md-6"><label id="auth_singleApprovalLimit'+ idx+ '">'+ ((obj.singleApprovalLimit !='' && obj.singleApprovalLimit !==undefined) ? obj.singleApprovalLimit : '-') +'</label></div>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">Same Group Approval Limit</label>';
                         tags += '<div class="col-md-6"><label id="auth_intraGroupLimit'+ idx+ '">'+ ((obj.intraGroupLimit !='' && obj.intraGroupLimit !==undefined) ? obj.intraGroupLimit : '-') +'</label></div>';
                     tags += '</div></div>';
-                    tags += '<div class="row"><div class="mb-3 row">';
+                    tags += '<div class="row"><div class="mb-3 row form-group">';
                         tags += '<label class="col-md-3 col-form-label ">Cross Group Approval Limit</label>';
                         tags += '<div class="col-md-6"><label id="auth_crossGroupLimit'+ idx+ '">'+ ((obj.crossGroupLimit !='' && obj.crossGroupLimit !==undefined) ? obj.crossGroupLimit : '-') +'</label></div>';
                     tags += '</div></div>';
@@ -1636,11 +1636,11 @@
             var idTable = "matrix_list" + idx;
             tags += '<div class="box-body">';
             tags += '<div class="container-fluid">';
-            tags += '<div class="row"><div class="mb-3 row"><h4 class="box-title"><strong>Mechanism Information</strong></h4>';
+            tags += '<div class="row"><div class="mb-3 row form-group"><h4 class="box-title"><strong>Mechanism Information</strong></h4>';
             tags += '<label class="col-md-3 col-form-label ">Menu</label>';
             tags += '<div class="col-md-6"><label id="name' + idx + '">' + obj.approvalMenu + '</label></div>';
             tags += '</div></div>';
-            tags += '<div class="row"><div class="mb-3 row">';
+            tags += '<div class="row"><div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Currency</label>';
             tags += '<div class="col-md-6"><label id="curr' + idx + '">' + (obj.approvalCurrency !== undefined ? obj.approvalCurrency : '-') + '</label></div>';
             tags += '</div></div>';
@@ -1648,7 +1648,7 @@
             tags += '</div>';
             tags += '<div class="box-body">';
             tags += '<div class="container-fluid">';
-            tags += '<div class="row"><div class="mb-3 row">';
+            tags += '<div class="row"><div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>Mechanism Listing</strong></h4>';
             tags += '</div></div>';
             tags += '<div class="row">';
@@ -1735,7 +1735,7 @@
             tags += '<div class="container-fluid">';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Account Group Code</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.accountGroupCode + '</label>';
@@ -1744,7 +1744,7 @@
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Account Group Name</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.accountGroupName + '</label>';
@@ -1753,7 +1753,7 @@
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>Account Listing</strong></h4>';
             tags += '</div>';
             tags += '</div>';
@@ -1804,13 +1804,13 @@
         $.each(dataUserGroup, function (idx, group) {
             // Group Information
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>Group Information</strong></h4>';
             tags += '</div>';
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Corporate</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.corporate + '</label>';
@@ -1819,7 +1819,7 @@
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">User Group Code</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.userGroupCode + '</label>';
@@ -1828,7 +1828,7 @@
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">User Group Name</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.userGroupName + '</label>';
@@ -1837,7 +1837,7 @@
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Account Group</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + group.accountGroup + '</label>';
@@ -1847,7 +1847,7 @@
 
             // Menu Package List
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>Menu</strong></h4>';
             tags += '</div>';
             tags += '</div>';
@@ -1895,7 +1895,7 @@
 
             // Transaction Limit List
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>Transaction Limit Detail</strong></h4>';
             tags += '</div>';
             tags += '</div>';
@@ -1929,13 +1929,13 @@
 $.each(group.userCorpList, function (idx1, userCorp) {
                 // Group Information
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<h4 class="box-title"><strong>User Add</strong></h4>';
             tags += '</div>';
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">User Id</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.userId + '</label>';
@@ -1944,7 +1944,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">User Name</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.userName + '</label>';
@@ -1953,7 +1953,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Email Address</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.phoneNo + '</label>';
@@ -1962,7 +1962,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Mobile Phone Number</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.emailAddress + '</label>';
@@ -1971,7 +1971,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">User Role</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.role + '</label>';
@@ -1980,7 +1980,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Approval Level</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.aprrovalLevel + '</label>';
@@ -1989,7 +1989,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">On Behalf User</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.onBehalfUser + '</label>';
@@ -1998,7 +1998,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Grant View Detail</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.grantView + '</label>';
@@ -2007,7 +2007,7 @@ $.each(group.userCorpList, function (idx1, userCorp) {
             tags += '</div>';
 
             tags += '<div class="row">';
-            tags += '<div class="mb-3 row">';
+            tags += '<div class="mb-3 row form-group">';
             tags += '<label class="col-md-3 col-form-label ">Authentication Type</label>';
             tags += '<div class="col-md-6">';
             tags += '<label>' + userCorp.authenticationType + '</label>';

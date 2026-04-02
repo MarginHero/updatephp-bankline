@@ -8,7 +8,7 @@
                             <h2 style="text-align: center">New Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Limit Setup Code</label>
                                         <div class="col-md-6">
                                             <label id="code_1">-</label>
@@ -16,7 +16,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Limit Setup Name</label>
                                         <div class="col-md-6">
                                             <label id="name">-</label>
@@ -63,7 +63,7 @@
                             <h2  style="text-align: center" >Old Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Limit Setup Code</label>
                                         <div class="col-md-6">
                                             <label id="old_code_1">-</label>
@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Limit Setup Name</label>
                                         <div class="col-md-6">
                                             <label id="old_name">-</label>

@@ -16,7 +16,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Product Code</label>
                                     <div class="col-md-6">
                                         <label id="productCode">-</label>
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Product Name</label>
                                     <div class="col-md-6">
                                         <label id="productName">-</label>

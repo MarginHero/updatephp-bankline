@@ -52,7 +52,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
                                         <input type="radio" id="createddt-rb" name="searchBy-rb" value="0" checked>
 										<label ><strong>Issued Date Range</strong></label>
@@ -81,7 +81,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<label  for="createddt-rb">Corporate ID</label>
 									</div>
@@ -94,7 +94,7 @@
 								</div>
 							</div>
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<label >Amount Range</label>
 									</div>
@@ -115,7 +115,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<input type="radio" id="refno-rb" name="searchBy-rb" value="1">
 										<label for="refno-rb" ><strong>Bank Reference Number</strong></label>

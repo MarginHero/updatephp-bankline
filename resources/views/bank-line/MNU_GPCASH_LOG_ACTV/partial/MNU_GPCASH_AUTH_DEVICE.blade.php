@@ -5,7 +5,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Corporate</label>
                                     <div class="col-md-6">
                                         <label id="code_1">-</label>
@@ -13,7 +13,7 @@
                                 </div>
                             </div>
                             <div class="row unassigned" style="display: none;">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Serial Number</label>
                                     <div class="col-md-6">
                                         <label id="tokenNo">-</label>
@@ -21,7 +21,7 @@
                                 </div>
                             </div>
                             <div class="row unassigned" style="display: none;">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Assigned To</label>
                                     <div class="col-md-6">
                                         <label id="assignedTo">-</label>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="row unassigned" style="display: none;">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Assigned By</label>
                                     <div class="col-md-6">
                                         <label id="assignedBy">-</label>
@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="row unassigned" style="display: none;">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Assigned Date</label>
                                     <div class="col-md-6">
                                         <label id="assignedDate">-</label>
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="row unassigned" style="display: none;">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Status</label>
                                     <div class="col-md-6">
                                         <label id="status">-</label>

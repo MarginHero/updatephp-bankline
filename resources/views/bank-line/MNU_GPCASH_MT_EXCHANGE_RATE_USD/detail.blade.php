@@ -16,7 +16,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Currency</label>
                                     <div class="col-md-6">
                                         <label id="currency">-</label>
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Transaction Buy Rate</label>
                                     <div class="col-md-6">
                                         <label id="trxBuy" class="rate">-</label>
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Transaction Sell Rate</label>
                                     <div class="col-md-6">
                                         <label id="trxSell" class="rate">-</label>
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Created By</label>
                                     <div class="col-md-6">
                                         <label id="createdBy">-</label>
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Created Date</label>
                                     <div class="col-md-6">
                                         <label id="createdDate">-</label>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Updated By</label>
                                     <div class="col-md-6">
                                         <label id="updatedBy">-</label>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Updated Date</label>
                                     <div class="col-md-6">
                                         <label id="updatedDate">-</label>

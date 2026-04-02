@@ -4,7 +4,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="searchMenuName">-</label>
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                         <div class="row stateCurrency">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Currency</label>
                                 <div class="col-md-6">
                                     <label id="currencyName">-</label>

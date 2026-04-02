@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="corporate_code" data-error="please select corporate" required>
@@ -24,21 +24,21 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Transaction Reference No</label>
                                 <div class="col-md-6">
                                     <input type="text" id="trxRefNo" name="trxRefNo" class="form-control" autocomplete="off" value="" maxlength="40">
                                 </div>
                             </div>
 
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Bank Reference No</label>
                                 <div class="col-md-6">
                                     <input type="text" id="bankRefNo" name="bankRefNo" class="form-control" autocomplete="off" value="" maxlength="40">
                                 </div>
                             </div>
 
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Amount Range</label>
                                 <div class="col-md-6">
                                     <div class="row g-2 align-items-center">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corp Release Date Range</label>
                                 <div class="col-md-7">
                                     <div class="row g-2 align-items-center">

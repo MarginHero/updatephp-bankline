@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -73,8 +73,8 @@
                 <div class="box-body single-delete">
                     <div class="container-fluid ">
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Reference Number</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="refNoSpecialRate">-</label>
                                 </div>
@@ -82,8 +82,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Corporate ID</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Corporate ID</label>
                                 <div class="col-md-6">
                                     <label id="corporate">-</label>
                                 </div>
@@ -91,8 +91,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Time Deposit Product</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Time Deposit Product</label>
                                 <div class="col-md-6">
                                     <label id="timeDepositProduct">-</label>
                                 </div>
@@ -100,17 +100,17 @@
                         </div>
 
                         <div class="row state_view" >
-                            <div class="mb-3 row row" >
-                                <label class="col-md-4 col-form-label text-end">Period </label>
-                                <div class="col-md-3 state_view">
+                            <div class="mb-3 row form-group" >
+                                <label class="col-md-2 col-form-label text-end">Period </label>
+                                <div class="col-md-6 state_view">
                                     <label id="periodDesc">-</label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Placement Amount</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Placement Amount</label>
                                 <div class="col-md-6">
                                     <label id="placementAmount">-</label>
                                 </div>
@@ -119,8 +119,8 @@
 
 
                         <div class="row ">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Special Rate</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Special Rate</label>
                                 <div class="col-md-6">
                                     <label id="specialRate" >-</label>
                                 </div>
@@ -128,8 +128,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Valid Until</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Valid Until</label>
                                 <div class="col-md-6">
                                     <label id="expiryDate" >-</label>
                                 </div>
@@ -137,8 +137,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Remark</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Remark</label>
                                 <div class="col-md-6">
                                     <label id="remark">-</label>
                                 </div>
@@ -146,8 +146,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Email</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Email</label>
                                 <div class="col-md-6">
                                     <label id="email">-</label>
                                 </div>
@@ -155,8 +155,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Status Transaction</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Status Transaction</label>
                                 <div class="col-md-6">
                                     <label id="status" >-</label>
                                 </div>

@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Package Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Denomination Name&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" name="name" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Description&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="dscp" name="dscp" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Denomination&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="denomination" name="denomination" class="form-control state_edit   " autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Denomination Type&ast;</strong></label>
                                 <div class="col-md-4">
                                     <div class="denomType_setup state_edit"><select class="form-control"></select></div>

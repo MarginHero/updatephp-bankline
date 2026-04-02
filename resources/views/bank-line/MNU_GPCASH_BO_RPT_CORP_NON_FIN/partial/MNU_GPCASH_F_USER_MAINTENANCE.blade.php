@@ -4,7 +4,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User ID</label>
                                 <div class="col-md-6">
                                     <label id="userId">-</label>
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Name</label>
                                 <div class="col-md-6">
                                     <label id="userName">-</label>
@@ -20,7 +20,7 @@
                             </div>
                         </div>	
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Email Address</label>
                                 <div class="col-md-6">
                                     <label id="email">-</label>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Phone Number</label>
                                 <div class="col-md-6">
                                     <label id="mobileNo">-</label>
@@ -43,7 +43,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Role</label>
                                 <div class="col-md-6">
                                     <label id="wfRoleName">-</label>
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Level</label>
                                 <div class="col-md-6">
                                     <label id="userLevel">-</label>
@@ -59,7 +59,7 @@
                             </div>
                         </div>	
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Group</label>
                                 <div class="col-md-6">
                                     <label id="userGroup">-</label>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Account Group</label>
                                 <div class="col-md-6">
                                     <label id="accountGroup">-</label>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">View Payroll Transaction Detail</label>
                                 <div class="col-md-6">
                                     <label id="isGrantViewDetail">-</label>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">New Pending Task</label>
                                 <div class="col-md-6">
                                     <label id="isNotifyMyTask">-</label>
@@ -91,7 +91,7 @@
                             </div>
                         </div>	
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">My Transaction Is Processed</label>
                                 <div class="col-md-6">
                                     <label id="isNotifyMyTrx">-</label>

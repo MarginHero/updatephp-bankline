@@ -18,7 +18,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Type</label>
                                 <div class="col-md-6">
                                     <label id="typeInfo">-</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Title</label>
                                 <div class="col-md-6">
                                     <label id="title">-</label>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6">
                                     <!-- <label id="fileUpload">-</label> -->
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                         <div class="row promoDesc_div">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Promo Detail Description</label>
                                 <div class="col-md-6">
                                     <!-- <label id="promoDesc">-</label> -->
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="row desc_div">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="dscp">-</label>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Uploaded Date</label>
                                 <div class="col-md-6">
                                     <label id="uploadDate">-</label>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Uploaded By</label>
                                 <div class="col-md-6">
                                     <label id="uploadBy">-</label>

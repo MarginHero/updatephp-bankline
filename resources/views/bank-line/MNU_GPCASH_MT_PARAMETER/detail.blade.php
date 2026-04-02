@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="dscp">-</label>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
 						<div class="row stateParent">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end" id="parentLabel"></label>
                                 <div class="col-md-6">
                                     <label id="parentName">-</label>

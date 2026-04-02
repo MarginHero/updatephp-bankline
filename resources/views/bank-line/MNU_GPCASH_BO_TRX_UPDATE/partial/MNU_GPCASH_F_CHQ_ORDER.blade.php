@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Source Account</label>
                                 <div class="col-md-6">
                                     <label id="sourceAcct">-</label>
@@ -25,7 +25,7 @@
                 <div class="box-body">
                     <div class="container-fluid ">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Number of pages</label>
                                 <div class="col-md-6">
                                     <label id="pagesNo">-</label>
@@ -36,7 +36,7 @@
                             
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Fee</label>
                                 <div class="col-md-6">
                                     <label id="feeTotal">-</label>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Debit Amount</label>
                                 <div class="col-md-6">
                                     <label id="totalDebitAmount">-</label>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Pickup Branch</label>
                                 <div class="col-md-6">
                                     <label id="pickBranch">-</label>
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="branchAddress">-</label>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Pickup Schedule</label>
                                 <div class="col-md-6">
                                     <label id="pickSchedule">-</label>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">At</label>
                                 <div class="col-md-6">
                                     <label id="pickTime">-</label>
@@ -153,7 +153,7 @@
 
     function setChargesDetail(chargeList){
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             tags += '<label class="col-md-5 col-form-label text-end">'+chargeList[i].serviceChargeName+'</label><div class="col-md-6"><label>'+chargeList[i].currencyCode+' '+chargeList[i].value+'</label></div>';
         }

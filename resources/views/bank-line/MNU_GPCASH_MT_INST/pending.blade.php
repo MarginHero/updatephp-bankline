@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -56,7 +56,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Institution Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Institution Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Institution Name English</label>
                                 <div class="col-md-6">
                                     <label id="nameEng">-</label>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="dscp">-</label>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Institution Category</label>
                                 <div class="col-md-6">
                                     <label id="institutionCategoryName">-</label>
@@ -96,7 +96,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Amount Selection</label>
                                 <div class="col-md-6">
                                     <label id="amountSelection">-</label>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Bill Online Flag</label>
                                 <div class="col-md-6">
                                     <label id="billOnlineFlag">-</label>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Institution Type</label>
                                 <div class="col-md-6">
                                     <label id="institutionType">-</label>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Amount Currency</label>
                                 <div class="col-md-6">
                                     <label id="amountCurrencyName">-</label>
@@ -128,7 +128,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Charges</label>
                                 <div class="col-md-6">
                                     <label id="charges">-</label>

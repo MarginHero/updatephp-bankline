@@ -14,13 +14,13 @@
                 <form class="form-horizontal">
                 <div class="box-body">
                     <div class="container-fluid">
-                        <div class="row mb-3">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-2 col-form-label text-end">Menu Setup Code</label>
                             <div class="col-md-6">
                                 <label id="code_1" class="form-label">-</label>
                             </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-2 col-form-label text-end">Menu Setup Name</label>
                             <div class="col-md-6">
                                 <label id="name" class="form-label">-</label>

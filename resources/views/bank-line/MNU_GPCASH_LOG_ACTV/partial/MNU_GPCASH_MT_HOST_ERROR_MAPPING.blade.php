@@ -8,7 +8,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -16,7 +16,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">English Language</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Local Language</label>
                                 <div class="col-md-6">
                                     <label id="nameId">-</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Type</label>
                                 <div class="col-md-6">
                                     <label id="type">-</label>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Rollback</label>
                                 <div class="col-md-6">
                                     <label id="isRollback">-</label>

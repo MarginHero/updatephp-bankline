@@ -22,7 +22,7 @@
                             <div class="container-fluid box-body">
                                 <div class="row">
                                     <form id="form-area-task" class="form-horizontal form-area">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Task Scheduler Code</label>
 
                                         <div class="col-md-6">
@@ -72,7 +72,7 @@
                             <div class="container-fluid box-body">
                                 <div class="row">
                                     <form id="form-area-status" class="form-horizontal form-area">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-2 col-form-label text-end">Task Status Code&ast;</label>
 
                                             <div class="col-md-6">
@@ -387,7 +387,7 @@
         $('#search').prop("disabled",false);
 
             //var taskCode = $(this).attr('data-code');
-            var content ='{{trans('form.batch_task_execute',['task'=>'$task'])}} </br></br><div class="mb-3 row form-inline"><label class="col-md-3 col-form-label text-end">Parameter</label><div class="col-md-4"> <input type="text" id="taskParam" name="taskParam" class="form-control" value="'+param+'"></div></div>';
+            var content ='{{trans('form.batch_task_execute',['task'=>'$task'])}} </br></br><div class="mb-3 row form-group form-inline"><label class="col-md-3 col-form-label text-end">Parameter</label><div class="col-md-4"> <input type="text" id="taskParam" name="taskParam" class="form-control" value="'+param+'"></div></div>';
 
             $.confirm({
                 title: 'Execute Task',

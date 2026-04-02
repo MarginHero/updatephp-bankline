@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Code</label>
 
                                 <div class="col-md-6">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Name</label>
 
                                 <div class="col-md-6">
@@ -36,7 +36,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Name English</label>
 
                                 <div class="col-md-6">

@@ -15,7 +15,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Menu</label>
                                     <div class="col-md-6">
                                         <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Activity</label>
                                     <div class="col-md-6">
                                         <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Reference Number</label>
                                     <div class="col-md-6">
                                         <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Activity Date Time</label>
                                     <div class="col-md-6">
                                         <label id="datetime_text">-</label>
@@ -55,7 +55,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Bank Reference No</strong></label>
                                     <div class="col-md-6">
                                         <label id="bankRefNo" class="state_view"></label>
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issue Date</strong></label>
 									<div class="col-md-6 state_issuedt">
                                         <label id="issueDate" class="state_view"></label>
@@ -74,7 +74,7 @@
                                 <h3 class="box-title">GENERAL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Media of Issue</strong></label>
 									<div class="col-md-6">
                                         <label id="mediaOfIssue" class="state_view"></label>
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Advise Date</strong></label>
                                     <div class="col-md-6 state_advisedt">
                                         <label id="adviceDate" class="state_view"></label>
@@ -93,7 +93,7 @@
                                 <h3 class="box-title">APPLICANT DETAIL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Name</strong></label>
                                     <div class="col-md-6">
                                         <label id="applicantName" class="state_view"></label>
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Address</strong></label>
                                     <div class="col-md-6">
                                         <label id="applicantAddress1" class="state_view"></label>
@@ -109,7 +109,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="applicantAddress2" class="state_view"></label>
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="applicantAddress3" class="state_view"></label>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Applicant Country</strong></label>
                                     <div class="col-md-6 state_view">
                                         <label id="applicantCountryName"></label>
@@ -136,7 +136,7 @@
                                 <h3 class="box-title">BENEFICIARY DETAIL</h3>
                             </div>
 							<div class="row" style="padding-top: 20px">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Corporate ID</strong></label>
                                     <div class="col-md-6 state_view">
                                         <label id="corpId"></label>
@@ -144,7 +144,7 @@
 								</div>
 							</div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficiary Name</strong></label>
                                     <div class="col-md-6">
                                         <label id="beneficiaryName" class="state_view"></label>
@@ -152,7 +152,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficary Address</strong></label>
                                     <div class="col-md-6">
                                         <label id="beneficiaryAddress1" class="state_view"></label>
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="beneficiaryAddress2" class="state_view"></label>
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="beneficiaryAddress3" class="state_view"></label>
@@ -176,7 +176,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Beneficiary Country<strong></label>
                                     <div class="col-md-6 state_view">
                                         <label id="beneficiaryCountryName"></label>
@@ -187,7 +187,7 @@
                                 <h3 class="box-title">ISSUING BANK DETAIL</h3>
                             </div>
                             <div class="row" style="padding-top: 20px">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Name</strong></label>
                                     <div class="col-md-6">
                                         <label id="issuingBankName" class="state_view"></label>
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Address</strong></label>
                                     <div class="col-md-6">
                                         <label id="issuingBankAddress1" class="state_view"></label>
@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="issuingBankAddress2" class="state_view"></label>
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="issuingBankAddress3" class="state_view"></label>
@@ -219,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end"><strong>Issuing Bank Country</strong></label>
                                     <div class="col-md-6 state_view">
                                         <label id="issuingBankCountryName"></label>
@@ -231,7 +231,7 @@
                             <h3 class="box-title">CONTRACT DETAIL</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Transferable</strong></label>
                                 <div class="col-md-6">
                                     <label id="transferable" class="state_view"></label>
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Confirming Instruction</strong></label>
                                 <div class="col-md-6">
                                     <label id="confirmingInst" class="state_view"></label>
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Bank Confirmation</strong></label>
                                 <div class="col-md-6">
                                     <label id="bankConfirming" class="state_view"></label>
@@ -255,7 +255,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Credit Available By</strong></label>
                                 <div class="col-md-6">
                                     <label id="creditAvailableBy" class="state_view"></label>
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Payment / Draft At</strong></label>
                                 <div class="col-md-6 state_view">
                                     <label id="paymentDraftAt"></label>
@@ -271,7 +271,7 @@
                             </div>
                         </div>
                         <div class="row state_paymentAtUsanceUpas">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-1 state_paymentAtUsance">
                                     <label id="usanceDay" class="state_view"></label>
@@ -291,7 +291,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Currency</strong></label>
                                 <div class="col-md-6 state_view">
                                     <label id="currency"></label>
@@ -299,7 +299,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Amount</strong></label>
                                 <div class="col-md-6">
                                     <label id="amount" class="state_view"></label>
@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Tolerance Percentage</strong></label>
                                 <div class="col-md-6">
                                     <label id="" class="state_view">Tolerance</label>
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-6">
                                     <label id="plusTolerancePercentage" class="state_view"></label>
@@ -323,7 +323,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Additional Amount Covered</strong></label>
                                 <div class="col-md-6">
                                     <label id="additionalAmount" class="state_view"></label>
@@ -331,7 +331,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Expiry Date</strong></label>
                                 <div class="col-md-6 state_expiryDate">
                                     <label id="expiryDate" class="state_view"></label>
@@ -339,7 +339,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Expiry Place</strong></label>
                                 <div class="col-md-6">
                                     <label id="expiryPlace" class="state_view"></label>
@@ -350,7 +350,7 @@
                             <h3 class="box-title">GOODS AND SHIPMENT</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Shipment Date</strong></label>
                                 <div class="col-md-4 state_shipmentdt">
                                     <label id="latestShipmentDate" class="state_view"></label>
@@ -362,7 +362,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Period of Presentation</strong></label>
                                 <div class="col-md-6">
                                     <label id="periodPresentation" class="state_view"></label>
@@ -370,7 +370,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Partial Shipment</strong></label>
                                 <div class="col-md-6">
                                     <label id="partialShipment" class="state_view"></label>
@@ -378,7 +378,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Transhipment</strong></label>
                                 <div class="col-md-6">
                                     <label id="transhipment" class="state_view"></label>
@@ -390,7 +390,7 @@
                             <h3 class="box-title">GOODS AND SHIPMENT</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Other Information</strong></label>
                                 <div class="col-md-6">
                                     <label id="otherInformation" class="state_view"></label>
@@ -401,7 +401,7 @@
                             <h3 class="box-title">ATTACHMENT DETAIL</h3>
                         </div>
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6 state_view">
                                     <!-- <label id="fileName1"></label>-->
@@ -411,7 +411,7 @@
                                     <input type="hidden" id="fileId1" value=""/>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6 state_view">
                                     <!-- <label id="fileName2"></label>-->
@@ -421,7 +421,7 @@
                                     <input type="hidden" id="fileId2" value=""/>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6 state_view">
                                     <!-- <label id="fileName3"></label> -->
@@ -431,7 +431,7 @@
                                     <input type="hidden" id="fileId3" value=""/>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6 state_view">
                                     <!-- <label id="fileName4"></label> -->
@@ -441,7 +441,7 @@
                                     <input type="hidden" id="fileId4" value=""/>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                 <div class="col-md-6 state_view">
                                     <!-- <label id="fileName5"></label> -->

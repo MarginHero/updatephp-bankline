@@ -66,7 +66,7 @@
                                     <div class="container-fluid">
                                         <form id="form-area" class="form-horizontal form-area">
                                             <div class="row state_createddt">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <input type="radio" id="checkbox_date" name="searchBy-rb" value="0" checked>
                                                         <label for="checkbox_date"><strong>Application Date Range</strong></label>
@@ -95,7 +95,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <label for="createddt-rb">Corporate ID</label>
                                                     </div>
@@ -108,7 +108,7 @@
                                                 </div>
                                             </div>
                                             <div class="row state_createddt">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <label >Amount Range</label>
                                                     </div>
@@ -127,7 +127,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <input type="radio" id="refno-rb" name="searchBy-rb" value="1">
                                                         <label for="refno-rb"><strong>Transaction Reference No</strong></label>
@@ -149,7 +149,7 @@
                                     <div class="container-fluid">
                                         <form id="form-area1" class="form-horizontal form-area">
                                             <div class="row state_createddt">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <input type="radio" id="checkbox_date1" name="searchBy-rb1" value="0" checked>
                                                         <label for="checkbox_date1"><strong>Application Date Range</strong></label>
@@ -178,7 +178,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <label  for="createddt-rb">Corporate ID</label>
                                                     </div>
@@ -191,7 +191,7 @@
                                                 </div>
                                             </div>
                                             <div class="row state_createddt">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <label >Amount Range</label>
                                                     </div>
@@ -210,7 +210,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <div class="col-md-3">
                                                         <input type="radio" id="refno-rb1" name="searchBy-rb1" value="1">
                                                         <label for="refno-rb1"><strong>Transaction Reference No</strong></label>

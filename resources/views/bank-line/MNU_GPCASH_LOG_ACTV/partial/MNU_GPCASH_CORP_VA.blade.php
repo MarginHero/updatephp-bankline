@@ -5,7 +5,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">CIF</label>
                                 <div class="col-md-6">
                                     <label id="cifDetail">-</label>
@@ -13,7 +13,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="corpDetail">-</label>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate Code</label>
                                 <div class="col-md-6">
                                     <label id="corpCodeDetail">-</label>
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Status</label>
                                 <div class="col-md-6">
                                     <label id="statusDetail">-</label>

@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Main Account</label>
                                 <div class="col-md-6">
                                     <label id="mainAccount">-</label>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Amount Type</label>
                                 <div class="col-md-6">
                                     <label id="amountType">-</label>
@@ -59,7 +59,7 @@
                             
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Fee</label>
                                 <div class="col-md-6">
                                     <label id="totalFee">-</label>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Payment Schedule</label>
                                 <div class="col-md-6">
                                     <label id="paymentSchedule">-</label>
@@ -192,7 +192,7 @@
 
     function setChargesDetail(chargeList){
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             tags += '<label class="col-md-5 col-form-label text-end">'+chargeList[i].serviceChargeName+'</label><div class="col-md-6"><label>'+chargeList[i].currencyCode+' '+chargeList[i].value+'</label></div>';
         }
@@ -206,7 +206,7 @@
 
         var instructionMode = detail.instructionMode;
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         if (instructionMode !=null && instructionMode == 'I') {
             tags += '<label class="col-md-5 col-form-label text-end">Payment Date</label>';
             tags += '<div class="col-md-6">';

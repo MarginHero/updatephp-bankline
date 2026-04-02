@@ -10,7 +10,7 @@
                             <h2 style="text-align: center">New Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Code</label>
                                         <div class="col-md-6">
                                             <label id="code_1">-</label>
@@ -18,7 +18,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Bank Name</label>
                                         <div class="col-md-6">
                                             <label id="name">-</label>
@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Address</label>
                                         <div class="col-md-6">
                                             <label id="address1">-</label>
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <label id="address2">-</label>
@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <label id="address3">-</label>
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">SKN Code</label>
                                         <div class="col-md-6">
                                             <label id="organizationUnitCode">-</label>
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Branch Name</label>
                                         <div class="col-md-6">
                                             <label id="organizationUnitName">-</label>
@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Member Code</label>
                                         <div class="col-md-6">
                                             <label id="memberCode">-</label>
@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                                 <div class="row domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">BI Fast Code</label>
                                         <div class="col-md-6">
                                             <label id="biFastCode">-</label>
@@ -108,7 +108,7 @@
                             <h2  style="text-align: center" >Old Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Code</label>
                                         <div class="col-md-6">
                                             <label id="old_code_1">-</label>
@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Bank Name</label>
                                         <div class="col-md-6">
                                             <label id="old_name">-</label>
@@ -124,7 +124,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Address</label>
                                         <div class="col-md-6">
                                             <label id="old_address1">-</label>
@@ -132,7 +132,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <label id="old_address2">-</label>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <label id="old_address3">-</label>
@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">SKN Code</label>
                                         <div class="col-md-6">
                                             <label id="old_organizationUnitCode">-</label>
@@ -156,7 +156,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Branch Name</label>
                                         <div class="col-md-6">
                                             <label id="old_organizationUnitName">-</label>
@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Member Code</label>
                                         <div class="col-md-6">
                                             <label id="old_memberCode">-</label>
@@ -172,7 +172,7 @@
                                     </div>
                                 </div>
                                 <div class="row old_domDetail">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">BI Fast Code</label>
                                         <div class="col-md-6">
                                             <label id="old_biFastCode">-</label>

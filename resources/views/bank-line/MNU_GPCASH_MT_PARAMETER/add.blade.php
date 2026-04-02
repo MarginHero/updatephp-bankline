@@ -20,7 +20,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit codeVal" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Name&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Description</label>
 
                                 <div class="col-md-6">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
 						<div class="row stateParent">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end" id="parentLabel"></label>
                                 <div class="col-md-6">
 									<div class="state_edit">

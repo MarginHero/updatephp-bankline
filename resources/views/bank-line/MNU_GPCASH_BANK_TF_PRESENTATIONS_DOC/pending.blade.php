@@ -13,7 +13,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -54,7 +54,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Transaction Reference No.</label>
                                 <div class="col-md-6">
                                     <label id="referenceNo_exam">-</label>
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate ID</label>
                                 <div class="col-md-6">
                                     <label id="corpId_exam">-</label>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate name</label>
                                 <div class="col-md-6">
                                     <label id="corpName_exam">-</label>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Maker ID</label>
                                 <div class="col-md-6">
                                     <label id="makerId_exam">-</label>
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corp Release Date</label>
                                 <div class="col-md-6">
                                     <label id="releaseDate_exam">-</label>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Amount</label>
                                 <div class="col-md-6">
                                     <label id="amount_exam">-</label>
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Number of Correction</label>
                                 <div class="col-md-6">
                                     <label id="noOfCorrection_exam">-</label>
@@ -117,7 +117,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">
                                     <a onClick="unlockAction(this);" style="color:#337ab7; text-decoration:underline; cursor:pointer;">View Detail Transaction</a>
                                 </label>
@@ -134,7 +134,7 @@
                     </div>
                     <!-- <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="mb-3 row fileName1">
+                            <div class="mb-3 row form-group fileName1">
                                 <label class="col-md-2 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6">
 				                <label>
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row fileName2">
+                            <div class="mb-3 row form-group fileName2">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
 					                <label>
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row fileName3">
+                            <div class="mb-3 row form-group fileName3">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
 					                <label>
@@ -163,7 +163,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row fileName4">
+                            <div class="mb-3 row form-group fileName4">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
 					                <label>
@@ -173,7 +173,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row fileName5">
+                            <div class="mb-3 row form-group fileName5">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
 					                <label>
@@ -190,7 +190,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Action Status</label>
                                 <div class="col-md-6">
                                     <label id="actionStatus">-</label>
@@ -198,7 +198,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Bank Reference No</label>
                                 <div class="col-md-6">
                                     <label id="bankRefNo">-</label>
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Comment</label>
                                 <div class="col-md-6">
                                     <label id="comment">-</label>
@@ -258,16 +258,16 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Transaction Status</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">Transaction Status</label>
                                 <div class="col-md-6">
                                     <label id="status_detail">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Transaction Reference No.</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">Transaction Reference No.</label>
                                 <div class="col-md-6">
                                     <label id="referenceNo_modal">-</label>
                                 </div>
@@ -282,40 +282,40 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">L/C Bank Reference No.</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">L/C Bank Reference No.</label>
                                 <div class="col-md-6">
                                     <label id="bankRefNo_modal">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">L/C Issue Date</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">L/C Issue Date</label>
                                 <div class="col-md-6">
                                     <label id="issuedDate">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Invoice No.</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">Invoice No.</label>
                                 <div class="col-md-6">
                                     <label id="invoiceNo">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Amount</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">Amount</label>
                                 <div class="col-md-6">
                                     <label id="amount">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-4 col-form-label text-end">Description</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-4 col-form-label">Description</label>
                                 <div class="col-md-6">
                                     <label id="description">-</label>
                                 </div>
@@ -711,22 +711,22 @@
             fileIds.push(detail.fileId5);
         }
         tags = `<div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">File Upload Account</label>
                         <div class="col-md-6">
                         <label style="color:#337ab7;cursor:pointer;">
-                            <a onClick="downloadFile('${fileNames[0]}', '${fileIds[0]}');">${fileNames[0]}</a>
+                            <a class="label-link" onClick="downloadFile('${fileNames[0]}', '${fileIds[0]}');">${fileNames[0]}</a>
                         </label>
                         </div>
                     </div>
                 </div>`;
 
         tagsDetail = `<div class="row">
-                        <div class="mb-3 row ">
-                                <label class="col-md-4 col-form-label text-end">File Upload Account</label>
+                        <div class="mb-3 row form-group ">
+                                <label class="col-md-4 col-form-label">File Upload Account</label>
                             <div class="col-md-6">
                             <label style="color:#337ab7;cursor:pointer;">
-                                <a onClick="downloadFile('${fileNames[0]}', '${fileIds[0]}');">${fileNames[0]}</a>
+                                <a class="label-link" onClick="downloadFile('${fileNames[0]}', '${fileIds[0]}');">${fileNames[0]}</a>
                             </label>
                             </div>
                         </div>
@@ -734,21 +734,21 @@
 
         for(let i = 1; i < fileNames.length; i++){
             tags = tags + `<div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                     <label style="color:#337ab7;cursor:pointer;">
-                                        <a onClick="downloadFile('${fileNames[i]}', '${fileIds[i]}');">${fileNames[i]}</a>
+                                        <a class="label-link" onClick="downloadFile('${fileNames[i]}', '${fileIds[i]}');">${fileNames[i]}</a>
                                     </label>
                                     </div>
                                 </div>
                            </div>`;
             tagsDetail = tagsDetail + `<div class="row">
-                                            <div class="mb-3 row">
-                                                <label class="col-md-4 col-form-label text-end"></label>
+                                            <div class="mb-3 row form-group">
+                                                <label class="col-md-4 col-form-label"></label>
                                                 <div class="col-md-6">
                                                 <label style="color:#337ab7;cursor:pointer;">
-                                                    <a onClick="downloadFile('${fileNames[i]}', '${fileIds[i]}');" >${fileNames[i]}</a>
+                                                    <a class="label-link" onClick="downloadFile('${fileNames[i]}', '${fileIds[i]}');" >${fileNames[i]}</a>
                                                 </label>
                                                 </div>
                                             </div>

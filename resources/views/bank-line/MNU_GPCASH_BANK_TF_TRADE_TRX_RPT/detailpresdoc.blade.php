@@ -15,7 +15,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Transaction Reference No.</label>
 									<div class="col-md-5">
 										<label id="trxRefNo">-</label>
@@ -23,7 +23,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Number of Correction</label>
 									<div class="col-md-5">
 										<label id="noOfCorrection">-</label>
@@ -38,7 +38,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Bank Ref No.</label>
 									<div class="col-md-5">
 										<label id="bankRefNo">-</label>
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Issued Date</label>
 									<div class="col-md-5">
 										<label id="issueDate">-</label>
@@ -54,7 +54,7 @@
 								</div>
 							</div>
                             <div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Invoice No</label>
 									<div class="col-md-5">
 										<label id="invoiceNo">-</label>
@@ -62,7 +62,7 @@
 								</div>
 							</div>
                             <div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Amount</label>
 									<div class="col-md-5">
 										<label id="amount">-</label>
@@ -70,7 +70,7 @@
 								</div>
 							</div>
                             <div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Description</label>
 									<div class="col-md-5">
 										<label id="templateDesc">-</label>
@@ -86,14 +86,14 @@
                     <div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Action Status</label>
 									<div class="col-md-5">
 										<label id="status">-</label>
 									</div>
 								</div>
 							</div><div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end">Comment by Bank</label>
 									<div class="col-md-5">
 										<label id="bankComment">-</label>
@@ -298,7 +298,7 @@
             fileNames.push(detail.fileName5);
         }
         tags = `<div class="row">
-					<div class="mb-3 row">
+					<div class="mb-3 row form-group">
 						<label class="col-md-3 col-form-label text-end">Atachment Detail</label>
 						<div class="col-md-5">
 							<label>${fileNames[0]}</label>
@@ -308,7 +308,7 @@
 
         for(let i = 1; i < fileNames.length; i++){
             tags = tags + `<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<label class="col-md-3 col-form-label text-end"></label>
 									<div class="col-md-5">
                                         <label>${fileNames[i]}</label>

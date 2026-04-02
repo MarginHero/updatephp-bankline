@@ -6,7 +6,7 @@
                         <div class="box-body" style="border-right: 4px solid #d2d6de">
                             <h2 style="text-align: center">New Value</h2>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">CIF</label>
                                     <div class="col-md-6">
                                         <label id="cifid">-</label>
@@ -14,7 +14,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Corporate ID</label>
                                     <div class="col-md-6">
                                         <label id="corporateId">-</label>
@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Corporate Name</label>
                                     <div class="col-md-6">
                                         <label id="corporateName">-</label>
@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Address</label>
                                     <div class="col-md-6">
                                         <label id="address1">-</label>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="address2">-</label>
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="address3">-</label>
@@ -55,7 +55,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Country</label>
                                     <div class="col-md-6">
                                         <label id="countryName">-</label>
@@ -64,7 +64,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">State</label>
                                     <div class="col-md-6">
                                         <label id="stateName">-</label>
@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Substate</label>
                                     <div class="col-md-6">
                                         <label id="substateName">-</label>
@@ -82,7 +82,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">City</label>
                                     <div class="col-md-6">
                                         <label id="cityName">-</label>
@@ -91,7 +91,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Post Code</label>
                                     <div class="col-md-6">
                                         <label id="postcode">-</label>
@@ -100,7 +100,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Email Address</label>
                                     <div class="col-md-6">
                                         <label id="email1">-</label>
@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
                                     <div class="col-md-6">
                                         <label id="email2">-</label>
@@ -117,7 +117,7 @@
                             </div>
                             <br/>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Phone No.</label>
                                     <div class="col-md-3">
                                         <label id="phoneNo">-</label>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Fax No.</label>
                                     <div class="col-md-6">
                                         <label id="faxNo">-</label>
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Servicing Branch</label>
                                     <div class="col-md-6">
                                         <label id="servicingBranch">-</label>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Industry Segment</label>
                                     <div class="col-md-6">
                                         <label id="industrySegmentName">-</label>
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Business Unit</label>
                                     <div class="col-md-6">
                                         <label id="businessUnitName">-</label>
@@ -161,7 +161,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Tax ID</label>
                                     <div class="col-md-6">
                                         <label id="taxIdNo">-</label>
@@ -169,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Handling Officer</label>
                                     <div class="col-md-6">
                                         <label id="handlingOfficer">-</label>
@@ -177,7 +177,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Residential Status</label>
                                     <div class="col-md-6">
                                         <label id="residentialStatus">-</label>
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Citizenship</label>
                                     <div class="col-md-6">
                                         <label id="citizenship">-</label>
@@ -193,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Remitter Type</label>
                                     <div class="col-md-6">
                                         <label id="remitterType">-</label>
@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Status</label>
                                     <div class="col-md-6">
                                         <label id="status" class="state_normal">-</label>
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row status">
+                                <div class="mb-3 row form-group status">
                                     <label class="col-md-3 col-form-label text-end">Reason</label>
                                     <div class="col-md-6">
                                         <label id="inActiveReason" class="state_normal">-</label>
@@ -243,7 +243,7 @@
                         </div>
                         <div class="box-body table-hidden non-status">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Service Setup</label>
                                     <div class="col-md-6">
                                         <label id="servicePackageName">-</label>
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Special Limit</label>
                                     <div class="col-md-6">
                                         <label id="specialLimitFlag">-</label>
@@ -259,7 +259,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Special Fee</label>
                                     <div class="col-md-6">
                                         <label id="specialChargeFlag">-</label>
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
                                     <div class="col-md-6">
                                         <label id="maxCorporateUser">-</label>
@@ -280,7 +280,7 @@
                         </div>
                         <div class="box-body auth-device table-hidden non-status token-list">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
                                     <div class="col-md-5">
                                         <label id="tokenType">Hard Token</label>
@@ -301,7 +301,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
                                     <div class="col-md-6">
                                         <label id="tokenNum">0</label>
@@ -334,7 +334,7 @@
                         <div class="box-body">
                             <h2  style="text-align: center" >Old Value</h2>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">CIF</label>
                                     <div class="col-md-6">
                                         <label id="old_cifid">-</label>
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Corporate ID</label>
                                     <div class="col-md-6">
                                         <label id="old_corporateId">-</label>
@@ -350,7 +350,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Corporate Name</label>
                                     <div class="col-md-6">
                                         <label id="old_corporateName">-</label>
@@ -358,7 +358,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Address</label>
                                     <div class="col-md-6">
                                         <label id="old_address1">-</label>
@@ -366,7 +366,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="old_address2">-</label>
@@ -374,7 +374,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <label id="old_address3">-</label>
@@ -383,7 +383,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Country</label>
                                     <div class="col-md-6">
                                         <label id="old_countryName">-</label>
@@ -392,7 +392,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">State</label>
                                     <div class="col-md-6">
                                         <label id="old_stateName">-</label>
@@ -401,7 +401,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Substate</label>
                                     <div class="col-md-6">
                                         <label id="old_substateName">-</label>
@@ -410,7 +410,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">City</label>
                                     <div class="col-md-6">
                                         <label id="old_cityName">-</label>
@@ -419,7 +419,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Post Code</label>
                                     <div class="col-md-6">
                                         <label id="old_postcode">-</label>
@@ -428,7 +428,7 @@
                             </div>
 
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Email Address</label>
                                     <div class="col-md-6">
                                         <label id="old_email1">-</label>
@@ -436,7 +436,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
                                     <div class="col-md-6">
                                         <label id="old_email2">-</label>
@@ -445,7 +445,7 @@
                             </div>
                             <br/>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Phone No.</label>
                                     <div class="col-md-3">
                                         <label id="old_phoneNo">-</label>
@@ -457,7 +457,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Fax No.</label>
                                     <div class="col-md-6">
                                         <label id="old_faxNo">-</label>
@@ -465,7 +465,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Servicing Branch</label>
                                     <div class="col-md-6">
                                         <label id="old_servicingBranch">-</label>
@@ -473,7 +473,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Industry Segment</label>
                                     <div class="col-md-6">
                                         <label id="old_industrySegmentName">-</label>
@@ -481,7 +481,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Business Unit</label>
                                     <div class="col-md-6">
                                         <label id="old_businessUnitName">-</label>
@@ -489,7 +489,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Tax ID</label>
                                     <div class="col-md-6">
                                         <label id="old_taxIdNo">-</label>
@@ -497,7 +497,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Handling Officer</label>
                                     <div class="col-md-6">
                                         <label id="old_handlingOfficer">-</label>
@@ -505,7 +505,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Residential Status</label>
                                     <div class="col-md-6">
                                         <label id="old_residentialStatus">-</label>
@@ -513,7 +513,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Citizenship</label>
                                     <div class="col-md-6">
                                         <label id="old_citizenship">-</label>
@@ -521,7 +521,7 @@
                                 </div>
                             </div>
                             <div class="row non-status">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Remitter Type</label>
                                     <div class="col-md-6">
                                         <label id="old_remitterType">-</label>
@@ -529,7 +529,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Status</label>
                                     <div class="col-md-6">
                                         <label id="old_status" class="state_normal">-</label>
@@ -537,7 +537,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row status">
+                                <div class="mb-3 row form-group status">
                                     <label class="col-md-3 col-form-label text-end">Reason</label>
                                     <div class="col-md-6">
                                         <label id="old_inActiveReason" class="state_normal">-</label>
@@ -571,7 +571,7 @@
                         </div>
                         <div class="box-body table-hidden non-status" style="border-right: 4px solid #d2d6de">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Service Setup</label>
                                     <div class="col-md-6">
                                         <label id="old_servicePackageName">-</label>
@@ -579,7 +579,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Special Limit</label>
                                     <div class="col-md-6">
                                         <label id="old_specialLimitFlag">-</label>
@@ -587,7 +587,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Special Fee</label>
                                     <div class="col-md-6">
                                         <label id="old_specialChargeFlag">-</label>
@@ -595,7 +595,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
                                     <div class="col-md-6">
                                         <label id="old_maxCorporateUser">-</label>
@@ -608,7 +608,7 @@
                         </div>
                         <div class="box-body auth-device table-hidden non-status old-token-list"  style="border-right: 4px solid #d2d6de">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
                                     <div class="col-md-5">
                                         <label id="old_tokenType">Hard Token</label>
@@ -629,7 +629,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
                                     <div class="col-md-6">
                                         <label id="old_tokenNum">0</label>

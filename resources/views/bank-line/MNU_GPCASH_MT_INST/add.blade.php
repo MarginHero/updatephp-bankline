@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Institution Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Institution Name&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" name="name" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Institution Name English&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="nameEng" name="nameEng" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Description&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="dscp" name="dscp" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
 						<div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-2 col-form-label text-end"><strong>Institution Category&ast;</strong></label>
 								<div class="col-md-6">
 									<div class="state_edit">
@@ -71,7 +71,7 @@
 							</div>
 						</div>  
 						<div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-2 col-form-label text-end"><strong>Amount Selection&ast;</strong></label>
 								<div class="col-md-6">
 									<div class="state_edit">
@@ -85,7 +85,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Bill Online Flag</label>
                                 <div class="col-md-6">
 									<div class="state_edit" id="billOnlineFlagCheck">										
@@ -95,7 +95,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-2 col-form-label text-end"><strong>Institution Type&ast;</strong></label>
 								<div class="col-md-6">
 									<div class="state_edit">
@@ -109,7 +109,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-2 col-form-label text-end"><strong>AmountCurrency&ast;</strong></label>
 								<div class="col-md-6">
 									<div class="state_edit">
@@ -123,7 +123,7 @@
 							</div>
 						</div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Charges&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="charges" name="charges" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="15" data-error="This field is required." required>

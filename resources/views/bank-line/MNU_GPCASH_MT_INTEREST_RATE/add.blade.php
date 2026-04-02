@@ -19,7 +19,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Product Code&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="productCode" name="productCode" class="form-control state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Product Name&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="productName" name="productName" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -46,7 +46,7 @@
                 <div class="box-body state_edit">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Balance&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="balance" name="balance" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Period</label>
                                 <div class="col-md-5">
                                     <input type="text" id="period" name="period" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="100">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Interest Rate (% pa)&ast;</strong></label>
                                 <div class="col-md-5">
                                     <input type="text" id="rate" name="rate" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-5">
                                    <button type="button" id="add_list" class="btn btn-default">Add to List</button>

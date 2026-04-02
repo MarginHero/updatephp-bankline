@@ -18,7 +18,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Fee Setup Code</label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit" autocomplete="off" value="" data-error="This field is required." maxlength="40" required>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Fee Setup Name</label>
 
                                 <div class="col-md-6">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row corp_limit" style="display:none">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate with Special Fee</label>
                                 <div class="col-md-4">
                                     <div class="state_edit">

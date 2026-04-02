@@ -19,7 +19,7 @@
                 <div class="box-body">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-2 col-form-label text-end lblDate"><strong>Date*</strong></label>
                             <div class="col-md-10">
                                 <div class="row g-2 align-items-center">
@@ -488,7 +488,7 @@
                 '<span id="currency">'+ obj.currencyCode +'</span>'+'<input id="currency_code" name="currency_code" value="' + obj.currencyCode + '" type="hidden"> <input id="currency_name" name="currency_name" value="' + obj.currencyCode + '" type="hidden">',
                 '<span id="product">'+obj.product.name +'</span>'+'<input id="product_code" name="product_code" value="' + obj.product.code + '" type="hidden"><input id="product_name" name="product_name" value="' + obj.product.name + '" type="hidden">',
                 '<span id="term">'+obj.term.name +'</span>'+'<input id="term_code" name="term_code" value="' + obj.term.code + '" type="hidden"> <input id="term_name" name="term_name" value="' + obj.term.name + '" type="hidden">',
-                '<div class="mb-3 row" style="margin:0!important;" ><input id="interest" name="interest" class="form-control state_edit rate'+i+'" value="'+ obj.interestRate +'" type="text" style="width:100%;text-align: right;" data-error="Interest Rate is Mandatory" required><span id="interest_view" class="state_view" style="float: right;">'+obj.interestRate+'</span><div class="help-block with-errors interestError" style="display:none;"></div></div>'
+                '<div class="mb-3 row form-group" style="margin:0!important;" ><input id="interest" name="interest" class="form-control state_edit rate'+i+'" value="'+ obj.interestRate +'" type="text" style="width:100%;text-align: right;" data-error="Interest Rate is Mandatory" required><span id="interest_view" class="state_view" style="float: right;">'+obj.interestRate+'</span><div class="help-block with-errors interestError" style="display:none;"></div></div>'
             ]).draw(false);
             $(".rate"+i).keydown(function (event) {
 

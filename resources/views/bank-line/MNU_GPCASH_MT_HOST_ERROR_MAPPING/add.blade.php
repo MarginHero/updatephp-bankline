@@ -18,7 +18,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>English Language&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -40,7 +40,7 @@
                         </div>
 
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Local Language&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                         </div>
-						<div class="row mb-3">
+						<div class="mb-3 row form-group">
 							<label class="col-md-2 col-form-label text-end" style="padding-top: 0;">Type</label>
 								<div class="col-md-6">
 									<div class="state_edit" style="margin-bottom: 10px;">
@@ -65,7 +65,7 @@
 									<label id="type_view" class="state_view"></label>
 								</div>
 							</div>
-						<div class="row mb-3">
+						<div class="mb-3 row form-group">
 							<label class="col-md-2 col-form-label text-end" style="padding-top: 0;">Rollback</label>
                                 <div class="col-md-6">
 									<div class="state_edit" id="rollbackCheck">

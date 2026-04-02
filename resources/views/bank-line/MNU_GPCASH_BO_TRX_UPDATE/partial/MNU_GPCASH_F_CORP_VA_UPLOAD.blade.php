@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Main Account</label>
                                 <div class="col-md-6">
                                     <label id="mainAcct">-</label>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Corporate Code</label>
                                 <div class="col-md-6">
                                     <label id="corpCode">-</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Product Code</label>
                                 <div class="col-md-6">
                                     <label id="prodCode">-</label>
@@ -41,7 +41,7 @@
                 <div class="box-body">
                     <div class="container-fluid ">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Uploaded Date Time</label>
                                 <div class="col-md-6">
                                     <label id="uploadDate">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Format</label>
                                 <div class="col-md-6">
                                     <label id="fileFormat">-</label>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6">
                                     <label id="fileUpload">-</label>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Number of Virtual Account</label>
                                 <div class="col-md-6">
                                     <label id="totalNo">-</label>

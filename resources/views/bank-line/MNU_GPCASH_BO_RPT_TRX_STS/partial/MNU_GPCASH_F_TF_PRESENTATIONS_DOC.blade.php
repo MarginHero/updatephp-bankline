@@ -20,7 +20,7 @@
 				<div class="box-body">
 					<div class="container-fluid">
                         <div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-5 col-form-label text-end">L/C Bank Reference No</label>
 								<div class="col-md-6">
 									<label id="bankRefNo"></label>
@@ -28,7 +28,7 @@
 							</div>
 						</div>
                         <div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-5 col-form-label text-end">L/C Issue Date</label>
 								<div class="col-md-6">
 									<label id="issueDate"></label>
@@ -36,7 +36,7 @@
 							</div>
 						</div>
                         <div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-5 col-form-label text-end">Invoice No.</label>
 								<div class="col-md-6">
 									<label id="invoiceNo"></label>
@@ -44,7 +44,7 @@
 							</div>
 						</div>
                         <div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-5 col-form-label text-end">Amount</label>
 								<div class="col-md-6">
 									<label id="amount"></label>
@@ -52,7 +52,7 @@
 							</div>
 						</div>
                         <div class="row">
-							<div class="mb-3 row">
+							<div class="mb-3 row form-group">
 								<label class="col-md-5 col-form-label text-end">Description</label>
 								<div class="col-md-6">
 									<label id="templateDesc" style="text-transform: none"></label>
@@ -210,7 +210,7 @@
             fileIds.push(detail.fileId5);
         }
         tags = `<div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-5 col-form-label text-end">File Upload Account</label>
                         <div class="col-md-6">
                             <a onClick="downloadFile('${fileNames[0]}', '${fileIds[0]}');">${fileNames[0]}</a>
@@ -220,7 +220,7 @@
 
         for(let i = 1; i < fileNames.length; i++){
             tags = tags + `<div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-5 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <a onClick="downloadFile('${fileNames[i]}', '${fileIds[i]}');">${fileNames[i]}</a>

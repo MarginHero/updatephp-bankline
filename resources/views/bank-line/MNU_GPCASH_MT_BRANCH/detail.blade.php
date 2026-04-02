@@ -16,7 +16,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Branch Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Branch Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="dscp">-</label>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Contact Person</label>
                                 <div class="col-md-6">
                                     <label id="contact">-</label>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Email</label>
                                 <div class="col-md-6">
                                     <label id="email">-</label>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Address</label>
                                 <div class="col-md-6">
                                     <label id="address1">-</label>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address2">-</label>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address3">-</label>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Type</label>
                                 <div class="col-md-6">
                                     <label id="branchType">-</label>

@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Source Account</label>
                                 <div class="col-md-6">
                                     <label id="sourceAccount">-</label>
@@ -25,7 +25,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Deposit Number</label>
                                 <div class="col-md-6">
                                     <label id="tdNumber">-</label>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Time Deposit Product</label>
                                 <div class="col-md-6">
                                     <label id="tdProduct">-</label>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Placement Date</label>
                                 <div class="col-md-6">
                                     <label id="placementDate">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Period</label>
                                 <div class="col-md-6">
                                     <label id="period">-</label>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Interest Rate</label>
                                 <div class="col-md-6">
                                     <label id="interestRate">-</label>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row" id="specialRate" style="display:none">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Special Interest Rate</label>
                                 <div class="col-md-6">
                                     <label id="refNoSpecialRate">-</label>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Principal Amount</label>
                                 <div class="col-md-6">
                                     <label id="principalAmount">-</label>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Maturity Instruction</label>
                                 <div class="col-md-6">
                                     <label id="maturityInst">-</label>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Account No. For Principal</label>
                                 <div class="col-md-6">
                                     <label id="principalAccount">-</label>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Account No. For Interest</label>
                                 <div class="col-md-6">
                                     <label id="interestAccount">-</label>

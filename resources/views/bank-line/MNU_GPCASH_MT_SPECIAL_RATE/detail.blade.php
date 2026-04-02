@@ -16,7 +16,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblDealRate text-end">Deal Rate No.</label>
                                 <div class="col-md-6">
                                 <label id="refNoSpecialRate">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label lblcorpID text-end">Corporate ID</label>
                                     <div class="col-md-6">
                                         <label id="corporate">-</label>
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="row ">
-                                <div class="mb-3 row row">
+                                <div class="mb-3 row form-group row">
                                     <label class="col-md-4 col-form-label lblDebitCurr text-end">Debit Currency</label>
                                     <div class="col-md-6">
                                         <label id="debitCurrency">-</label>
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="row ">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label lblCreditCurr text-end">Credit Currency</label>
                                     <div class="col-md-6 ">
                                         <label id="creditCurrency">-</label>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label lblSpecialrate text-end">Special Rate</label>
                                     <div class="col-md-6">
                                         <label id="specialRate" >-</label>
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Remark</label>
                                     <div class="col-md-6" style="word-wrap:break-word;width:50%;">
                                         <label id="remark">-</label>
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label lblActiveDate text-end">Active Date</label>
                                     <div class="col-md-6">
                                         <label id="activeDate">-</label>
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="row" hidden>
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label lblEmail text-end">Email</label>
                                     <div class="col-md-6" style="word-wrap:break-word;width:50%;">
                                         <label id="email">-</label>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Status</label>
                                 <div class="col-md-6">
                                     <label id="status" >-</label>

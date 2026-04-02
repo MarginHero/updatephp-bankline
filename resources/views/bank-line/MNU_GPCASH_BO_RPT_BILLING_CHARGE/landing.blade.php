@@ -91,7 +91,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-2 text-right">
                                    <label for="branch"><strong>Branch</strong></label>
                                 </div>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-2 text-right">
                                    <label for="corporate"><strong>Company*</strong></label>
                                 </div>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-2 text-right">
                                    <label for="service"><strong>Service</strong></label>
                                 </div>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-2 text-right">
                                    <label for="status"><strong>Status</strong></label>
                                 </div>
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-2 text-right">
                                    <label for="regDate-rb"><strong>From Date</strong></label>
                                 </div>

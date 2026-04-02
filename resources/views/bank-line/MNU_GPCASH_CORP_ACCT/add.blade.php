@@ -18,7 +18,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="code_1" name="code">-</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">CIF</label>
                                 <div class="col-md-6">
                                     <label id="cifid" name="cifid">-</label>
@@ -45,7 +45,7 @@
                     
                         
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label"> Account No</label>
                                     <div class="col-md-6">
                                         <input type="text" id="filter_accountNo" name="filter_accountNo" class="form-control" autocomplete="off" value="">
@@ -55,7 +55,7 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"></label>
                                     <div class="col-md-6">
                                         <button type="button" id="filter_submit" name="filter_submit" class="btn btn-default">Search</button>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div class="row table-hidden">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <table id="list_add" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                        style="border-collapse:collapse;">
                                     <thead>

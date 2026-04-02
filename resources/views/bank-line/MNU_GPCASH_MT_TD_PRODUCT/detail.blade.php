@@ -16,7 +16,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Code</label>
                                 <div class="col-md-6">
                                     <label id="productCode">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Name</label>
                                 <div class="col-md-6">
                                     <label id="productName">-</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="description">-</label>
@@ -47,16 +47,16 @@
                 <div class="box-body termEdit state_edit">
                     <div class="container-fluid">
                         <div class="row">
-                            <div id="termblock" class="mb-3 row has-feedback">
-                                <label class="col-md-4 col-form-label lblTerm"><strong>Term&ast;</strong></label>
-                                <div class="col-md-3">
+                            <div id="termblock" class="mb-3 row form-group has-feedback">
+                                <label class="col-md-4 col-form-label lblTerm text-end"><strong>Term&ast;</strong></label>
+                                <div class="col-md-6">
                                     <input type="text" id="term" name="term" class="form-control state_edit" autocomplete="off" value="" style="width:100%;text-align: left;" data-error="This field is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-5">
                                    <button type="button" id="add_list" class="btn btn-default">Add to List</button>

@@ -17,8 +17,8 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
-                                    <label class="col-md-4 col-form-label currlbl"><strong>Currency&ast;</strong></label>
+                                <div class="mb-3 row form-group">
+                                    <label class="col-md-4 col-form-label text-end currlbl"><strong>Currency&ast;</strong></label>
                                     <div class="col-md-4">
                                         <div class="currency_setup state_edit"><select class="form-control"></select></div>
                                         <label id="currency_setup_view" class="state_view"></label>
@@ -26,8 +26,8 @@
                                 </div>
                             </div>
                             <div class="row"  >
-                                <div class="mb-3 row" id="trxBuyRateBlock">
-                                    <label class="col-md-4 col-form-label lblTrxBuy"><strong>Transaction Buy Rate&ast;</strong></label>
+                                <div class="mb-3 row form-group" id="trxBuyRateBlock">
+                                    <label class="col-md-4 col-form-label text-end lblTrxBuy"><strong>Transaction Buy Rate&ast;</strong></label>
                                     <div class="col-md-4">
                                         <input type="text" id="trxBuyRate" name="trxBuyRate" class="form-control state_edit numeric " autocomplete="off" value="" style="width:100%;text-align: right;" data-error="This field is required."  required>
                                         <div class="help-block with-errors"></div>
@@ -36,8 +36,8 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="mb-3 row" id="trxSellRateBlock">
-                                    <label class="col-md-4 col-form-label lblTrxSell"><strong>Transaction Sell Rate&ast;</strong></label>
+                                <div class="mb-3 row form-group" id="trxSellRateBlock">
+                                    <label class="col-md-4 col-form-label text-end lblTrxSell"><strong>Transaction Sell Rate&ast;</strong></label>
                                     <div class="col-md-4">
                                         <input type="text" id="trxSellRate" name="trxSellRate" class="form-control state_edit numeric" autocomplete="off" value="" style="width:100%;text-align: right;" data-error="This field is required." required>
                                         <div class="help-block with-errors"></div>

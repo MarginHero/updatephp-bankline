@@ -19,7 +19,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="corpDetail">-</label>
@@ -34,7 +34,7 @@
                 <div class="box-body state_edit">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Document Type&ast;</strong></label>
                                 <div class="col-md-5">
                                     <select class="form-control state_edit" id="docType" data-error="please select document type" required>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong>Underlying Amount&ast;</strong></label>
                                 <div class="col-md-1">
                                     <label class="col-form-label text-end">USD</label>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Remark</label>
                                 <div class="col-md-5">
                                     <input type="text" id="remark" name="remark" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Expiry Date</label>
                                 <div class="col-md-5">
                                     <div class="input-group">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Registering Branch</label>
                                 <div class="col-md-5">
                                     <label id="branch_view"></label>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-5">
                                    <button type="button" id="add_list" class="btn btn-default">Add to List</button>

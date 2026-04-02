@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -56,7 +56,7 @@
                     <div class="box-body form_add">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="row form-group">
                                     <label class="col-md-2 col-form-label text-end"><strong>From Date</strong></label>
                                     <div class="col-md-3">
                                         <label id="holidayDateFrom_view" ></label>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="row form-group">
                                     <label class="col-md-2 col-form-label text-end"><strong>To Date</strong></label>
                                     <div class="col-md-3">
                                        <label id="holidayDateTo_view" ></label>
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="row form-group">
                                     <label class="col-md-2 col-form-label text-end"><strong>Description</strong></label>
                                     <div class="col-md-6">
                                        <label id="dscp_view"></label>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="row form-group">
                                     <label class="col-md-2 col-form-label text-end"><strong>Type</strong></label>
                                     <div class="col-md-6">
                                        <label id="type_view"></label>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="box-body form_edit">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-9">
                                     <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"

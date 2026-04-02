@@ -18,7 +18,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Bank Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Bank Name&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -40,7 +40,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Address &ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -52,7 +52,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
 
                                 <div class="col-md-6">
@@ -64,7 +64,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
 
                                 <div class="col-md-6">
@@ -76,7 +76,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Branch Code&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -88,7 +88,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Branch Name&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -100,7 +100,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Member Code&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -112,7 +112,7 @@
                         </div>
 						
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Online Bank Code</label>
 
                                 <div class="col-md-6">

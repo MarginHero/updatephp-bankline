@@ -14,7 +14,7 @@
 					<div class="box-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-2">
 										<input type="radio" id="createddt-rb" name="searchby-rb" value="0" checked>
 										<label for="createddt-rb" style="margin-left: 7px"><strong>Creation Date</strong></label>
@@ -41,7 +41,7 @@
 								</div>
 							</div>
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-2">
 										<label style="margin-left:22Px">Activity By</label>
 									</div>
@@ -53,7 +53,7 @@
 								</div>
 							</div>
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-2">
 										<label style="margin-left:22Px">Menu</label>
 									</div>
@@ -65,7 +65,7 @@
 								</div>
 							</div>
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-2">
 										<label style="margin-left:22Px">Activity Type</label>
 									</div>
@@ -77,7 +77,7 @@
 								</div>
 							</div>
 							<div class="row state_createddt">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-2">
 										<label style="margin-left:22Px">Status</label>
 									</div>
@@ -91,7 +91,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="mb-3 row">
+								<div class="mb-3 row form-group">
 									<div class="col-md-3">
 										<input type="radio" id="refno-rb" name="searchby-rb" value="1">
 										<label for="refno-rb" style="margin-left: 7px"><strong>Reference Number</strong></label>

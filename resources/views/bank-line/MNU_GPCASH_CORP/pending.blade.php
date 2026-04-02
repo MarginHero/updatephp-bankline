@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menu_text">-</label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity</label>
                                 <div class="col-md-6">
                                     <label id="activity_text">-</label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="noref_text">-</label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Activity Date Time</label>
                                 <div class="col-md-6">
                                     <label id="datetime_text">-</label>
@@ -54,56 +54,56 @@
 
                     <div class="box-body">
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">CIF</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">CIF</label>
                                 <div class="col-md-6">
                                     <label id="cifid">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Customer Location</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Customer Location</label>
                                 <div class="col-md-6">
                                     <label id="customerLocation">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Corporate ID</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Corporate ID</label>
                                 <div class="col-md-6">
                                     <label id="corporateId">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Corporate Name</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Corporate Name</label>
                                 <div class="col-md-6">
                                     <label id="corporateName">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Address</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Address</label>
                                 <div class="col-md-6">
                                     <label id="address1">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end"></label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address2">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end"></label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address3">-</label>
                                 </div>
@@ -111,8 +111,8 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Country</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Country</label>
                                 <div class="col-md-6">
                                     <label id="countryName">-</label>
                                 </div>
@@ -120,8 +120,8 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">State</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">State</label>
                                 <div class="col-md-6">
                                     <label id="stateName">-</label>
                                 </div>
@@ -129,8 +129,8 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Substate</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Substate</label>
                                 <div class="col-md-6">
                                     <label id="substateName">-</label>
                                 </div>
@@ -138,8 +138,8 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">City</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">City</label>
                                 <div class="col-md-6">
                                     <label id="cityName">-</label>
                                 </div>
@@ -147,8 +147,8 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Post Code</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Post Code</label>
                                 <div class="col-md-6">
                                     <label id="postcode">-</label>
                                 </div>
@@ -156,16 +156,16 @@
                         </div>
 
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Email Address</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Email Address</label>
                                 <div class="col-md-6">
                                     <label id="email1">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Alternate Email Address</label>
                                 <div class="col-md-6">
                                     <label id="email2">-</label>
                                 </div>
@@ -173,9 +173,9 @@
                         </div>
                         <br/>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Phone No.</label>
-                                <div class="col-md-3">
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Phone No.</label>
+                                <div class="col-md-2">
                                     <label id="phoneNo">-</label>
                                 </div>
                                 <label class="col-md-2 col-form-label text-end">Ext No.</label>
@@ -185,88 +185,88 @@
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Fax No.</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Fax No.</label>
                                 <div class="col-md-6">
                                     <label id="faxNo">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Servicing Branch</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Servicing Branch</label>
                                 <div class="col-md-6">
                                     <label id="servicingBranch">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Industry Segment</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Industry Segment</label>
                                 <div class="col-md-6">
                                     <label id="industrySegmentName">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Business Unit</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Business Unit</label>
                                 <div class="col-md-6">
                                     <label id="businessUnitName">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Tax ID</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Tax ID</label>
                                 <div class="col-md-6">
                                     <label id="taxIdNo">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Handling Officer</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Handling Officer</label>
                                 <div class="col-md-6">
                                     <label id="handlingOfficer">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Residential Status</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Residential Status</label>
                                 <div class="col-md-6">
                                     <label id="residentialStatus">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Citizenship</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Citizenship</label>
                                 <div class="col-md-6">
                                     <label id="citizenship">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Remitter Type</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Remitter Type</label>
                                 <div class="col-md-6">
                                     <label id="remitterType">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
-                                <label class="col-md-3 col-form-label text-end">Status</label>
+                            <div class="mb-3 row form-group">
+                                <label class="col-md-2 col-form-label text-end">Status</label>
                                 <div class="col-md-6">
                                     <label id="status" class="state_normal">-</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row status">
-                                <label class="col-md-3 col-form-label text-end">Reason</label>
+                            <div class="mb-3 row form-group status">
+                                <label class="col-md-2 col-form-label text-end">Reason</label>
                                 <div class="col-md-6">
                                     <label id="inActiveReason" class="state_normal">-</label>
                                 </div>
@@ -299,48 +299,48 @@
                 </div>
                 <div class="box-body table-hidden non-status">
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Service Setup</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Service Setup</label>
                             <div class="col-md-6">
                                 <label id="servicePackageName">-</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Special Limit</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Special Limit</label>
                             <div class="col-md-6">
                                 <label id="specialLimitFlag">-</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Special Fee</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Special Fee</label>
                             <div class="col-md-6">
                                 <label id="specialChargeFlag">-</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Corporate SME</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Corporate SME</label>
                             <div class="col-md-6">
                                 <label id="smeFlag">-</label>
                             </div>
                         </div>
                     </div>
                      <div class="row app-matrix">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Default Approval Matrix</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Default Approval Matrix</label>
                             <div class="col-md-6">
                                 <label id="defAppMatrixFlag">-</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Maximum Number of User</label>
                             <div class="col-md-6">
                                 <label id="maxCorporateUser">-</label>
                             </div>
@@ -353,15 +353,15 @@
                 </div>
                 <div class="box-body auth-device table-hidden non-status token-list">
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Authentication Device Type</label>
                             <div class="col-md-5">
                                 <label id="tokenType">Hard Token</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <label class="col-md-3 col-form-label text-end"></label>
+                        <label class="col-md-2 col-form-label text-end"></label>
                         <div class="col-md-5">
                         <table id="list_token" class="table table-bordered table-striped dataTable" style="border-collapse:collapse;" border="2" cellpadding="2"
                                style="border-collapse:collapse;">
@@ -374,8 +374,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
+                        <div class="mb-3 row form-group">
+                            <label class="col-md-2 col-form-label text-end">Total Number of Token</label>
                             <div class="col-md-6">
                                 <label id="tokenNum">0</label>
                             </div>

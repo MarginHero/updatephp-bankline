@@ -4,7 +4,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Level</label>
                                 <div class="col-md-6">
                                     <label id="approvalLevelName">-</label>
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">User Level Alias</label>
                                 <div class="col-md-6">
                                     <label id="alias">-</label>
@@ -20,7 +20,7 @@
                             </div>
                         </div>	
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Currency</label>
                                 <div class="col-md-6">
                                     <label id="currencyName">-</label>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Maker Limit</label>
                                 <div class="col-md-6">
                                     <label id="makerLimit">-</label>
@@ -43,7 +43,7 @@
 				<div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Single Approval Limit</label>
                                 <div class="col-md-6">
                                     <label id="singleApprovalLimit">-</label>
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Same Group Approval Limit</label>
                                 <div class="col-md-6">
                                     <label id="intraGroupLimit">-</label>
@@ -59,7 +59,7 @@
                             </div>
                         </div>	
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Cross Group Approval Limit</label>
                                 <div class="col-md-6">
                                     <label id="crossGroupLimit">-</label>

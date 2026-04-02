@@ -18,7 +18,7 @@
                 <div class="box-body form_add" style="display:none">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>From Date&ast;</strong></label>
                                 <div class="col-md-3">
                                     <div class="input-group state_edit">
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>To Date&ast;</strong></label>
                                 <div class="col-md-3">
                                     <div class="input-group state_edit">
@@ -50,9 +50,9 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Description&ast;</strong></label>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="padding-left:30px">
                                     <input type="text" id="dscp" name="dscp" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
                                     <div class="help-block with-errors"></div>
                                     <label id="dscp_view" class="state_view"></label>
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Type&ast;</strong></label>
                                 <div class="col-md-8">
                                     <label class="radio-inline state_edit">
@@ -86,7 +86,7 @@
 
                     <div class="box-body form_edit" style="display:none">
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end">Date</label>
                                 <div class="col-md-4">
                                     <div class="form-inline" style="margin-left:-15px">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Description&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="dscp_edit" name="dscp_edit" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Type&ast;</strong></label>
                                 <div class="col-md-6">
                                     <label class="radio-inline" style="margin-left:5px">
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <div class="row state_edit">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <button id="add_list" class="btn btn-primary btn-outline">Add to List</button>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row form-group">
                                 <label class="col-md-2 col-form-label text-end"></label>
                                 <div class="col-md-9">
                                     <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
@@ -208,7 +208,7 @@
 
         $('input[name="type"]').on('change', function(e) {
             if(this.value=='CURRENCY'){
-                $('.currClass').show();
+                $('.currClass').show().css('display', 'inline-block');;
             }else{
                 $('.currClass').hide();
             }
@@ -216,7 +216,7 @@
 
         $('input[name="type_edit"]').on('change', function(e) {
             if(this.value=='CURRENCY'){
-                $('.currClass').show();
+                $('.currClass').show().css('display', 'inline-block');;
             }else{
                 $('.currClass').hide();
             }

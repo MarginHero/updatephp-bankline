@@ -13,7 +13,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Order Number</label>
                                 <div class="col-md-6">
                                     <input type="text" id="orderNo" name="orderNo" maxlength="40" class="form-control" autocomplete="off" value="">
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Status</label>
                                 <div class="col-md-6">
                                    <select class="form-control" id="status">

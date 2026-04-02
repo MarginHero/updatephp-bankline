@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row fomb-3 row form-group">
                            <label for="code" class="col-md-2 col-form-label text-end text-end">User Id</label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control" autocomplete="off" value="" maxlength="40">
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row fomb-3 row form-group">
                                 <label for="name" class="col-md-2 col-form-label text-end text-end">User Name</label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" name="name" class="form-control" autocomplete="off" value="" maxlength="100">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="row fomb-3 row form-group">
                                 <label for="branchCode" class="col-md-2 col-form-label text-end text-end">Unit</label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="branchCode">

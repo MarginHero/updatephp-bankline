@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Main Account</label>
                                 <div class="col-md-6">
                                     <label id="mainAcct">-</label>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Corporate Code</label>
                                 <div class="col-md-6">
                                     <label id="corpCode">-</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Product Code</label>
                                 <div class="col-md-6">
                                     <label id="prodCode">-</label>
@@ -41,7 +41,7 @@
                 <div class="box-body addView">
                     <div class="container-fluid ">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Virtual Account Number</label>
                                 <div class="col-md-6">
                                     <label id="vaNo">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Virtual Account Name</label>
                                 <div class="col-md-6">
                                     <label id="vaName">-</label>

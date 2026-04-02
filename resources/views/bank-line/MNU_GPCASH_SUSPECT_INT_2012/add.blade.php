@@ -39,7 +39,7 @@
                                     <h3 class="box-title">Corporate Detail</h3><br>
                                 </div>
                                 <div class="box-body">
-                                        <div class="mb-3 row corporate_filter" id="cifidBlock">
+                                        <div class="mb-3 row form-group corporate_filter" id="cifidBlock">
                                             <label class="col-md-3 col-form-label text-end"><strong>Corporate - CIF</strong></label>
                                             <div class="col-md-5">
                                                 <div class="form-inline">
@@ -51,7 +51,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Corporate ID</label>
                                             <div class="col-md-5">
                                                 <div class="form-inline">
@@ -62,7 +62,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Customer Location&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -78,7 +78,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"></label>
                                             <div class="col-md-5">
                                                 <div class="form-inline">
@@ -87,7 +87,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row" hidden="true">
+                                        <div class="mb-3 row form-group" hidden="true">
                                             <label class="col-md-3 col-form-label text-end"><strong>Corporate ID&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="corporateId" name="corporateId" class="form-control state_edit detail" autocomplete="off" value="" maxlength="20" data-error="This field is required." required>
@@ -95,7 +95,7 @@
                                                 <label id="corporateId_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Corporate Name&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="corporateName" name="corporateName" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -103,7 +103,7 @@
                                                 <label id="corporateName_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Address&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="address1" name="address1" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -111,7 +111,7 @@
                                                 <label id="address1_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="address2" name="address2" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -119,14 +119,14 @@
                                                 <label id="address2_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="address3" name="address3" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
                                                 <label id="address3_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Country&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -139,7 +139,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>State&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -152,7 +152,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Substate&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -165,7 +165,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>City&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -179,7 +179,7 @@
                                         </div>
 
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Post Code&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -192,7 +192,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row" id="email1Block">
+                                        <div class="mb-3 row form-group" id="email1Block">
                                             <label class="col-md-3 col-form-label text-end"><strong>Email Address&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input id="email1" name="email1" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -200,7 +200,7 @@
                                                 <label id="email1_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row" id="email2Block">
+                                        <div class="mb-3 row form-group" id="email2Block">
                                             <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
                                             <div class="col-md-5">
                                                 <input type="email" id="email2" name="email2" class="form-control state_edit" autocomplete="off" maxlength="100" data-error="Invalid Email Address." value="">
@@ -208,7 +208,7 @@
                                                 <label id="email2_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Phone No.&ast;</strong></label>
                                             <div class="col-md-3">
                                                 <input type="text" id="phoneNo" name="phoneNo" class="form-control state_edit detail numeric phone" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -221,14 +221,14 @@
                                                 <label id="extNo_view" class="state_view numeric phone">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Fax No.</label>
                                             <div class="col-md-5">
                                                 <input type="text" id="faxNo" name="faxNo" class="form-control state_edit numeric phone" autocomplete="off" value="" maxlength="40">
                                                 <label id="faxNo_view" class="state_view numeric phone">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                         <label class="col-md-3 col-form-label text-end"><strong>Servicing Branch&ast;</strong></label>
                                         <div class="col-md-5">
                                             <div class="state_edit">
@@ -240,7 +240,7 @@
                                             <label id="branch_view" class="state_view">-</label>
                                         </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Industry Segment</label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -251,7 +251,7 @@
                                                 <label id="industrySegment_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Business Unit</label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -262,7 +262,7 @@
                                                 <label id="businessUnit_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Tax ID&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="taxId" name="taxId" class="form-control state_edit detail taxId" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -270,7 +270,7 @@
                                                 <label id="taxId_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Handling Officer</label>
                                             <div class="col-md-5">
                                                 <div class="state_edit">
@@ -282,7 +282,7 @@
                                                 <label id="handlingOfficer_view" class="state_view">-</label>
                                             </div>
                                         </div>
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-3 col-form-label text-end">Residential Status</label>
                                         <div class="col-md-5">
                                             <div class="state_edit">
@@ -293,7 +293,7 @@
                                             <label id="residential_view" class="state_view"></label>
                                         </div>
                                     </div>
-                                    <div class="mb-3 row state_edit">
+                                    <div class="mb-3 row form-group state_edit">
                                         <label class="col-md-3 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <div class="state_edit">
@@ -311,7 +311,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-3 col-form-label text-end">Citizenship</label>
                                         <div class="col-md-5">
                                             <div class="state_edit">
@@ -322,7 +322,7 @@
                                             <label id="citizenship_view" class="state_view"></label>
                                         </div>
                                     </div>
-                                    <div class="mb-3 row state_edit">
+                                    <div class="mb-3 row form-group state_edit">
                                         <label class="col-md-3 col-form-label text-end"></label>
                                         <div class="col-md-6">
                                             <div class="state_edit">
@@ -339,7 +339,7 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-3 col-form-label text-end">Remitter Type</label>
                                         <div class="col-md-5">
                                             <div class="state_edit">
@@ -351,7 +351,7 @@
                                             <label id="remitterType_view" class="state_view">-</label>
                                         </div>
                                     </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Status</label>
                                                 <div class="col-md-5">
                                                     <label id="status">-</label>
@@ -385,7 +385,7 @@
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Service Setup</label>
                                                 <div class="col-md-5">
                                                     <label id="servicePackageName">-</label>
@@ -393,7 +393,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Special Limit</label>
                                                 <div class="col-md-5">
                                                     <label id="specialLimitFlag_view">No</label>
@@ -401,7 +401,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Special Fee</label>
                                                 <div class="col-md-5">
                                                     <label id="specialChargeFlag_view">No</label>
@@ -409,7 +409,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Corporate SME</label>
                                                 <div class="col-md-5">
                                                     <label id="smeFlag_view">No</label>
@@ -417,7 +417,7 @@
                                             </div>
                                         </div>
                                         <div class="row token-list">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Default Approval Matrix</label>
                                                 <div class="col-md-5">
                                                     <label id="defAppMatrixFlag_view">No</label>
@@ -425,7 +425,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
                                                 <div class="col-md-5">
                                                     <label id="maxCorporateUser">-</label>
@@ -438,7 +438,7 @@
                                     </div>
                                     <div class="box-body auth-device token-list">
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
                                                 <div class="col-md-5">
                                                     <label id="tokenType_view">Hard Token</label>
@@ -459,7 +459,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
                                                 <div class="col-md-5">
                                                     <label id="tokenNum_view">-</label>
@@ -490,7 +490,7 @@
                             <div class="tab-pane" id="tab_services">
                                 <div class="container-fluid box-body">
                                     <div class="col-xs-12">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Service Setup&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <select class="form-control state_edit" id="servicePackage" data-error="This field is required." required>
@@ -498,7 +498,7 @@
                                             </div>
                                             <div class="help-block with-errors"></div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Special Limit</label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -507,7 +507,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Special Fee</label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -516,7 +516,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Corporate SME</label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -525,7 +525,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="mb-3 row token-list">
+                                        <div class="mb-3 row form-group token-list">
                                             <label class="col-md-3 col-form-label text-end">Default Approval Matrix</label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -534,7 +534,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Maximum Number of User&ast;</strong></label>
                                             <div class="col-md-5">
                                                 <input type="text" id="maximumUser" name="maximumUser" class="form-control state_edit numeric" autocomplete="off" value="999999999" maxlength="9" data-error="This field is required." required>
@@ -548,7 +548,7 @@
                                         </div>
                                         <div class="box-body auth-device token-list">
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <label class="col-md-3 col-form-label text-end">Authentication Device Type</label>
                                                     <div class="col-md-6">
                                                         <label id="tokenType">Hard Token</label>
@@ -556,7 +556,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <label class="col-md-3 col-form-label text-end">Serial Number</label>
                                                     <div class="col-md-6 form-inline">
                                                         <input type="text" id="serialNumber" name="serialNumber" class="form-control state_edit" autocomplete="off" value="" maxlength="40">
@@ -579,7 +579,7 @@
                                                     </div>
                                             </div>
                                             <div class="row">
-                                                <div class="mb-3 row">
+                                                <div class="mb-3 row form-group">
                                                     <label class="col-md-3 col-form-label text-end">Total Number of Token</label>
                                                     <div class="col-md-6">
                                                         <label id="tokenNum">-</label>
@@ -611,17 +611,17 @@
                                                 <tbody>
                                                 <tr>
                                                     <td>Admin Maker</td>
-                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="text" id="maker_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="text" id="maker_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row maker" style="margin: 0"><input type="email" id="maker_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="maker_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group maker" style="margin: 0"><input type="text" id="maker_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group maker" style="margin: 0"><input type="text" id="maker_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group maker" style="margin: 0"><input type="email" id="maker_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group approver" style="margin: 0"><input type="text" id="maker_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Admin Approver</td>
-                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="email" id="approver_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
-                                                    <td><div class="mb-3 row approver" style="margin: 0"><input type="text" id="approver_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group approver" style="margin: 0"><input type="text" id="approver_userId" class="form-control state_edit" style="width: 100%;" maxlength="20" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group approver" style="margin: 0"><input type="text" id="approver_name" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group approver" style="margin: 0"><input type="email" id="approver_email" class="form-control state_edit" style="width: 100%;" maxlength="100" data-error="This field is invalid." required><div class="help-block with-errors"></div></div></td>
+                                                    <td><div class="mb-3 row form-group approver" style="margin: 0"><input type="text" id="approver_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40" data-error="This field is required." required><div class="help-block with-errors"></div></div></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -742,7 +742,7 @@
                 '<input type="text" id="cp_name" class="form-control state_edit" style="width: 100%;" maxlength="100"><label id="cp_name_view" class="state_view">-</label>',
                 '<input type="text" id="cp_phoneNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40"><label id="cp_phoneNo_view" class="state_view numeric phone">-</label>',
                 '<input type="text" id="cp_mobileNo" class="form-control state_edit numeric phone" style="width: 100%;" maxlength="40"><label id="cp_mobileNo_view" class="state_view numeric phone">-</label>',
-                '<div class="mb-3 row maker" style="margin: 0"><input type="email" id="cp_email" data-error="Invalid Email Address." class="cp_email form-control state_edit" style="width: 100%;" maxlength="100"><div class="help-block with-errors"></div><label id="cp_email_view" class="state_view">-</label></div>',
+                '<div class="mb-3 row form-group maker" style="margin: 0"><input type="email" id="cp_email" data-error="Invalid Email Address." class="cp_email form-control state_edit" style="width: 100%;" maxlength="100"><div class="help-block with-errors"></div><label id="cp_email_view" class="state_view">-</label></div>',
                 '<input type="text" id="cp_faxNo" class="form-control state_edit numeric" style="width: 100%;" maxlength="40"><label id="cp_faxNo_view" class="state_view">-</label>'
             ]).draw(true);
             cp_count++;

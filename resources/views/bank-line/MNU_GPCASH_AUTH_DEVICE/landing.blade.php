@@ -14,7 +14,7 @@
                 <div class="box-body">
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate ID</label>
                                 <div class="col-md-6">
                                     <input type="text" id="corporateId" name="corporateId" class="form-control" autocomplete="off" value="" maxlength="40">
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate Name</label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" name="name" class="form-control" autocomplete="off" value="" maxlength="100">
@@ -70,7 +70,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -140,7 +140,7 @@
                             <div class="box-body">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-4 col-form-label text-end">Serial Number</label>
                                             <div class="col-md-8">
                                                 <label id="tokenNo-modal" class="state_view">-</label>
@@ -149,7 +149,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-4 col-form-label text-end"><strong>Token Challenge Code*</strong></label>
                                             <div class="col-md-8">
                                                 <input type="text" id="randomLockedCode" name="randomLockedCode" class="form-control" autocomplete="off" value="" maxlength="20" data-error="This field is required." required>

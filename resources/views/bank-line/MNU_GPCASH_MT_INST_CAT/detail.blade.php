@@ -16,7 +16,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
 						<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Institution Category Name English</label>
                                 <div class="col-md-6">
                                     <label id="nameEng">-</label>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Description</label>
                                 <div class="col-md-6">
                                     <label id="dscp">-</label>

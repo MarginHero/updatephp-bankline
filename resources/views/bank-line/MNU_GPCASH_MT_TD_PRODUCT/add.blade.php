@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblProductCode text-end"><strong>Code&ast;</strong></label>
                                 <div class="col-md-4">
                                     <input type="text" id="productCode" name="productCode" class="form-control state_edit" autocomplete="off" value="" style="width:100%;text-align: left;" data-error="This field is required." required>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblProductName text-end"><strong>Name&ast;</strong></label>
                                 <div class="col-md-4">
                                     <input type="text" id="productName" name="productName" class="form-control state_edit" autocomplete="off" value="" style="width:100%;text-align: left;" data-error="This field is required." required>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Description</label>
                                 <div class="col-md-4">
                                     <input type="text" id="description" name="description" class="form-control state_edit" autocomplete="off" value="" style="width:100%;text-align: left;">

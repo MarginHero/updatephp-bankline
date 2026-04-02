@@ -44,7 +44,7 @@
                         <div class="modal-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Executed Date</label>
                                         <div class="col-md-6">
                                             <label id="executedDate">-</label>
@@ -52,7 +52,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">System Reference Number</label>
                                         <div class="col-md-6">
                                             <label id="sysRefNo">-</label>
@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Sender Reference Number</label>
                                         <div class="col-md-6">
                                             <label id="senderRefNo">-</label>
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Debit Account</label>
                                         <div class="col-md-6">
                                             <label id="debitAcct">-</label>
@@ -76,7 +76,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Debit Equivalent Amount</label>
                                         <div class="col-md-6">
                                             <label id="debitEqv">-</label>
@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Debit Exchange Rate</label>
                                         <div class="col-md-6">
                                             <label id="debitExchange">-</label>
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Beneficiary Reference Number</label>
                                         <div class="col-md-6">
                                             <label id="benRefNo">-</label>
@@ -100,7 +100,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Credit Account</label>
                                         <div class="col-md-6">
                                             <label id="creditAcct">-</label>
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Credit Equivalent Amount</label>
                                         <div class="col-md-6">
                                             <label id="creditEqv">-</label>
@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Credit Exchange Rate</label>
                                         <div class="col-md-6">
                                             <label id="creditExchange">-</label>
@@ -124,7 +124,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Account</label>
                                         <div class="col-md-6">
                                             <label id="feeAcct">-</label>
@@ -132,7 +132,7 @@
                                     </div>
                                 </div>
                                 <!-- <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Type</label>
                                         <div class="col-md-6">
                                             <label id="feeType">-</label>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Equivalent Account</label>
                                         <div class="col-md-6">
                                             <label id="feeEqv">-</label>
@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Exchange Rate</label>
                                         <div class="col-md-6">
                                             <label id="feeExchange">-</label>
@@ -341,7 +341,7 @@
 
     function setChargesDetail(chargeList){
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             tags += '<label class="col-md-5 col-form-label text-end">Fee Type</label>';
             tags += '<div class="col-md-6"><label>'+chargeList[i].chargeType+'</label></div>';

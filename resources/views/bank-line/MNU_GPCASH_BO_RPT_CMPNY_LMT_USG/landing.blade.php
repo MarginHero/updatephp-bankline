@@ -15,7 +15,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 col-form-label text-right">
                                         <label for="corporateId"><strong>Company ID</strong></label>
                                     </div>
@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 col-form-label text-right">
                                         <label for="corporateName"><strong>Company Name</strong></label>
                                     </div>

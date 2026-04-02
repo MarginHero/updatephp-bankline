@@ -72,7 +72,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end">Company</label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="searchCompany">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label text-end"><strong>Month&ast;</strong></label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="searchMonth" data-error="Please Select Month" required>

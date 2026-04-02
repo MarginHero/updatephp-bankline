@@ -6,7 +6,7 @@
     <div class="box-body">
         <div class="container-fluid">
             <div class="row">
-                <div class="mb-3 row">
+                <div class="mb-3 row form-group">
                     <label class="col-md-5 col-form-label text-end">Fee Updates</label>
                     <div class="col-md-4">
                         <label class="col-form-label text-end" id="updateType"></label>
@@ -14,14 +14,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 row specialFeeRow">
+                <div class="mb-3 row form-group specialFeeRow">
                     <label class="col-md-5 col-form-label text-end">Corporate with Special Fee</label>
                     <div class="col-md-4 form-inline">
                         <label class="col-form-label text-end" id="isUpdate"></label>
                     </div>
                 </div>
                 <div class="row specificFee">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-3 col-form-label text-end">Fee Setup Code</label>
                         <div class="col-md-6">
                             <label id="feeCode">-</label>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="row specificFee">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-3 col-form-label text-end">Fee Setup Name</label>
                         <div class="col-md-6">
                             <label id="feeName">-</label>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 row feeSetupCode">
+                <div class="mb-3 row form-group feeSetupCode">
                     <label class="col-md-5 col-form-label text-end">Fee Setup Code</label>
                     <div class="col-md-4 form-inline">
                         <label class="col-form-label text-end" id="feeCode"></label>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 row feeSetupName">
+                <div class="mb-3 row form-group feeSetupName">
                     <label class="col-md-5 col-form-label text-end">Fee Setup Name</label>
                     <div class="col-md-4 form-inline">
                         <label class="col-form-label text-end" id="feeName"></label>

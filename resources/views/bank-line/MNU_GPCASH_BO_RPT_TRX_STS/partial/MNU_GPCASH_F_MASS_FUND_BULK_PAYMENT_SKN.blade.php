@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Transaction Service</label>
                                 <div class="col-md-6">
                                     <label id="trxService">-</label>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Transaction Type</label>
                                 <div class="col-md-6">
                                     <label id="trxType">-</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Source Account</label>
                                 <div class="col-md-6">
                                     <label id="sourceAccount">-</label>
@@ -41,7 +41,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Uploaded Date Time</label>
                                 <div class="col-md-6">
                                     <label id="uploadDate">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Format</label>
                                 <div class="col-md-6">
                                     <label id="fileFormat">-</label>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Upload</label>
                                 <div class="col-md-6">
                                     <label id="fileUpload">-</label>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">File Description</label>
                                 <div class="col-md-6">
                                     <label id="fileDescp" style="text-transform: none">-</label>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Record</label>
                                 <div class="col-md-6">
                                     <label id="totalRecord">-</label>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Amount</label>
                                 <div class="col-md-6">
                                     <label id="totalAmount">-</label>
@@ -92,7 +92,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Total Debit Amount</label>
                                 <div class="col-md-6">
                                     <label id="totalDebitAmount">-</label>
@@ -101,7 +101,7 @@
                         </div>
                         <hr style="height:1px;border:none;color:#333;background-color:#d2d6de;"/>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Payment Schedule</label>
                                 <div class="col-md-6">
                                     <label id="paymentSchedule">-</label>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row instDate">
+                            <div class="mb-3 row form-group instDate">
                                 <label class="col-md-5 col-form-label text-end">Payment Date</label>
                                 <div class="col-md-6">
                                     <label id="paymentDate">-</label>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="row sessionTime">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">At</label>
                                 <div class="col-md-6">
                                     <label id="sessionTime">-</label>
@@ -439,21 +439,21 @@
 
     function setChargesDetail(chargeList, confirm_data){
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             if (chargeList[i].value !== '0' && chargeList[i].value !== '0.00' && chargeList[i].value !== '0.0000000' && chargeList[i].value !== '0.0') {
               tags += '<label class="col-md-5 col-form-label text-end">'+chargeList[i].serviceChargeName+'</label><div class="col-md-6"><label>'+chargeList[i].currencyCode+' '+currencyFormat(chargeList[i].value)+'</label></div>';
             }
 
 	if(chargeList[i].total != '0.0000000'){
-                tags += '<div class="mb-3 row">';
+                tags += '<div class="mb-3 row form-group">';
                 tags += '<label class="col-md-5 col-form-label text-end">Total Our Fee</label>';
                 tags += '<div class="col-md-6">';
                 tags += '<label>'+chargeList[i].currencyCode+' '+currencyFormat(chargeList[i].value)+' x '+chargeList[i].totalRecord+' record = '+ chargeList[i].currencyCode+' '+ currencyFormat(chargeList[i].total)+'</label>';
                 tags += '</div></div>';
             }
             if(chargeList[i].totalBen != '0.0000000'){
-                tags += '<div class="mb-3 row">';
+                tags += '<div class="mb-3 row form-group">';
                 tags += '<label class="col-md-5 col-form-label text-end">Total Ben Fee</label>';
                 tags += '<div class="col-md-6">';
                 tags += '<label>'+chargeList[i].currencyCode+' '+currencyFormat(chargeList[i].value)+' x '+chargeList[i].totalRecordBen+' record = '+ chargeList[i].currencyCode+' '+ currencyFormat(chargeList[i].totalBen)+'</label>';

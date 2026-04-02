@@ -9,7 +9,7 @@
             <h2 style="text-align: center">New Value</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Type</label>
                         <div class="col-md-6">
                             <label id="infoType">-</label>
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Title</label>
                         <div class="col-md-6">
                             <label id="title">-</label>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">File Upload</label>
                         <div class="col-md-6">
                             <!-- <label id="fileUpload">-</label> -->
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="row promoDesc_div">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Promo Detail Description</label>
                         <div class="col-md-6">
                             <!-- <label id="promoDesc">-</label> -->
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="row desc_div">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Description</label>
                         <div class="col-md-6">
                             <label id="dscp">-</label>
@@ -63,7 +63,7 @@
             <h2 style="text-align: center">Old Value</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Type</label>
                         <div class="col-md-6">
                             <label id="old_infoType">-</label>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Title</label>
                         <div class="col-md-6">
                             <label id="old_title">-</label>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">File Upload</label>
                         <div class="col-md-6">
                             <!-- <label id="fileUpload">-</label> -->
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="row old_promoDesc_div">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Promo Detail Description</label>
                         <div class="col-md-6">
                             <!-- <label id="promoDesc">-</label> -->
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="row old_desc_div">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Description</label>
                         <div class="col-md-6">
                             <label id="old_dscp">-</label>

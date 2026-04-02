@@ -14,7 +14,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate ID</label>
 
                                 <div class="col-md-6">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate Name</label>
 
                                 <div class="col-md-6">
@@ -81,7 +81,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">CIF</label>
                                 <div class="col-md-6">
                                     <label id="cifid">-</label>
@@ -161,7 +161,7 @@
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Corporate</label>
                             <div class="col-md-6">
                                 <label id="modal_corporate">-</label>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Account CIF</label>
                             <div class="col-md-6">
                                 <label id="modal_cif">-</label>
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Account Number</label>
                             <div class="col-md-6">
                                 <label id="modal_accountNo">-</label>
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Account Name</label>
                             <div class="col-md-6">
                                 <label id="modal_accountName">-</label>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Account Currency</label>
                             <div class="col-md-6">
                                 <label id="modal_accountCurrency">-</label>
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Account Type</label>
                             <div class="col-md-6">
                                 <label id="modal_accountType">-</label>
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Opening Branch</label>
                             <div class="col-md-6">
                                 <label id="modal_accountBranchName">-</label>
@@ -217,7 +217,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Allow Inquiry</label>
                             <div class="col-md-6">
                                 <label id="modal_isAllowInquiry">-</label>
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Allow Debit</label>
                             <div class="col-md-6">
                                 <label id="modal_isAllowDebit">-</label>
@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Allow Credit</label>
                             <div class="col-md-6">
                                 <label id="modal_isAllowCredit">-</label>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 row">
+                        <div class="mb-3 row form-group">
                             <label class="col-md-4 col-form-label text-end">Status</label>
                             <div class="col-md-6">
                                 <label id="modal_accountStatus">-</label>

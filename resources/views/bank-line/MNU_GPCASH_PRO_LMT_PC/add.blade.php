@@ -38,7 +38,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end"><strong>Limit Setup Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end"><strong>Limit Setup Name&ast;</strong></label>
 
                                 <div class="col-md-6">
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="row corp_limit" style="display:none">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate with Special Limit</label>
                                 <div class="col-md-4">
                                     <div class="state_edit">

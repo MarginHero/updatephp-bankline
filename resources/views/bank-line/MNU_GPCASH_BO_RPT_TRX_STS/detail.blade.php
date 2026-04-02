@@ -19,7 +19,7 @@
                 <div class="box-body" id="trxDetail">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Menu</label>
                                 <div class="col-md-6">
                                     <label id="menuName">-</label>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Transaction Status</label>
                                 <div class="col-md-6">
                                     <label id="trxStatus">-</label>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Transaction Reference Number</label>
                                 <div class="col-md-6">
                                     <label id="trxRefNo">-</label>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="row reject" style="display:none">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Reject Reason</label>
                                 <div class="col-md-6">
                                     <label id="rejectReason">-</label>
@@ -70,7 +70,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="table-hidden">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <table id="activityList" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                        style="border-collapse:collapse;">
                                     <thead>

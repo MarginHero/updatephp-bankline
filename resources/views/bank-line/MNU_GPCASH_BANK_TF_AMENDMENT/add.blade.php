@@ -17,7 +17,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Branch Code&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="code" name="code" class="form-control state_edit numeric" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Branch Name&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="name" name="name" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Description&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="dscp" name="dscp" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Contact Person&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="contact" name="contact" class="form-control state_edit   " autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Email&ast;</strong></label>
                                 <div class="col-md-6">
                                     <input type="email" id="email" name="email" class="form-control state_edit" autocomplete="off" value="" maxlength="100" data-error="This field is invalid." required>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Address</label>
                                 <div class="col-md-6">
                                     <input type="text" id="address1" name="address1" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="address2" name="address2" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong></strong></label>
                                 <div class="col-md-6">
                                     <input type="text" id="address3" name="address3" class="form-control state_edit" autocomplete="off" value="" maxlength="100">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>City&ast;</strong></label>
                                 <div class="col-md-4">
                                     <div class="city_setup state_edit"><select class="form-control"></select></div>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end"><strong>Level&ast;</strong></label>
                                 <div class="col-md-4">
                                     <div class="level_setup state_edit"><select class="form-control"></select></div>

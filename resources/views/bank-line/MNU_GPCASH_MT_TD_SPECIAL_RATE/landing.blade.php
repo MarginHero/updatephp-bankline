@@ -16,7 +16,7 @@
                         <div class="container-fluid">
 
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-2">
                                         <input type="radio" id="corporate-rb" name="searchBy-rb" value="0" checked>
                                         <label for="corporate-rb" style="margin-left: 5px;">Corporate</label>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="row row-date">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-2">
                                         <label for="dateRange-label" style="margin-left: 20px;">Date Range</label>
                                     </div>
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-2">
                                         <input type="radio" id="refNo-rb" name="searchBy-rb" value="1">
                                         <label for="refNo-rb" style="margin-left: 5px;">Reference Number</label>

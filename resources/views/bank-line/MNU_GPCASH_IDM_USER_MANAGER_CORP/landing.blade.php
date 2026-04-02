@@ -13,7 +13,7 @@
                 <div class="box-body">
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Corporate</label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="corporate_code"></select>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">User Id</label>
 
                                 <div class="col-md-6">
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Active Session</label>
                                 <div class="col-md-6">
                                     <label id="stillLoginFlag" name="stillLoginFlag">Y</label>

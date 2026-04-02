@@ -15,7 +15,7 @@
                       <div class="box-body">
                         <div class="container-fluid">
                            
-                               <div class="mb-3 row">
+                               <div class="mb-3 row form-group">
                                 <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                        style="border-collapse:collapse;">
                                     <thead>
@@ -229,8 +229,8 @@
                                 oTable.row.add([
 
                                     '<span id="cot_name">'+obj.name +'</span>'+'<input id="cot_code" name="cot_code" class="form-control state_edit" value="' + obj.code + '" type="hidden">',
-                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row param" style="margin: 0"><input id="start_time" class="form-control state_edit numeric start_time_cls " value="'+obj.startHour + ':' + obj.startMinutes+'" type="text" maxlength="5" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="start_time_id" class="state_view" style="float: left;">'+obj.startHour + ':' + obj.startMinutes+'</span><div class="help-block with-errors"></div></div></form>',
-                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row param" style="margin: 0"><input id="end_time" class="form-control state_edit numeric end_time_cls" value="'+obj.endHour + ':' + obj.endMinutes+'" type="text" maxlength="5" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="end_time_id" class="state_view" style="float: left;">'+obj.endHour + ':' + obj.endMinutes+'</span><div class="help-block with-errors"></div></div></form>'
+                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row form-group param" style="margin: 0"><input id="start_time" class="form-control state_edit numeric start_time_cls " value="'+obj.startHour + ':' + obj.startMinutes+'" type="text" maxlength="5" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="start_time_id" class="state_view" style="float: left;">'+obj.startHour + ':' + obj.startMinutes+'</span><div class="help-block with-errors"></div></div></form>',
+                                    '<form id="form-area" class="form-horizontal form-area"><div class="mb-3 row form-group param" style="margin: 0"><input id="end_time" class="form-control state_edit numeric end_time_cls" value="'+obj.endHour + ':' + obj.endMinutes+'" type="text" maxlength="5" style="width:100%;display:hidden;text-align: float-left;" data-error="This field is required." required><span id="end_time_id" class="state_view" style="float: left;">'+obj.endHour + ':' + obj.endMinutes+'</span><div class="help-block with-errors"></div></div></form>'
 
                                 ]).draw(false);
                             }

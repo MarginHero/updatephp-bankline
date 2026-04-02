@@ -103,7 +103,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-4 row">
+                                <div class="mb-4 row form-group">
                                     <div class="col-md-2">
                                         <input type="radio" id="corporate-rb" name="searchBy-rb" value="0" checked>
                                         <label for="corporate-rb"  style="margin-left: 5px;"><strong>Corporate</strong></label>
@@ -118,7 +118,7 @@
                             </div>
 
                             <div class="row row-status">
-                                <div class="mb-4 row">
+                                <div class="mb-4 row form-group">
                                     <div class="col-md-2" style="margin-left: 15px;">
                                         <label style="margin-left: 5px;">Status</label>
                                     </div>
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="row row-date">
-                                <div class="mb-4 row">
+                                <div class="mb-4 row form-group">
                                     <div class="col-md-2" style="margin-left: 15px;">
                                         <label style="margin-left: 5px;">Date Range</label>
                                     </div>
@@ -164,7 +164,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="mb-4 row">
+                                <div class="mb-4 row form-group">
                                     <div class="col-md-3">
                                         <input type="radio" id="refNo-rb" name="searchBy-rb" value="1">
                                         <label for="refNo-rb"  style="margin-left: 5px;">Transaction Reference Number</label>
@@ -176,7 +176,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-4 row">
+                                <div class="mb-4 row form-group">
                                     <div class="col-md-3">
                                         <input type="radio" id="refNo-rb" name="searchBy-rb" value="2">
                                                 <label for="refNo-rb"  style="margin-left: 5px;">BOSS Reference Number</label>

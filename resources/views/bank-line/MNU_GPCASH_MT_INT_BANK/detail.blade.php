@@ -16,7 +16,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Organization Type</label>
                                 <div class="col-md-6">
                                     <label id="organization">-</label>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Bank Code</label>
                                 <div class="col-md-6">
                                     <label id="code_1">-</label>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Bank Name</label>
                                 <div class="col-md-6">
                                     <label id="name">-</label>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Department</label>
                                 <div class="col-md-6">
                                     <label id="department">-</label>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Sub Department</label>
                                 <div class="col-md-6">
                                     <label id="subDepartment">-</label>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Street Name</label>
                                 <div class="col-md-6">
                                     <label id="streetName">-</label>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Building Number</label>
                                 <div class="col-md-6">
                                     <label id="buildingNumber">-</label>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Building Name</label>
                                 <div class="col-md-6">
                                     <label id="buildingName">-</label>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Floor</label>
                                 <div class="col-md-6">
                                     <label id="floor">-</label>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Post Box</label>
                                 <div class="col-md-6">
                                     <label id="postBox">-</label>
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Post Code</label>
                                 <div class="col-md-6">
                                     <label id="postCode">-</label>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Room</label>
                                 <div class="col-md-6">
                                     <label id="room">-</label>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Town Name</label>
                                 <div class="col-md-6">
                                     <label id="townName">-</label>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Town Location Name</label>
                                 <div class="col-md-6">
                                     <label id="townLocationName">-</label>
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">District Name</label>
                                 <div class="col-md-6">
                                     <label id="districtName">-</label>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Country Sub Division</label>
                                 <div class="col-md-6">
                                     <label id="countrySubDivision">-</label>
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-2 col-form-label text-end">Country</label>
                                 <div class="col-md-6">
                                     <label id="country">-</label>

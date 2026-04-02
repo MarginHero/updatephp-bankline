@@ -17,7 +17,7 @@
                 <form id="form-area" class="form-horizontal form-area">
                     <div class="box-body">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">CIF</label>
                                     <div class="col-md-6">
                                         <label id="cifid">-</label>
@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate ID</label>
                                 <div class="col-md-6">
                                     <label id="corporateId">-</label>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate Name</label>
                                 <div class="col-md-6">
                                     <label id="corporateName">-</label>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Address</label>
                                 <div class="col-md-6">
                                     <label id="address1">-</label>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address2">-</label>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end"></label>
                                 <div class="col-md-6">
                                     <label id="address3">-</label>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Country</label>
                                 <div class="col-md-6">
                                     <label id="countryName">-</label>
@@ -74,7 +74,7 @@
                         </div>
 
                       	<div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">State</label>
                                 <div class="col-md-6">
                                     <label id="stateName">-</label>
@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Substate</label>
                                 <div class="col-md-6">
                                     <label id="substateName">-</label>
@@ -92,7 +92,7 @@
                         </div>
 
                        <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">City</label>
                                 <div class="col-md-6">
                                     <label id="cityName">-</label>
@@ -101,7 +101,7 @@
                         </div>
 
                        <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Post Code</label>
                                 <div class="col-md-6">
                                     <label id="postcode">-</label>
@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Email Address</label>
                                 <div class="col-md-6">
                                     <label id="email1">-</label>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Alternate Email Address</label>
                                 <div class="col-md-6">
                                     <label id="email2">-</label>
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Phone No.</label>
                                 <div class="col-md-3">
                                     <label id="phoneNo">-</label>
@@ -138,7 +138,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Fax No.</label>
                                 <div class="col-md-6">
                                     <label id="faxNo">-</label>
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Servicing Branch</label>
                                 <div class="col-md-6">
                                     <label id="servicingBranch">-</label>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Industry Segment</label>
                                 <div class="col-md-6">
                                     <label id="industrySegmentName">-</label>
@@ -162,7 +162,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Business Unit</label>
                                 <div class="col-md-6">
                                     <label id="businessUnitName">-</label>
@@ -170,7 +170,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Tax ID</label>
                                 <div class="col-md-6">
                                     <label id="taxIdNo">-</label>
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Handling Officer</label>
                                 <div class="col-md-6">
                                     <label id="handlingOfficer">-</label>
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Residential Status</label>
                                 <div class="col-md-6">
                                     <label id="residentialStatus">-</label>
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Citizenship</label>
                                 <div class="col-md-6">
                                     <label id="citizenship">-</label>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                         <div class="row non-status">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Remitter Type</label>
                                 <div class="col-md-6">
                                     <label id="remitterType">-</label>
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Status</label>
                                 <div class="col-md-6">
                                     <div class="state_update">
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                         <div class="row reason">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end"><strong>Reason&ast;</strong></label>
                                 <div class="col-md-6">
                                     <textarea id="inactiveReason" class="form-control" rows="5" maxlength="255" style="margin-top: 10px;height:200px !important;" required></textarea>
@@ -232,7 +232,7 @@
                             </div>
                         </div>
 						<div class="row state_normal">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Reason</label>
                                 <div class="col-md-6">
                                     <label id="inActiveReasonDetail">-</label>
@@ -265,7 +265,7 @@
                     </div>
                     <div class="box-body table-hidden">
                          <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Service Setup</label>
                                     <div class="col-md-6">
                                         <label id="servicePackageName">-</label>
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Special Limit</label>
                                 <div class="col-md-6">
                                     <label id="specialLimitFlag">-</label>
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Special Fee</label>
                                 <div class="col-md-6">
                                     <label id="specialChargeFlag">-</label>
@@ -289,7 +289,7 @@
                             </div>
                         </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label text-end">Corporate SME</label>
                                 <div class="col-md-6">
                                     <label id="smeFlag">-</label>
@@ -297,7 +297,7 @@
                             </div>
                         </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-3 col-form-label text-end">Maximum Number of User</label>
                                     <div class="col-md-6">
                                         <label id="maxCorporateUser">-</label>

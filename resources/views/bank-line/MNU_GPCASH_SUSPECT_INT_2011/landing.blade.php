@@ -15,7 +15,7 @@
                     <div class="container-fluid">
 
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3" >
                                     <input type="radio" id="corporate-rb" name="searchby-rb" value="1" checked>
                                     <label class="col-form-label text-end"  >Corporate ID</label>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row state_corporate">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3" >
                                     <label class="col-form-label text-end" >Corporate Name</label>
                                 </div>
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="row row-date">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3" >
                                     <label  >Date Range</label>
                                 </div>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3" >
                                     <input type="radio" id="createddt-rb" name="searchby-rb" value="0">
                                     <label class="col-form-label text-end"  >Transaction Reference No</label>

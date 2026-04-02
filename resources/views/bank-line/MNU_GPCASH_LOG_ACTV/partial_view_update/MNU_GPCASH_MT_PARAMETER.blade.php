@@ -11,7 +11,7 @@
                             <h2 style="text-align: center">New Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Code</label>
                                         <div class="col-md-6">
                                             <label id="code_1">-</label>
@@ -19,7 +19,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Name</label>
                                         <div class="col-md-6">
                                             <label id="name">-</label>
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Description</label>
                                         <div class="col-md-6">
                                             <label id="dscp">-</label>
@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="row stateParent">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end" id="parentLabel"></label>
                                         <div class="col-md-6">
                                             <label id="parentName">-</label>
@@ -51,7 +51,7 @@
                             <h2  style="text-align: center" >Old Value</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Code</label>
                                         <div class="col-md-6">
                                             <label id="old_code_1">-</label>
@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Name</label>
                                         <div class="col-md-6">
                                             <label id="old_name">-</label>
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end">Description</label>
                                         <div class="col-md-6">
                                             <label id="old_dscp">-</label>
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                                 <div class="row oldStateParent">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-2 col-form-label text-end" id="parentLabel"></label>
                                         <div class="col-md-6">
                                             <label id="old_parentName">-</label>

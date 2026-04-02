@@ -13,7 +13,7 @@
                 <form id="form-area" class="form-horizontal form-area">
                     <div class="box-body">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label">
                                     <input type="radio" id="corporate-rb" name="searchBy-rb" value="0" checked>
                                     Corporate
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="row row-date">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label " >Activity Date Range</label>
                                 <div class="col-md-7">
                                     <div class="row g-2 align-items-center">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="row row-trx-type">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label " >Transaction Type</label>
                                 <div class="col-md-7">
                                     <select class="form-control" id="trxType">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="row row-status">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label " >Status</label>
                                 <div class="col-md-7">
                                     <select class="form-control" id="status">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="row row-amount">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label " >Amount Range</label>
                                 <div class="col-md-7">
                                     <div class="row g-2 align-items-center">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label ">
                                     <input type="radio" id="refNo-rb" name="searchBy-rb" value="1">
                                     Transaction Reference No
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-3 col-form-label ">
                                     <input type="radio" id="bankRefNo-rb" name="searchBy-rb" value="2">
                                     Bank Reference No

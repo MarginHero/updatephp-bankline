@@ -41,7 +41,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblDealRate text-end"><strong>Deal Rate No.&ast;</strong></label>
                                 <div class="col-md-5">
                                     <div class="state_edit">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row" id="corporateblock">
+                            <div class="mb-3 row form-group" id="corporateblock">
                                 <label class="col-md-4 col-form-label lblcorpID text-end"><strong>Corporate ID&ast;</strong></label>
                                 <div class="col-md-5">
                                     <div class="corporate_setup state_edit"><select class="form-control"></select></div>
@@ -65,9 +65,9 @@
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="mb-3 row row" id="debitCurrencyBlock">
+                            <div class="mb-3 row form-group" id="debitCurrencyBlock">
                                 <label class="col-md-4 col-form-label lblDebitCurr text-end"><strong>Debit Currency&ast;</strong></label>
-                                <div class="col-md-3 state_view">
+                                <div class="col-md-5 state_view">
                                     <label id="debit_curr_view" class="state_view"></label>
                                     <label id="debit_amount_view" class="state_view"></label>
                                 </div>
@@ -92,9 +92,9 @@
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="mb-3 row" id="creditCurrencyBlock">
+                            <div class="mb-3 row form-group" id="creditCurrencyBlock">
                                 <label class="col-md-4 col-form-label lblCreditCurr text-end"><strong>Credit Currency&ast;</strong></label>
-                                <div class="col-md-3 state_view">
+                                <div class="col-md-5 state_view">
                                     <label id="credit_curr_view" class="state_view"></label>
                                     <label id="credit_amount_view" class="state_view"></label>
                                 </div>
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row" id="specialRateblok">
+                            <div class="mb-3 row form-group" id="specialRateblok">
                                 <label class="col-md-4 col-form-label lblSpecialrate text-end"><strong>Special Rate&ast;</strong></label>
                                 <div class="state_edit col-md-5">
                                     <input type="text" id="specialRate" name="specialRate" class="form-control state_edit numeric rateSpecial"  data-error="This field is required." required>
@@ -128,13 +128,13 @@
                                 <div class="state_edit col-md-3">
                                     <button id="calculateButton" class="btn btn-primary text-end">Calculate</button>
                                 </div>
-                                <div class="col-md-3 state_view">
+                                <div class="col-md-5 state_view">
                                     <label id="specialRate_view" class="state_view"></label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label text-end">Remark</label>
                                 <div class="col-md-5">
                                     <input type="text" id="remark" name="remark" class="form-control state_edit" maxlength="200" autocomplete="off" value="" >
@@ -143,19 +143,19 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-4 col-form-label lblActiveDate text-end"><strong>Active Date&ast;</strong></label>
                                     <div class="activeDate_setup state_edit col-md-5">
                                         <select class="form-control"></select>
                                     </div>
                                     <div class="help-block with-errors"></div>
-				    <div class="col-md-3 state_view">
+				    <div class="col-md-5 state_view">
                                     	<label id="activeDate_setup_view" class="state_view"></label>
 			            </div>
                             </div>
                         </div>
                         <div class="row" >
-                            <div class="mb-3 row" id="emailblock">
+                            <div class="mb-3 row form-group" id="emailblock">
                                 <label class="col-md-4 col-form-label lblEmail text-end">Email</label>
                                 <div class="col-md-5">
                                     <input type="text" id="email" maxlength="1000" name="email" class="form-control state_edit email" autocomplete="off" value="" >

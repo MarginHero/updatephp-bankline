@@ -83,7 +83,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 text-right">
                                         <label for="corporate-rb"><strong>Company*</strong></label>
                                     </div>
@@ -96,7 +96,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <div class="col-md-3 text-right">
                                         <label for="corporate-rb">Account Type</label>
                                     </div>

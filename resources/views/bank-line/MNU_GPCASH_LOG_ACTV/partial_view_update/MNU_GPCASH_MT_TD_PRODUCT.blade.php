@@ -7,7 +7,7 @@
             <h2 style="text-align: center">New Value</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Code</label>
                         <div class="col-md-6">
                             <label id="productCode">-</label>
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Name</label>
                         <div class="col-md-6">
                             <label id="productName">-</label>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Description</label>
                         <div class="col-md-6">
                             <label id="description">-</label>
@@ -52,7 +52,7 @@
             <h2 style="text-align: center">Old Value</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Code</label>
                         <div class="col-md-6">
                             <label id="old_productCode">-</label>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Name</label>
                         <div class="col-md-6">
                             <label id="old_productName">-</label>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 row">
+                    <div class="mb-3 row form-group">
                         <label class="col-md-2 col-form-label text-end">Description</label>
                         <div class="col-md-6">
                             <label id="old_description">-</label>

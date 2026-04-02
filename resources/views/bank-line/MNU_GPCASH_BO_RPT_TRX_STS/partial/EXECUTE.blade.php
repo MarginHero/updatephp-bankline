@@ -68,7 +68,7 @@
                         <div class="modal-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Executed Date</label>
                                         <div class="col-md-6">
                                             <label id="executedDate">-</label>
@@ -76,7 +76,7 @@
                                     </div>
                                 </div>
                                 {{--                                <div class="row">--}}
-                                {{--                                    <div class="mb-3 row">--}}
+                                {{--                                    <div class="mb-3 row form-group">--}}
                                 {{--                                        <label class="col-md-5 col-form-label text-end">System Reference Number</label>--}}
                                 {{--                                        <div class="col-md-6">--}}
                                 {{--                                            <label id="sysRefNo">-</label>--}}
@@ -85,7 +85,7 @@
                                 {{--                                </div>--}}
 
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Debit Account</label>
                                         <div class="col-md-6">
                                             <label id="debitAcct">-</label>
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Debit Equivalent Amount</label>
                                         <div class="col-md-6">
                                             <label id="debitEqv">-</label>
@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Beneficiary Reference Number</label>
                                         <div class="col-md-6">
                                             <label id="benRefNo">-</label>
@@ -109,7 +109,7 @@
                                     </div>
                                 </div>
                                 {{--                                <div class="row">--}}
-                                {{--                                    <div class="mb-3 row">--}}
+                                {{--                                    <div class="mb-3 row form-group">--}}
                                 {{--                                        <label class="col-md-5 col-form-label text-end">Order Party Reference Number</label>--}}
                                 {{--                                        <div class="col-md-6">--}}
                                 {{--                                            <label id="benRefNo">-</label>--}}
@@ -117,7 +117,7 @@
                                 {{--                                    </div>--}}
                                 {{--                                </div>--}}
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Credit Account</label>
                                         <div class="col-md-6">
                                             <label id="creditAcct" style="word-wrap: break-word;">-</label>
@@ -125,7 +125,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Credit Equivalent Amount</label>
                                         <div class="col-md-6">
                                             <label id="creditEqv">-</label>
@@ -133,7 +133,7 @@
                                     </div>
                                 </div>
                                 {{--                                <div class="row">--}}
-                                {{--                                    <div class="mb-3 row">--}}
+                                {{--                                    <div class="mb-3 row form-group">--}}
                                 {{--                                        <label class="col-md-5 col-form-label text-end">Credit Exchange Rate</label>--}}
                                 {{--                                        <div class="col-md-6">--}}
                                 {{--                                            <label id="creditExchange">-</label>--}}
@@ -141,7 +141,7 @@
                                 {{--                                    </div>--}}
                                 {{--                                </div>--}}
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Account</label>
                                         <div class="col-md-6">
                                             <label id="feeAcct">-</label>
@@ -149,7 +149,7 @@
                                     </div>
                                 </div>
                                 <!-- <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Type</label>
                                         <div class="col-md-6">
                                             <label id="feeType">-</label>
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Equivalent Account</label>
                                         <div class="col-md-6">
                                             <label id="feeEqv">-</label>
@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-5 col-form-label text-end">Fee Exchange Rate</label>
                                         <div class="col-md-6">
                                             <label id="feeExchange">-</label>
@@ -204,20 +204,20 @@
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Source Account</label>
                                                 <label class="col-md-6 col-form-label static-label" id="sub_SourceAcct" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Remitter Information</label>
                                             <div class="col-md-6">
                                             </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Remitter Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id="sub_remitterName" style="text-align: left;">-</label>
                                             </div>
@@ -229,87 +229,87 @@
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Account</label>
                                                 <label class="col-md-6 col-form-label text-end" hidden id="otherAcct" style="text-align: left;">Other Account</label>
                                                 <label class="col-md-6 col-form-label text-end" hidden id="newEntry"  style="text-align: left;">New Entry</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="benTypeBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Account Type</label>
                                                 <label class="col-md-6 col-form-label text-end" id="benType" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="proxyTypeBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.popup.proxyType !=''">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Proxy Type</label>
                                                 <label class="col-md-6 col-form-label text-end" id="proxyType" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="proxyAddressBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.popup.proxyAddress !=''">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Proxy Address</label>
                                                 <label class="col-md-6 col-form-label text-end" id="proxyAddress" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="bankCountryNameBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Country</label>
                                                 <label class="col-md-6 col-form-label text-end" id="bankCountryName" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="destinationBankNameBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Bank</label>
                                                  <label class="col-md-6 col-form-label " id="destinationBankNameINT" hidden style="text-align: left;" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">-</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankName"  style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="destinationBankCityNameBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Bank City</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankCityName" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="destinationBankCodeBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_SKN'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">SKN Code</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankCode" style="text-align: left;"></label>
                                             </div>
                                         </div>
                                         <div class="row" id="destinationBankCodeRTGSBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_RTGS'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">RTGS Code</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankCodeRTGS" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="destinationBankCodeBIFASTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end" >BI FAST Code</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankCodeBIFAST" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="destinationBankCodeINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">SWIFT Code</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankCodeINT" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="destinationBankTownNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Town Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankTownNameINT" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                        <!--  <div class="row" hidden  id="destinationBankBranchINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Branch</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankBranchINT" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="destinationBankAddressINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Address</label>
                                                 <label class="col-md-6 col-form-label text-end" id="destinationBankAddress1INT" style="text-align: left;">-</label>
                                                 <label class="col-md-4 col-form-label text-end"></label>
@@ -319,96 +319,96 @@
                                             </div>
                                         </div> -->
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Account Number</label>
                                                 <label class="col-md-6 col-form-label text-end" id="creditAccount" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Account Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='creditAccountName' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="departmentINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Department</label>
                                                 <label class="col-md-6 col-form-label text-end" id='department' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="subDepartmentINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Sub Department</label>
                                                 <label class="col-md-6 col-form-label text-end" id='subDepartment' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="stretNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Street Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='streetName' style="text-align: left;word-wrap: break-word;" >-</label>         
                                             </div>
                                         </div>
                                         <div class="row" hidden id="buildingNumberINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Building Number</label>
                                                 <label class="col-md-6 col-form-label text-end" id='buildingNumber' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="buildingNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Building Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='buildingName' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="floorINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Floor</label>
                                                 <label class="col-md-6 col-form-label text-end" id='floor' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="postBoxINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Post Box</label>
                                                 <label class="col-md-6 col-form-label text-end" id='postBox' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="postCodeINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Post Code</label>
                                                 <label class="col-md-6 col-form-label text-end" id='postCode' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="roomINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Room</label>
                                                 <label class="col-md-6 col-form-label text-end" id='room' style="text-align: left;word-wrap: break-word;" >-</label>
                                         </div>
                                         <div class="row"  hidden id="townNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Town Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='townName' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" hidden id="townLocationNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Town Location Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='townLocationName' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row"  hidden id="districtNameINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">District Name</label>
                                                 <label class="col-md-6 col-form-label text-end" id='districtName' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row"  hidden id="countrySubDivisionINTBlock" v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Country Sub Division</label>
                                                 <label class="col-md-6 col-form-label text-end" id='countrySubDivision' style="text-align: left;word-wrap: break-word;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="addressBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Address</label>
                                                 <label class="col-md-6 col-form-label text-end" id='benAddress1' style="text-align: left;">-</label>
                                                 <label class="col-md-4 col-form-label text-end"></label>
@@ -418,16 +418,16 @@
                                             </div>
                                         </div>
                                         <div class="row" id="destinationCityBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">City</label>
                                                 <label class="col-md-6 col-form-label text-end" id='destinationCity' style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="residentBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Residentship</label>
                                                 <label class="col-md-2 col-form-label text-end" id="isBenResident" style="text-align: left;">-</label>
-                                                <div class="mb-3 row" v-show="this.popup.isBenResident == 'N'">
+                                                <div class="mb-3 row form-group" v-show="this.popup.isBenResident == 'N'">
                                                     <label class="col-md-2 col-form-label text-end static-label" id="residentCountry" style="text-align: left; margin-left:-70px">
                                                         -
                                                     </label>
@@ -435,10 +435,10 @@
                                             </div>
                                         </div>
                                         <div class="row" id="citiZenBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Citizhenship</label>
                                                 <label class="col-md-2 col-form-label text-end" id="isBenCitizen" style="text-align: left;">-</label>
-                                                <div class="mb-3 row" v-show="this.popup.isBenCitizen == 'N'">
+                                                <div class="mb-3 row form-group" v-show="this.popup.isBenCitizen == 'N'">
                                                     <label class="col-md-2 col-form-label text-end static-label" id="citizenCountry" style="text-align: left; margin-left:-70px">
                                                         -
                                                     </label>
@@ -446,19 +446,19 @@
                                             </div>
                                         </div>
                                         <div class="row" id="beneficiaryTypeBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' && this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Type</label>
                                                 <label class="col-md-6 col-form-label text-end" id="beneficiaryType" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="benCountryNameBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Benefciary Country</label>
                                                 <label class="col-md-6 col-form-label text-end" id='benCountryName' style="text-align: left;word-wrap: break-word;">-</label>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Order Party Reference Number</label>
                                                 <label class="col-form-label static-label" id="subBenRefNo">
                                                     -
@@ -472,13 +472,13 @@
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Amount</label>
                                                 <label class="col-md-6 col-form-label text-end" id="amount" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="chargeToBlock" hidden v-if="this.menu !== 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH'">
-                                            <div class="mb-3 row has-feedback">
+                                            <div class="mb-3 row form-group has-feedback">
                                                 <label class="col-md-4 col-form-label text-end">Charge Instruction</label>
                                                 <label class="col-md-6 col-form-label static-label" id="chargeTo" style="text-align: left;">
                                                     -
@@ -489,13 +489,13 @@
 
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row has-feedback">
+                                            <div class="mb-3 row form-group has-feedback">
                                                 <label class="col-md-4 col-form-label text-end">Total Debit Amount</label>
                                                 <label class="col-md-6 col-form-label text-end" id="debitEquivalentAmount" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Description</label>
                                                 <label class="col-form-label static-label" id="remark1">
                                                     -
@@ -503,7 +503,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end"></label>
                                                 <label class="col-form-label static-label" id="remark2">
 
@@ -511,7 +511,7 @@
                                             </div>
                                         </div>
                                         <div class="row" id="remark3Block" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_IH' || this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end"></label>
                                                 <label class="col-form-label static-label" id="remark3">
                                                    -
@@ -519,37 +519,37 @@
                                             </div>
                                         </div>
                                         <div class="row" id="trxPurposeNameBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_BIFAST' || this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Transaction Purpose</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;word-wrap: break-word;" id="trxPurposeName">-</label>
                                             </div>
                                         </div>
                                         <div class="row"  id="row_nameOfGoods" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Name of Goods</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;word-wrap: break-word;" id="nameOfGoods">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="row_countryOfOrigin" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Country of Origin</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;word-wrap: break-word;" id="countryOfOrigin">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="row_countryOfLoading" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Country of Destination</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;word-wrap: break-word;" id="countryOfLoading">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="row_countryOfShipment" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Country of Loading</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;word-wrap: break-word;" id="countryOfShipment">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="row_isRelated" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end"></label> 
                                                 <div class="col-md-6" style="text-align: left;word-wrap: break-word;">
                                                     <label class="col-form-label text-end" id="isRelatedYes" style="text-align:left !important;" hidden>
@@ -562,46 +562,46 @@
                                             </div>
                                         </div>
                                         <div class="row" id='senderCategoryDisplayBlock' hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Sender Category</label>
                                                 <label class="col-md-6 col-form-label text-end" id="senderCategoryDisplay" style="text-align: left;">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="benCategoryDisplayBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Category</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;" id="benCategoryDisplay">-</label>
                                             </div>
                                         </div>
                                         <div class="row" id="trxRelationDisplayBlock" hidden v-if="this.menu == 'MNU_GPCASH_F_MASS_FUND_BULK_PAYMENT_INT'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Transactor Relationship</label>
                                                 <label class="col-md-6 col-form-label text-end" style="text-align: left;" id="trxRelationDisplay">-</label>
                                             </div>
                                         </div>
                                         <hr />
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Payment Schedule</label>
                                                 <label class="col-md-6 col-form-label text-end" id='instructionMode' style="text-align:left;" >-</label>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Payment Date</label>
                                                 <label class="col-md-6 col-form-label text-end" id="instructionDate" style="text-align:left;">-</label>
                                             </div>
                                         </div>
                                         <hr />
                                         <div class="row">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Notify The Beneficiary</label>
                                                 <label class="col-md-6 col-form-label static-label" id="benNotificationFlag" style="text-align: left;">-
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="row" id="benNotificationValueBlock" v-if="this.popup.benNotificationFlag == 'Y'">
-                                            <div class="mb-3 row">
+                                            <div class="mb-3 row form-group">
                                                 <label class="col-md-4 col-form-label text-end">Beneficiary Email Address</label>
                                                 <label class="col-md-6 col-form-label static-label" id="benNotificationValue" style="text-align: left;">
                                                     -
@@ -1085,7 +1085,7 @@ if (menu.includes('BULK')) {
 
     function setChargesDetailExecuted(chargeList){
 
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             if(chargeList[i].chargeEquivalentAmount  != '0' && chargeList[i].chargeEquivalentAmount   != '0.00' && chargeList[i].chargeEquivalentAmount != '0.0000000' && chargeList[i].chargeEquivalentAmount != '0.0' && chargeList[i].chargeEquivalentAmount != '0E-7'){
                 tags += '<label class="col-md-5 col-form-label text-end">Fee Type</label>';
@@ -1100,7 +1100,7 @@ if (menu.includes('BULK')) {
 
     }
     function  setChargesDetail(chargeList){
-        tags = '<div class="mb-3 row">'
+        tags = '<div class="mb-3 row form-group">'
         for (var i = 0; i < chargeList.length; i++) {
             if(chargeList[i].chargeEquivalentAmount  != '0' && chargeList[i].chargeEquivalentAmount   != '0.00' && chargeList[i].chargeEquivalentAmount != '0.0000000' && chargeList[i].chargeEquivalentAmount != '0.0' && chargeList[i].chargeEquivalentAmount != '0E-7'){
                 tags += '<label class="col-md-4 col-form-label text-end">'+chargeList[i].chargeType+'</label><label class="col-md-6">'+chargeList[i].chargeCurrency+' '+currencyFormat(chargeList[i].chargeEquivalentAmount)+'</label>';

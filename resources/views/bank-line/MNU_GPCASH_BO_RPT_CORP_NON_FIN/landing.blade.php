@@ -87,7 +87,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label">
                                         <input type="radio" id="createddt-rb" name="searchby-rb" value="0" checked>
                                         <strong>Corporate</strong>
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div class="row state_createddt">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label "><strong>Activity By</strong></label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="activityBy">
@@ -112,7 +112,7 @@
                             </div>
 
                             <div class="row state_createddt">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label "><strong>Menu</strong></label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="menu">
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                             <div class="row state_createddt">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label "><strong>Activity Type</strong></label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="activityType">
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="row state_createddt">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label "><strong>Status</strong></label>
                                     <div class="col-md-6">
                                         <select class="form-control" id="status">
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="row state_createddt">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label "><strong>Activity Date</strong></label>
                                     <div class="col-md-6">
                                         <div class="row g-2 align-items-center">
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-2 col-form-label">
                                         <input type="radio" id="refno-rb" name="searchby-rb" value="1">
                                         <strong>Reference Number</strong>

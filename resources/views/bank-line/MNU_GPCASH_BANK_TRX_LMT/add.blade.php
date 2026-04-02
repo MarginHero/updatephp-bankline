@@ -15,7 +15,7 @@
                       <div class="box-body">
                         <div class="container-fluid">
                            
-                               <div class="mb-3 row">
+                               <div class="mb-3 row form-group">
                                 <table id="list" class="table table-bordered table-striped dataTable" border="2" cellpadding="2"
                                        style="border-collapse:collapse;">
                                     <thead>

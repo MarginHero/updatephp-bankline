@@ -28,7 +28,7 @@
                                     <h3 class="box-title">User Detail</h3><br>
                                 </div>
                                 <div class="box-body">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>User Id&ast;</strong></label>
                                             <div class="col-md-6">
                                                 <input type="text" id="code" name="code" class="form-control state_edit detail" autocomplete="off" value="" maxlength="40" data-error="This field is required." required>
@@ -38,7 +38,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>User Name&ast;</strong></label>
                                             <div class="col-md-6">
                                                 <input type="text" id="name" name="name" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -47,7 +47,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Unit&ast;</strong></label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -61,7 +61,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end"><strong>Email Address&ast;</strong></label>
                                             <div class="col-md-6">
                                                 <input type="email" id="email" name="email" class="form-control state_edit detail" autocomplete="off" value="" maxlength="100" data-error="This field is required." required>
@@ -71,7 +71,7 @@
                                         </div>
 
 
-                                    <div class="mb-3 row">
+                                    <div class="mb-3 row form-group">
                                         <label class="col-md-3 col-form-label text-end"><strong>Active From&ast;</strong></label>
                                         <div class="col-md-6">
                                             <div class="row g-2 align-items-center">
@@ -96,7 +96,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-3 col-form-label text-end">Password Never Expired</label>
                                             <div class="col-md-6">
                                                 <div class="state_edit">
@@ -112,7 +112,7 @@
                             <div class="tab-pane fade" id="tab_role" role="tabpanel" aria-labelledby="role-tab" style="display:none;">
                                 <div class="container-fluid box-body">
                                     <div class="col-xs-12">
-                                        <div class="mb-3 row">
+                                        <div class="mb-3 row form-group">
                                             <label class="col-md-2 col-form-label text-end">Role</label>
                                             <div class="col-md-4">
                                                 <select class="form-control" id="roleCode">

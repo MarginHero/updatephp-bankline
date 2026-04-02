@@ -72,7 +72,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3">
                                    <label for="corporate-rb"><strong>Company</strong></label>
                                 </div>
@@ -83,7 +83,7 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <div class="col-md-3">
                                    <label></label>
                                 </div>

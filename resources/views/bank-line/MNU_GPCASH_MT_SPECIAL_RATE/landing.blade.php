@@ -14,7 +14,7 @@
                     <div class="box-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Deal Rate No</label>
 
                                     <div class="col-md-4">
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Corporate</label>
 
                                     <div class="col-md-4">
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="row local">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Debit Currency</label>
 
                                     <div class="col-md-4">
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="row local">
-                                <div class="mb-3 row">
+                                <div class="mb-3 row form-group">
                                     <label class="col-md-4 col-form-label text-end">Credit Currency</label>
 
                                     <div class="col-md-4">

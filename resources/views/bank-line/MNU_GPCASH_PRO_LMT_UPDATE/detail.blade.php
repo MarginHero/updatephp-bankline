@@ -15,7 +15,7 @@
                 <div class="box-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="mb-3 row">
+                            <div class="mb-3 row form-group">
                                 <label class="col-md-5 col-form-label text-end">Limit Updates</label>
                                 <div class="col-md-4">
                                    <label class="col-form-label text-end" id="updateType"></label>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row specialLimitRow">
+                            <div class="mb-3 row form-group specialLimitRow">
                                  <label class="col-md-5 col-form-label text-end">Corporate with Special Limit</label>
                                 <div class="col-md-4 form-inline">
                                     <label class="col-form-label text-end" id="isUpdate"></label>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row feeSetupCode">
+                            <div class="mb-3 row form-group feeSetupCode">
                                  <label class="col-md-5 col-form-label text-end">Limit Setup Code</label>
                                 <div class="col-md-4 form-inline">
                                     <label class="col-form-label text-end" id="feeCode"></label>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="mb-3 row feeSetupName">
+                            <div class="mb-3 row form-group feeSetupName">
                                  <label class="col-md-5 col-form-label text-end">Limit Setup Name</label>
                                 <div class="col-md-4 form-inline">
                                     <label class="col-form-label text-end" id="feeName"></label>

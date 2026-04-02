@@ -7,7 +7,7 @@
 <div class="box-body">
     <div class="container-fluid">
         <div class="row">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-3 col-form-label text-end">Limit Updates</label>
                 <div class="col-md-6">
                     <label id="updateType">-</label>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="row specialLimit">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-3 col-form-label text-end">Corporate with Special Limit</label>
                 <div class="col-md-6">
                     <label id="isUpdate">-</label>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="row specificLimit">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-3 col-form-label text-end">Limit Setup Code</label>
                 <div class="col-md-6">
                     <label id="feeCode">-</label>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="row specificLimit">
-            <div class="mb-3 row">
+            <div class="mb-3 row form-group">
                 <label class="col-md-3 col-form-label text-end">Limit Setup Name</label>
                 <div class="col-md-6">
                     <label id="feeName">-</label>
